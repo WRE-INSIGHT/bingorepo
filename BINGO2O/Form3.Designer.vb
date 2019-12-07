@@ -61,11 +61,12 @@ Partial Class Form3
         Me.KryptonButton2.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
         Me.KryptonButton2.TabIndex = 1
         Me.KryptonButton2.Values.Text = "RAFFLE"
+        Me.KryptonButton2.Visible = False
         '
         'KryptonButton3
         '
         Me.KryptonButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton3.Location = New System.Drawing.Point(189, 279)
+        Me.KryptonButton3.Location = New System.Drawing.Point(189, 344)
         Me.KryptonButton3.Name = "KryptonButton3"
         Me.KryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton3.Size = New System.Drawing.Size(247, 59)
@@ -110,7 +111,7 @@ Partial Class Form3
         Me.KryptonButton4.StateCommon.Border.Rounding = 0
         Me.KryptonButton4.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
         Me.KryptonButton4.TabIndex = 6
-        Me.KryptonButton4.Values.Text = "VIDEOKE CARAVAN"
+        Me.KryptonButton4.Values.Text = "VIDEOKE CHALLENGE"
         Me.KryptonButton4.Visible = False
         '
         'Form3
@@ -119,12 +120,12 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(448, 413)
+        Me.Controls.Add(Me.KryptonButton4)
         Me.Controls.Add(Me.KryptonButton3)
         Me.Controls.Add(Me.KryptonButton2)
         Me.Controls.Add(Me.KryptonButton1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.KryptonButton4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(464, 452)
         Me.MinimumSize = New System.Drawing.Size(464, 452)

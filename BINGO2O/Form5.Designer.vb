@@ -23,7 +23,7 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
@@ -138,8 +138,8 @@ Partial Class Form5
         '
         Me.KryptonDataGridView3.AllowUserToAddRows = False
         Me.KryptonDataGridView3.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.KryptonDataGridView3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.KryptonDataGridView3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.KryptonDataGridView3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -356,8 +356,8 @@ Partial Class Form5
         Me.KryptonButton9.Name = "KryptonButton9"
         Me.KryptonButton9.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton9.Size = New System.Drawing.Size(203, 199)
-        Me.KryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.KryptonButton9.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(130, Byte), Integer))
+        Me.KryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.Purple
+        Me.KryptonButton9.StateCommon.Back.Color2 = System.Drawing.Color.Purple
         Me.KryptonButton9.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -378,8 +378,8 @@ Partial Class Form5
         Me.KryptonButton5.Name = "KryptonButton5"
         Me.KryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton5.Size = New System.Drawing.Size(203, 199)
-        Me.KryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.KryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(130, Byte), Integer))
+        Me.KryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.Yellow
+        Me.KryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.Fuchsia
         Me.KryptonButton5.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -409,8 +409,8 @@ Partial Class Form5
         Me.KryptonButton6.Name = "KryptonButton6"
         Me.KryptonButton6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton6.Size = New System.Drawing.Size(203, 199)
-        Me.KryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.KryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(130, Byte), Integer))
+        Me.KryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.Purple
+        Me.KryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.Yellow
         Me.KryptonButton6.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -432,8 +432,8 @@ Partial Class Form5
         Me.KryptonButton7.Name = "KryptonButton7"
         Me.KryptonButton7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton7.Size = New System.Drawing.Size(203, 199)
-        Me.KryptonButton7.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(214, Byte), Integer))
-        Me.KryptonButton7.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(130, Byte), Integer))
+        Me.KryptonButton7.StateCommon.Back.Color1 = System.Drawing.Color.Fuchsia
+        Me.KryptonButton7.StateCommon.Back.Color2 = System.Drawing.Color.Cyan
         Me.KryptonButton7.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -491,7 +491,7 @@ Partial Class Form5
         Me.KryptonLabel14.Name = "KryptonLabel14"
         Me.KryptonLabel14.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
         Me.KryptonLabel14.Size = New System.Drawing.Size(1047, 74)
-        Me.KryptonLabel14.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.KryptonLabel14.StateCommon.ShortText.Color1 = System.Drawing.Color.Yellow
         Me.KryptonLabel14.StateCommon.ShortText.Color2 = System.Drawing.Color.Green
         Me.KryptonLabel14.StateCommon.ShortText.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Dashed
         Me.KryptonLabel14.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 40.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -502,14 +502,15 @@ Partial Class Form5
         '
         'KryptonLabel11
         '
-        Me.KryptonLabel11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.KryptonLabel11.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.KryptonLabel11.AutoSize = False
         Me.KryptonLabel11.Location = New System.Drawing.Point(3, 433)
         Me.KryptonLabel11.Name = "KryptonLabel11"
         Me.KryptonLabel11.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
         Me.KryptonLabel11.Size = New System.Drawing.Size(1047, 121)
-        Me.KryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.Yellow
+        Me.KryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.KryptonLabel11.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 65.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KryptonLabel11.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
         Me.KryptonLabel11.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center

@@ -1316,4 +1316,8 @@ O5='" & O5.Text & "' where serial = '" & id.Text & "'"
     Private Sub Form4_SizeChanged(sender As Object, e As EventArgs) Handles MyBase.SizeChanged
         Panel1.Location = New Point((TabPage2.Width - Panel1.Width) / 2, (TabPage2.Height - Panel1.Height) / 2)
     End Sub
+
+    Private Sub Form4_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Me.Dispose()
+    End Sub
 End Class

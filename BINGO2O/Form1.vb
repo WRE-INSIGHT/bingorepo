@@ -6,20 +6,66 @@ Public Class Form1
     Dim winners As String
     Dim speech As Object = CreateObject("SAPI.SpVoice")
 
+    Private Sub reset()
+        KryptonLabel2.Text = ""
+        labeltext.Text = "Let's play Bingo!"
+        letsgoprice = "PATTERN"
+        KryptonNumericUpDown1.Text = "0"
+        Label2.Text = letsgoprice
+        a1.Checked = False
+        a2.Checked = False
+        a3.Checked = False
+        a4.Checked = False
+        a5.Checked = False
+        b1.Checked = False
+        b2.Checked = False
+        b3.Checked = False
+        b4.Checked = False
+        b5.Checked = False
+        c1.Checked = False
+        c2.Checked = False
+
+        c4.Checked = False
+        c5.Checked = False
+        d1.Checked = False
+        d2.Checked = False
+        d3.Checked = False
+        d4.Checked = False
+        d5.Checked = False
+        e1.Checked = False
+        e2.Checked = False
+        e3.Checked = False
+        e4.Checked = False
+        e5.Checked = False
+
+        a11.Checked = False
+        a22.Checked = False
+        a33.Checked = False
+        a44.Checked = False
+        a55.Checked = False
+        b11.Checked = False
+        b22.Checked = False
+        b33.Checked = False
+        b44.Checked = False
+        b55.Checked = False
+        c11.Checked = False
+        c22.Checked = False
+
+        c44.Checked = False
+        c55.Checked = False
+        d11.Checked = False
+        d22.Checked = False
+        d33.Checked = False
+        d44.Checked = False
+        d55.Checked = False
+        e11.Checked = False
+        e22.Checked = False
+        e33.Checked = False
+        e44.Checked = False
+        e55.Checked = False
 
 
-    Private Sub ResetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResetToolStripMenuItem.Click
 
-        BCheckButton.Checked = True
-        ICheckButton.Checked = True
-        NCheckButton.Checked = True
-        GCheckButton.Checked = True
-        OCheckButton.Checked = True
-        KryptonCheckButton101.Checked = True
-        KryptonCheckButton102.Checked = True
-        KryptonCheckButton103.Checked = True
-        KryptonCheckButton104.Checked = True
-        KryptonCheckButton105.Checked = True
 
         Label1.Text = ""
         KryptonLabel1.Text = ""
@@ -283,6 +329,11 @@ Public Class Form1
         a175.Text = ""
 
         PictureBox2.BringToFront()
+
+        Console.WriteLine(PictureBox1.Location.X.ToString + "," + PictureBox1.Location.Y.ToString)
+        Console.WriteLine(PictureBox3.Location.X.ToString + "," + PictureBox3.Location.Y.ToString)
+
+        DISABLEBINGO(True)
     End Sub
     Private Sub textAnimation()
         'Dim forb As String
@@ -432,18 +483,41 @@ Public Class Form1
     End Sub
 
     Private Sub KryptonButton157_Click(sender As Object, e As EventArgs) Handles KryptonButton157.Click
-        PictureBox2.SendToBack()
-        Timer1.Start()
-        Timer1.Interval = ToolStripTextBox1.Text
-        ProgressBar1.Maximum = 75
-        KryptonButton157.Visible = False
-        animestarter.Visible = False
-        PAUSE.Visible = True
-        letterstart.Visible = False
+        Select Case manualselectbtn.Checked
+            Case True
+                MessageBox.Show("Sorry cant play while manual picking is selected.")
+            Case Else
+
+
+                PictureBox2.SendToBack()
+                    Timer1.Start()
+                    Timer1.Interval = ToolStripTextBox1.Text
+                    ProgressBar1.Maximum = 75
+                    KryptonButton157.Visible = False
+                    animestarter.Visible = False
+                    PAUSE.Visible = True
+                    letterstart.Visible = False
+                    DISABLEBINGO(False)
+                    manualselectbtn.Checked = False
+
+        End Select
+
     End Sub
+    Private Sub DISABLEBINGO(ByVal B As Boolean)
+        BCheckButton.Enabled = B
+        ICheckButton.Enabled = B
+        NCheckButton.Enabled = B
+        GCheckButton.Enabled = B
+        OCheckButton.Enabled = B
+        KryptonCheckButton101.Enabled = B
+        KryptonCheckButton102.Enabled = B
+        KryptonCheckButton103.Enabled = B
+        KryptonCheckButton104.Enabled = B
+        KryptonCheckButton105.Enabled = B
 
+        manualselectbtn.Enabled = B
+    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         repeatmyvoice.SelectedIndex = 0
         myvoice.SelectedIndex = 0
         vrate.SelectedIndex = 10
@@ -451,7 +525,7 @@ Public Class Form1
         repeattimes.SelectedIndex = 0
         labelspeed.SelectedIndex = 3
         ToolStripTextBox1.SelectedIndex = 1
-        ToolStripTextBox2.SelectedIndex = 1
+        ToolStripTextBox2.SelectedIndex = 3
         labelbackcolor.SelectedIndex = 1
         Timer2.Start()
         Timer2.Interval = 500
@@ -483,6 +557,8 @@ Public Class Form1
             ComboBox3.Items.Add(numbers(RandomIndex))
             numbers.RemoveAt(RandomIndex)
         Next
+
+        reset()
     End Sub
     Public Sub mynumbers(ByVal val As Integer)
 
@@ -959,74 +1035,84 @@ Public Class Form1
     End Sub
 
     Private Sub PREV_Click(sender As Object, e As EventArgs) Handles PREV.Click
-        PictureBox2.SendToBack()
-        If ComboBox1.Text = "" Then
-        Else
-            PAUSE.PerformClick()
-            Dim vnum As Integer
-            vnum = Integer.Parse(ComboBox1.Text)
-            mynumbers(vnum)
-        End If
-        If PictureBox1.Location.X > 600 Then
-            Dim LOC = (PictureBox1.Location.X) - 315
-            PictureBox1.Location = New Point(PictureBox1.Location.X - LOC, PictureBox1.Location.Y)
-        End If
-        If ProgressBar1.Value > 1 Then
-            ProgressBar1.Value = ProgressBar1.Value - 1
+        Select Case manualselectbtn.Checked
+            Case True
+                MessageBox.Show("Sorry cant play while manual picking is selected.")
+            Case Else
+                If KryptonButton157.Visible = True Then
+                    MessageBox.Show("start bingo first")
+                Else
+                    PictureBox2.SendToBack()
+                    If ComboBox1.Text = "" Then
+                    Else
+                        PAUSE.PerformClick()
+                        Dim vnum As Integer
+                        vnum = Integer.Parse(ComboBox1.Text)
+                        mynumbers(vnum)
+                    End If
+                    If PictureBox1.Location.X > 600 Then
+                        Dim LOC = (PictureBox1.Location.X) - 315
+                        PictureBox1.Location = New Point(PictureBox1.Location.X - LOC, PictureBox1.Location.Y)
+                    End If
+                    If ProgressBar1.Value > 1 Then
+                        ProgressBar1.Value = ProgressBar1.Value - 1
 
-            ComboBox1.SelectedIndex = ProgressBar1.Value - 1
-            ComboBox2.SelectedIndex = ProgressBar1.Value
-            ComboBox3.SelectedIndex = ProgressBar1.Value - 2
-            ComboBox4.Items.Remove(ComboBox1.Items(ProgressBar1.Value))
-            Dim bnum As Integer
-            mynumbersoff(ComboBox2.Text)
-            bnum = Integer.Parse(ComboBox1.Text)
-            If BCheckButton.Checked = True Then
-                If bnum >= 1 And bnum <= 15 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "B"
+                        ComboBox1.SelectedIndex = ProgressBar1.Value - 1
+                        ComboBox2.SelectedIndex = ProgressBar1.Value
+                        ComboBox3.SelectedIndex = ProgressBar1.Value - 2
+                        ComboBox4.Items.Remove(ComboBox1.Items(ProgressBar1.Value))
+                        Dim bnum As Integer
+                        mynumbersoff(ComboBox2.Text)
+                        bnum = Integer.Parse(ComboBox1.Text)
+                        If BCheckButton.Checked = True Then
+                            If bnum >= 1 And bnum <= 15 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "B"
+
+                            End If
+                        End If
+
+                        If ICheckButton.Checked = True Then
+                            If bnum >= 16 And bnum <= 30 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "I"
+
+                            End If
+                        End If
+
+                        If NCheckButton.Checked = True Then
+                            If bnum >= 31 And bnum <= 45 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "N"
+
+                            End If
+                        End If
+
+                        If GCheckButton.Checked = True Then
+                            If bnum >= 46 And bnum <= 60 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "G"
+
+                            End If
+                        End If
+
+                        If OCheckButton.Checked = True Then
+                            If bnum >= 61 And bnum <= 75 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "O"
+
+                            End If
+                        End If
+                        lastcall()
+                    End If
+                    If ProgressBar1.Value < 75 Then
+                        Timer1.Stop()
+
+                    End If
+                    called()
 
                 End If
-            End If
-
-            If ICheckButton.Checked = True Then
-                If bnum >= 16 And bnum <= 30 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "I"
-
-                End If
-            End If
-
-            If NCheckButton.Checked = True Then
-                If bnum >= 31 And bnum <= 45 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "N"
-
-                End If
-            End If
-
-            If GCheckButton.Checked = True Then
-                If bnum >= 46 And bnum <= 60 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "G"
-
-                End If
-            End If
-
-            If OCheckButton.Checked = True Then
-                If bnum >= 61 And bnum <= 75 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "O"
-
-                End If
-            End If
-            lastcall()
-        End If
-        If ProgressBar1.Value < 75 Then
-            Timer1.Stop()
-
-        End If
-        called()
+        End Select
     End Sub
     Public Sub lastcall()
 
@@ -1064,75 +1150,83 @@ Public Class Form1
         End If
     End Sub
     Private Sub NEXXT_Click(sender As Object, e As EventArgs) Handles NEXXT.Click
+        Select Case manualselectbtn.Checked
+            Case True
+                MessageBox.Show("Sorry cant play while manual picking is selected.")
+            Case Else
+                If KryptonButton157.Visible = True Then
+                    MessageBox.Show("start bingo first")
+                Else
+                    PictureBox2.SendToBack()
 
-        PictureBox2.SendToBack()
+                    If ComboBox1.Text = "" Then
+                    Else
+                        PAUSE.PerformClick()
+                        Dim vnum As Integer
+                        vnum = Integer.Parse(ComboBox1.Text)
+                        mynumbers(vnum)
+                    End If
+                    If PictureBox1.Location.X > 600 Then
+                        Dim LOC = (PictureBox1.Location.X) - 315
+                        PictureBox1.Location = New Point(PictureBox1.Location.X - LOC, PictureBox1.Location.Y)
+                    End If
+                    If ProgressBar1.Value < 75 Then
+                        ProgressBar1.Value = ProgressBar1.Value + 1
+                        ComboBox1.SelectedIndex = ProgressBar1.Value - 1
+                        ComboBox2.SelectedIndex = ProgressBar1.Value - 1
+                        ComboBox3.SelectedIndex = ProgressBar1.Value - 2
 
-        If ComboBox1.Text = "" Then
-        Else
-            PAUSE.PerformClick()
-            Dim vnum As Integer
-            vnum = Integer.Parse(ComboBox1.Text)
-            mynumbers(vnum)
-        End If
-        If PictureBox1.Location.X > 600 Then
-            Dim LOC = (PictureBox1.Location.X) - 315
-            PictureBox1.Location = New Point(PictureBox1.Location.X - LOC, PictureBox1.Location.Y)
-        End If
-        If ProgressBar1.Value < 75 Then
-            ProgressBar1.Value = ProgressBar1.Value + 1
-            ComboBox1.SelectedIndex = ProgressBar1.Value - 1
-            ComboBox2.SelectedIndex = ProgressBar1.Value - 1
-            ComboBox3.SelectedIndex = ProgressBar1.Value - 2
+                        Dim bnum As Integer
+                        bnum = Integer.Parse(ComboBox1.Text)
+                        mynumbers(bnum)
+                        If BCheckButton.Checked = True Then
+                            If bnum >= 1 And bnum <= 15 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "B"
+                                ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
+                            End If
+                        End If
 
-            Dim bnum As Integer
-            bnum = Integer.Parse(ComboBox1.Text)
-            mynumbers(bnum)
-            If BCheckButton.Checked = True Then
-                If bnum >= 1 And bnum <= 15 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "B"
-                    ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
+                        If ICheckButton.Checked = True Then
+                            If bnum >= 16 And bnum <= 30 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "I"
+                                ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
+                            End If
+                        End If
+
+                        If NCheckButton.Checked = True Then
+                            If bnum >= 31 And bnum <= 45 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "N"
+                                ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
+                            End If
+                        End If
+
+                        If GCheckButton.Checked = True Then
+                            If bnum >= 46 And bnum <= 60 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "G"
+                                ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
+                            End If
+                        End If
+
+                        If OCheckButton.Checked = True Then
+                            If bnum >= 61 And bnum <= 75 Then
+                                Label1.Text = "" & bnum & ""
+                                KryptonLabel1.Text = "O"
+                                ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
+                            End If
+                        End If
+                        lastcall()
+                    End If
+                    If ProgressBar1.Value = 75 Then
+                        Timer1.Stop()
+
+                    End If
+                    called()
                 End If
-            End If
-
-            If ICheckButton.Checked = True Then
-                If bnum >= 16 And bnum <= 30 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "I"
-                    ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
-                End If
-            End If
-
-            If NCheckButton.Checked = True Then
-                If bnum >= 31 And bnum <= 45 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "N"
-                    ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
-                End If
-            End If
-
-            If GCheckButton.Checked = True Then
-                If bnum >= 46 And bnum <= 60 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "G"
-                    ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
-                End If
-            End If
-
-            If OCheckButton.Checked = True Then
-                If bnum >= 61 And bnum <= 75 Then
-                    Label1.Text = "" & bnum & ""
-                    KryptonLabel1.Text = "O"
-                    ComboBox4.Items.Add(ComboBox1.Items(ProgressBar1.Value - 1))
-                End If
-            End If
-            lastcall()
-        End If
-        If ProgressBar1.Value = 75 Then
-            Timer1.Stop()
-
-        End If
-        called()
+        End Select
     End Sub
 
     Private Sub PAUSE_Click(sender As Object, e As EventArgs) Handles PAUSE.Click
@@ -1160,605 +1254,19 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub KryptonCheckButton1_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton1.Click
-        If KryptonCheckButton1.Checked = True Then
-            KryptonCheckButton1.Checked = False
-        ElseIf KryptonCheckButton1.Checked = False Then
-            KryptonCheckButton1.Checked = True
-        End If
+    Private Sub KryptonCheckButton1_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton1.Click, KryptonCheckButton9.Click, KryptonCheckButton8.Click, KryptonCheckButton75.Click, KryptonCheckButton74.Click, KryptonCheckButton73.Click, KryptonCheckButton72.Click, KryptonCheckButton71.Click, KryptonCheckButton70.Click, KryptonCheckButton7.Click, KryptonCheckButton69.Click, KryptonCheckButton68.Click, KryptonCheckButton67.Click, KryptonCheckButton66.Click, KryptonCheckButton65.Click, KryptonCheckButton64.Click, KryptonCheckButton63.Click, KryptonCheckButton62.Click, KryptonCheckButton61.Click, KryptonCheckButton60.Click, KryptonCheckButton6.Click, KryptonCheckButton59.Click, KryptonCheckButton58.Click, KryptonCheckButton57.Click, KryptonCheckButton56.Click, KryptonCheckButton55.Click, KryptonCheckButton54.Click, KryptonCheckButton53.Click, KryptonCheckButton52.Click, KryptonCheckButton51.Click, KryptonCheckButton50.Click, KryptonCheckButton5.Click, KryptonCheckButton49.Click, KryptonCheckButton48.Click, KryptonCheckButton47.Click, KryptonCheckButton46.Click, KryptonCheckButton45.Click, KryptonCheckButton44.Click, KryptonCheckButton43.Click, KryptonCheckButton42.Click, KryptonCheckButton41.Click, KryptonCheckButton40.Click, KryptonCheckButton4.Click, KryptonCheckButton39.Click, KryptonCheckButton38.Click, KryptonCheckButton37.Click, KryptonCheckButton36.Click, KryptonCheckButton35.Click, KryptonCheckButton34.Click, KryptonCheckButton33.Click, KryptonCheckButton32.Click, KryptonCheckButton31.Click, KryptonCheckButton30.Click, KryptonCheckButton3.Click, KryptonCheckButton29.Click, KryptonCheckButton28.Click, KryptonCheckButton27.Click, KryptonCheckButton26.Click, KryptonCheckButton25.Click, KryptonCheckButton24.Click, KryptonCheckButton23.Click, KryptonCheckButton22.Click, KryptonCheckButton21.Click, KryptonCheckButton20.Click, KryptonCheckButton2.Click, KryptonCheckButton19.Click, KryptonCheckButton18.Click, KryptonCheckButton17.Click, KryptonCheckButton16.Click, KryptonCheckButton15.Click, KryptonCheckButton14.Click, KryptonCheckButton13.Click, KryptonCheckButton12.Click, KryptonCheckButton11.Click, KryptonCheckButton10.Click
+        Select Case manualselectbtn.Checked
+            Case True
+            Case Else
+                If sender.Checked = True Then
+                    sender.Checked = False
+                ElseIf sender.Checked = False Then
+                    sender.Checked = True
+                End If
+        End Select
     End Sub
 
-    Private Sub KryptonCheckButton2_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton2.Click
-        If KryptonCheckButton2.Checked = True Then
-            KryptonCheckButton2.Checked = False
-        ElseIf KryptonCheckButton2.Checked = False Then
-            KryptonCheckButton2.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton3_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton3.Click
-        If KryptonCheckButton3.Checked = True Then
-            KryptonCheckButton3.Checked = False
-        ElseIf KryptonCheckButton3.Checked = False Then
-            KryptonCheckButton3.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton4_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton4.Click
-        If KryptonCheckButton4.Checked = True Then
-            KryptonCheckButton4.Checked = False
-        ElseIf KryptonCheckButton4.Checked = False Then
-            KryptonCheckButton4.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton5_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton5.Click
-        If KryptonCheckButton5.Checked = True Then
-            KryptonCheckButton5.Checked = False
-        ElseIf KryptonCheckButton5.Checked = False Then
-            KryptonCheckButton5.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton6_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton6.Click
-        If KryptonCheckButton6.Checked = True Then
-            KryptonCheckButton6.Checked = False
-        ElseIf KryptonCheckButton6.Checked = False Then
-            KryptonCheckButton6.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton7_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton7.Click
-        If KryptonCheckButton7.Checked = True Then
-            KryptonCheckButton7.Checked = False
-        ElseIf KryptonCheckButton7.Checked = False Then
-            KryptonCheckButton7.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton8_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton8.Click
-        If KryptonCheckButton8.Checked = True Then
-            KryptonCheckButton8.Checked = False
-        ElseIf KryptonCheckButton8.Checked = False Then
-            KryptonCheckButton8.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton9_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton9.Click
-        If KryptonCheckButton9.Checked = True Then
-            KryptonCheckButton9.Checked = False
-        ElseIf KryptonCheckButton9.Checked = False Then
-            KryptonCheckButton9.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton10_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton10.Click
-        If KryptonCheckButton10.Checked = True Then
-            KryptonCheckButton10.Checked = False
-        ElseIf KryptonCheckButton10.Checked = False Then
-            KryptonCheckButton10.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton11_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton11.Click
-        If KryptonCheckButton11.Checked = True Then
-            KryptonCheckButton11.Checked = False
-        ElseIf KryptonCheckButton11.Checked = False Then
-            KryptonCheckButton11.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton12_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton12.Click
-        If KryptonCheckButton12.Checked = True Then
-            KryptonCheckButton12.Checked = False
-        ElseIf KryptonCheckButton12.Checked = False Then
-            KryptonCheckButton12.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton13_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton13.Click
-        If KryptonCheckButton13.Checked = True Then
-            KryptonCheckButton13.Checked = False
-        ElseIf KryptonCheckButton13.Checked = False Then
-            KryptonCheckButton13.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton14_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton14.Click
-        If KryptonCheckButton14.Checked = True Then
-            KryptonCheckButton14.Checked = False
-        ElseIf KryptonCheckButton14.Checked = False Then
-            KryptonCheckButton14.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton15_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton15.Click
-        If KryptonCheckButton15.Checked = True Then
-            KryptonCheckButton15.Checked = False
-        ElseIf KryptonCheckButton15.Checked = False Then
-            KryptonCheckButton15.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton16_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton16.Click
-        If KryptonCheckButton16.Checked = True Then
-            KryptonCheckButton16.Checked = False
-        ElseIf KryptonCheckButton16.Checked = False Then
-            KryptonCheckButton16.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton17_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton17.Click
-        If KryptonCheckButton17.Checked = True Then
-            KryptonCheckButton17.Checked = False
-        ElseIf KryptonCheckButton17.Checked = False Then
-            KryptonCheckButton17.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton18_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton18.Click
-        If KryptonCheckButton18.Checked = True Then
-            KryptonCheckButton18.Checked = False
-        ElseIf KryptonCheckButton18.Checked = False Then
-            KryptonCheckButton18.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton19_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton19.Click
-        If KryptonCheckButton19.Checked = True Then
-            KryptonCheckButton19.Checked = False
-        ElseIf KryptonCheckButton19.Checked = False Then
-            KryptonCheckButton19.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton20_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton20.Click
-        If KryptonCheckButton20.Checked = True Then
-            KryptonCheckButton20.Checked = False
-        ElseIf KryptonCheckButton20.Checked = False Then
-            KryptonCheckButton20.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton21_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton21.Click
-        If KryptonCheckButton21.Checked = True Then
-            KryptonCheckButton21.Checked = False
-        ElseIf KryptonCheckButton21.Checked = False Then
-            KryptonCheckButton21.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton22_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton22.Click
-        If KryptonCheckButton22.Checked = True Then
-            KryptonCheckButton22.Checked = False
-        ElseIf KryptonCheckButton22.Checked = False Then
-            KryptonCheckButton22.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton23_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton23.Click
-        If KryptonCheckButton23.Checked = True Then
-            KryptonCheckButton23.Checked = False
-        ElseIf KryptonCheckButton23.Checked = False Then
-            KryptonCheckButton23.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton24_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton24.Click
-        If KryptonCheckButton24.Checked = True Then
-            KryptonCheckButton24.Checked = False
-        ElseIf KryptonCheckButton24.Checked = False Then
-            KryptonCheckButton24.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton25_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton25.Click
-        If KryptonCheckButton25.Checked = True Then
-            KryptonCheckButton25.Checked = False
-        ElseIf KryptonCheckButton25.Checked = False Then
-            KryptonCheckButton25.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton26_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton26.Click
-        If KryptonCheckButton26.Checked = True Then
-            KryptonCheckButton26.Checked = False
-        ElseIf KryptonCheckButton26.Checked = False Then
-            KryptonCheckButton26.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton27_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton27.Click
-        If KryptonCheckButton27.Checked = True Then
-            KryptonCheckButton27.Checked = False
-        ElseIf KryptonCheckButton27.Checked = False Then
-            KryptonCheckButton27.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton28_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton28.Click
-        If KryptonCheckButton28.Checked = True Then
-            KryptonCheckButton28.Checked = False
-        ElseIf KryptonCheckButton28.Checked = False Then
-            KryptonCheckButton28.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton29_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton29.Click
-        If KryptonCheckButton29.Checked = True Then
-            KryptonCheckButton29.Checked = False
-        ElseIf KryptonCheckButton29.Checked = False Then
-            KryptonCheckButton29.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton30_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton30.Click
-        If KryptonCheckButton30.Checked = True Then
-            KryptonCheckButton30.Checked = False
-        ElseIf KryptonCheckButton30.Checked = False Then
-            KryptonCheckButton30.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton31_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton31.Click
-        If KryptonCheckButton31.Checked = True Then
-            KryptonCheckButton31.Checked = False
-        ElseIf KryptonCheckButton31.Checked = False Then
-            KryptonCheckButton31.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton32_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton32.Click
-        If KryptonCheckButton32.Checked = True Then
-            KryptonCheckButton32.Checked = False
-        ElseIf KryptonCheckButton32.Checked = False Then
-            KryptonCheckButton32.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton33_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton33.Click
-        If KryptonCheckButton33.Checked = True Then
-            KryptonCheckButton33.Checked = False
-        ElseIf KryptonCheckButton33.Checked = False Then
-            KryptonCheckButton33.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton34_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton34.Click
-        If KryptonCheckButton34.Checked = True Then
-            KryptonCheckButton34.Checked = False
-        ElseIf KryptonCheckButton34.Checked = False Then
-            KryptonCheckButton34.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton35_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton35.Click
-        If KryptonCheckButton35.Checked = True Then
-            KryptonCheckButton35.Checked = False
-        ElseIf KryptonCheckButton35.Checked = False Then
-            KryptonCheckButton35.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton36_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton36.Click
-        If KryptonCheckButton36.Checked = True Then
-            KryptonCheckButton36.Checked = False
-        ElseIf KryptonCheckButton36.Checked = False Then
-            KryptonCheckButton36.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton37_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton37.Click
-        If KryptonCheckButton37.Checked = True Then
-            KryptonCheckButton37.Checked = False
-        ElseIf KryptonCheckButton37.Checked = False Then
-            KryptonCheckButton37.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton38_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton38.Click
-        If KryptonCheckButton38.Checked = True Then
-            KryptonCheckButton38.Checked = False
-        ElseIf KryptonCheckButton38.Checked = False Then
-            KryptonCheckButton38.Checked = True
-        End If
-    End Sub
 
-    Private Sub KryptonCheckButton39_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton39.Click
-        If KryptonCheckButton39.Checked = True Then
-            KryptonCheckButton39.Checked = False
-        ElseIf KryptonCheckButton39.Checked = False Then
-            KryptonCheckButton39.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton40_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton40.Click
-        If KryptonCheckButton40.Checked = True Then
-            KryptonCheckButton40.Checked = False
-        ElseIf KryptonCheckButton40.Checked = False Then
-            KryptonCheckButton40.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton41_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton41.Click
-        If KryptonCheckButton41.Checked = True Then
-            KryptonCheckButton41.Checked = False
-        ElseIf KryptonCheckButton41.Checked = False Then
-            KryptonCheckButton41.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton42_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton42.Click
-        If KryptonCheckButton42.Checked = True Then
-            KryptonCheckButton42.Checked = False
-        ElseIf KryptonCheckButton42.Checked = False Then
-            KryptonCheckButton42.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton43_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton43.Click
-        If KryptonCheckButton43.Checked = True Then
-            KryptonCheckButton43.Checked = False
-        ElseIf KryptonCheckButton43.Checked = False Then
-            KryptonCheckButton43.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton44_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton44.Click
-        If KryptonCheckButton44.Checked = True Then
-            KryptonCheckButton44.Checked = False
-        ElseIf KryptonCheckButton44.Checked = False Then
-            KryptonCheckButton44.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton45_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton45.Click
-        If KryptonCheckButton45.Checked = True Then
-            KryptonCheckButton45.Checked = False
-        ElseIf KryptonCheckButton45.Checked = False Then
-            KryptonCheckButton45.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton46_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton46.Click
-        If KryptonCheckButton46.Checked = True Then
-            KryptonCheckButton46.Checked = False
-        ElseIf KryptonCheckButton46.Checked = False Then
-            KryptonCheckButton46.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton47_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton47.Click
-        If KryptonCheckButton47.Checked = True Then
-            KryptonCheckButton47.Checked = False
-        ElseIf KryptonCheckButton47.Checked = False Then
-            KryptonCheckButton47.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton48_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton48.Click
-        If KryptonCheckButton48.Checked = True Then
-            KryptonCheckButton48.Checked = False
-        ElseIf KryptonCheckButton48.Checked = False Then
-            KryptonCheckButton48.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton49_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton49.Click
-        If KryptonCheckButton49.Checked = True Then
-            KryptonCheckButton49.Checked = False
-        ElseIf KryptonCheckButton49.Checked = False Then
-            KryptonCheckButton49.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton50_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton50.Click
-        If KryptonCheckButton50.Checked = True Then
-            KryptonCheckButton50.Checked = False
-        ElseIf KryptonCheckButton50.Checked = False Then
-            KryptonCheckButton50.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton51_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton51.Click
-        If KryptonCheckButton51.Checked = True Then
-            KryptonCheckButton51.Checked = False
-        ElseIf KryptonCheckButton51.Checked = False Then
-            KryptonCheckButton51.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton52_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton52.Click
-        If KryptonCheckButton52.Checked = True Then
-            KryptonCheckButton52.Checked = False
-        ElseIf KryptonCheckButton52.Checked = False Then
-            KryptonCheckButton52.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton53_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton53.Click
-        If KryptonCheckButton53.Checked = True Then
-            KryptonCheckButton53.Checked = False
-        ElseIf KryptonCheckButton53.Checked = False Then
-            KryptonCheckButton53.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton54_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton54.Click
-        If KryptonCheckButton54.Checked = True Then
-            KryptonCheckButton54.Checked = False
-        ElseIf KryptonCheckButton54.Checked = False Then
-            KryptonCheckButton54.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton55_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton55.Click
-        If KryptonCheckButton55.Checked = True Then
-            KryptonCheckButton55.Checked = False
-        ElseIf KryptonCheckButton55.Checked = False Then
-            KryptonCheckButton55.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton56_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton56.Click
-        If KryptonCheckButton56.Checked = True Then
-            KryptonCheckButton56.Checked = False
-        ElseIf KryptonCheckButton56.Checked = False Then
-            KryptonCheckButton56.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton57_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton57.Click
-        If KryptonCheckButton57.Checked = True Then
-            KryptonCheckButton57.Checked = False
-        ElseIf KryptonCheckButton57.Checked = False Then
-            KryptonCheckButton57.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton58_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton58.Click
-        If KryptonCheckButton58.Checked = True Then
-            KryptonCheckButton58.Checked = False
-        ElseIf KryptonCheckButton58.Checked = False Then
-            KryptonCheckButton58.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton59_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton59.Click
-        If KryptonCheckButton59.Checked = True Then
-            KryptonCheckButton59.Checked = False
-        ElseIf KryptonCheckButton59.Checked = False Then
-            KryptonCheckButton59.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton60_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton60.Click
-        If KryptonCheckButton60.Checked = True Then
-            KryptonCheckButton60.Checked = False
-        ElseIf KryptonCheckButton60.Checked = False Then
-            KryptonCheckButton60.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton61_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton61.Click
-        If KryptonCheckButton61.Checked = True Then
-            KryptonCheckButton61.Checked = False
-        ElseIf KryptonCheckButton61.Checked = False Then
-            KryptonCheckButton61.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton62_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton62.Click
-        If KryptonCheckButton62.Checked = True Then
-            KryptonCheckButton62.Checked = False
-        ElseIf KryptonCheckButton62.Checked = False Then
-            KryptonCheckButton62.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton63_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton63.Click
-        If KryptonCheckButton63.Checked = True Then
-            KryptonCheckButton63.Checked = False
-        ElseIf KryptonCheckButton63.Checked = False Then
-            KryptonCheckButton63.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton64_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton64.Click
-        If KryptonCheckButton64.Checked = True Then
-            KryptonCheckButton64.Checked = False
-        ElseIf KryptonCheckButton64.Checked = False Then
-            KryptonCheckButton64.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton65_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton65.Click
-        If KryptonCheckButton65.Checked = True Then
-            KryptonCheckButton65.Checked = False
-        ElseIf KryptonCheckButton65.Checked = False Then
-            KryptonCheckButton65.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton66_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton66.Click
-        If KryptonCheckButton66.Checked = True Then
-            KryptonCheckButton66.Checked = False
-        ElseIf KryptonCheckButton66.Checked = False Then
-            KryptonCheckButton66.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton67_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton67.Click
-        If KryptonCheckButton67.Checked = True Then
-            KryptonCheckButton67.Checked = False
-        ElseIf KryptonCheckButton67.Checked = False Then
-            KryptonCheckButton67.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton68_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton68.Click
-        If KryptonCheckButton68.Checked = True Then
-            KryptonCheckButton68.Checked = False
-        ElseIf KryptonCheckButton68.Checked = False Then
-            KryptonCheckButton68.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton69_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton69.Click
-        If KryptonCheckButton69.Checked = True Then
-            KryptonCheckButton69.Checked = False
-        ElseIf KryptonCheckButton69.Checked = False Then
-            KryptonCheckButton69.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton70_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton70.Click
-        If KryptonCheckButton70.Checked = True Then
-            KryptonCheckButton70.Checked = False
-        ElseIf KryptonCheckButton70.Checked = False Then
-            KryptonCheckButton70.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton71_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton71.Click
-        If KryptonCheckButton71.Checked = True Then
-            KryptonCheckButton71.Checked = False
-        ElseIf KryptonCheckButton71.Checked = False Then
-            KryptonCheckButton71.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton72_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton72.Click
-        If KryptonCheckButton72.Checked = True Then
-            KryptonCheckButton72.Checked = False
-        ElseIf KryptonCheckButton72.Checked = False Then
-            KryptonCheckButton72.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton73_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton73.Click
-        If KryptonCheckButton73.Checked = True Then
-            KryptonCheckButton73.Checked = False
-        ElseIf KryptonCheckButton73.Checked = False Then
-            KryptonCheckButton73.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton74_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton74.Click
-        If KryptonCheckButton74.Checked = True Then
-            KryptonCheckButton74.Checked = False
-        ElseIf KryptonCheckButton74.Checked = False Then
-            KryptonCheckButton74.Checked = True
-        End If
-    End Sub
-
-    Private Sub KryptonCheckButton75_Click(sender As Object, e As EventArgs) Handles KryptonCheckButton75.Click
-        If KryptonCheckButton75.Checked = True Then
-            KryptonCheckButton75.Checked = False
-        ElseIf KryptonCheckButton75.Checked = False Then
-            KryptonCheckButton75.Checked = True
-        End If
-    End Sub
 
     Private Sub BCheckButton_Click(sender As Object, e As EventArgs) Handles BCheckButton.Click
         If BCheckButton.Checked = True Then
@@ -3210,6 +2718,7 @@ Public Class Form1
 
         letsgoprice = "PRICE: " + customprice.Text
         KryptonNumericUpDown1.Text = customwinner.Text
+        labeltext.Text = "Custom Pattern"
         Label2.Text = letsgoprice
     End Sub
 
@@ -3478,7 +2987,7 @@ Public Class Form1
         e44.Checked = False
         e55.Checked = False
 
-        letsgoprice = "PRICE: " + doublevprice.Text
+        letsgoprice = "PRICE: " + doublehprice.Text
         KryptonNumericUpDown1.Text = doublevwin.Text
         Label2.Text = letsgoprice
         labeltext.Text = "Any Double Vertical Line"
@@ -3537,7 +3046,7 @@ Public Class Form1
         e44.Checked = False
         e55.Checked = False
 
-        letsgoprice = "PRICE: " + doublehprice.Text
+        letsgoprice = "PRICE: " + doublevprice.Text
         KryptonNumericUpDown1.Text = doublehwin.Text
         Label2.Text = letsgoprice
         labeltext.Text = "Any Double Horizontal Line"
@@ -3658,5 +3167,30 @@ Public Class Form1
         letsgoprice = "PRICE: " + lastprice.Text
         KryptonNumericUpDown1.Text = lastwinner.Text
         labeltext.Text = "Last Man Standing"
+    End Sub
+
+    Private Sub KryptonButton1_Click(sender As Object, e As EventArgs) Handles KryptonButton1.Click
+        If MessageBox.Show("click yes to reset", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.No Then
+            Return
+        End If
+        If MessageBox.Show("are you sure you want to reset?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.No Then
+            Return
+        End If
+        reset()
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Me.Dispose()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+
+    End Sub
+
+    Private Sub KryptonButton2_Click(sender As Object, e As EventArgs) Handles KryptonButton2.Click
+        If PAUSE.Visible = True Then
+            PAUSE.PerformClick()
+        End If
+        Form4.ShowDialog()
     End Sub
 End Class

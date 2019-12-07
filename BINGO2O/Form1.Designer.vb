@@ -26,7 +26,6 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SpeedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripComboBox()
@@ -239,10 +238,10 @@ Partial Class Form1
         Me.KryptonHeaderGroup3 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
         Me.letterstart = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.animestarter = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.KryptonLabel1 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.KryptonHeaderGroup4 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
         Me.KryptonCheckButton101 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.KryptonCheckButton102 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
@@ -378,6 +377,9 @@ Partial Class Form1
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.KryptonPanel1 = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.lettertimer = New System.Windows.Forms.Timer(Me.components)
+        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.KryptonButton2 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.manualselectbtn = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -387,9 +389,9 @@ Partial Class Form1
         CType(Me.KryptonHeaderGroup3.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonHeaderGroup3.Panel.SuspendLayout()
         Me.KryptonHeaderGroup3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup4.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonHeaderGroup4.Panel.SuspendLayout()
@@ -426,22 +428,16 @@ Partial Class Form1
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResetToolStripMenuItem, Me.SpeedToolStripMenuItem, Me.PatternToolStripMenuItem, Me.SwitchViewToolStripMenuItem, Me.CheckerToolStripMenuItem, Me.SpeakToolStripMenuItem, Me.LabelToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SpeedToolStripMenuItem, Me.PatternToolStripMenuItem, Me.SwitchViewToolStripMenuItem, Me.CheckerToolStripMenuItem, Me.SpeakToolStripMenuItem, Me.LabelToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.FileToolStripMenuItem.Text = "Game"
-        '
-        'ResetToolStripMenuItem
-        '
-        Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
-        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ResetToolStripMenuItem.Text = "Reset"
         '
         'SpeedToolStripMenuItem
         '
         Me.SpeedToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CallToolStripMenuItem, Me.AnimationToolStripMenuItem})
         Me.SpeedToolStripMenuItem.Name = "SpeedToolStripMenuItem"
-        Me.SpeedToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SpeedToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.SpeedToolStripMenuItem.Text = "Speed"
         '
         'CallToolStripMenuItem
@@ -476,7 +472,7 @@ Partial Class Form1
         '
         Me.PatternToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsideSquareToolStripMenuItem, Me.HorizontalToolStripMenuItem, Me.IntersectingHVLinesToolStripMenuItem, Me.DoubleHorizontalToolStripMenuItem, Me.DoubleVerticalToolStripMenuItem, Me.KMDIToolStripMenuItem, Me.LastManStandingToolStripMenuItem, Me.SemiBlackoutToolStripMenuItem, Me.BlackoutToolStripMenuItem, Me.CustomToolStripMenuItem})
         Me.PatternToolStripMenuItem.Name = "PatternToolStripMenuItem"
-        Me.PatternToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PatternToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.PatternToolStripMenuItem.Text = "Pattern"
         '
         'InsideSquareToolStripMenuItem
@@ -893,7 +889,7 @@ Partial Class Form1
         '
         Me.WinnerToolStripMenuItem6.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.customwinner})
         Me.WinnerToolStripMenuItem6.Name = "WinnerToolStripMenuItem6"
-        Me.WinnerToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
+        Me.WinnerToolStripMenuItem6.Size = New System.Drawing.Size(112, 22)
         Me.WinnerToolStripMenuItem6.Text = "Winner"
         '
         'customwinner
@@ -906,7 +902,7 @@ Partial Class Form1
         '
         Me.PriceToolStripMenuItem6.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.customprice})
         Me.PriceToolStripMenuItem6.Name = "PriceToolStripMenuItem6"
-        Me.PriceToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
+        Me.PriceToolStripMenuItem6.Size = New System.Drawing.Size(112, 22)
         Me.PriceToolStripMenuItem6.Text = "Price"
         '
         'customprice
@@ -918,20 +914,20 @@ Partial Class Form1
         'SwitchViewToolStripMenuItem
         '
         Me.SwitchViewToolStripMenuItem.Name = "SwitchViewToolStripMenuItem"
-        Me.SwitchViewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SwitchViewToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.SwitchViewToolStripMenuItem.Text = "Switch View"
         '
         'CheckerToolStripMenuItem
         '
         Me.CheckerToolStripMenuItem.Name = "CheckerToolStripMenuItem"
-        Me.CheckerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CheckerToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.CheckerToolStripMenuItem.Text = "Checker"
         '
         'SpeakToolStripMenuItem
         '
         Me.SpeakToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.yesnospeak, Me.VoiceToolStripMenuItem, Me.RateToolStripMenuItem, Me.RepeatVoiceToolStripMenuItem, Me.RepeatRateToolStripMenuItem, Me.RepeatTimesToolStripMenuItem})
         Me.SpeakToolStripMenuItem.Name = "SpeakToolStripMenuItem"
-        Me.SpeakToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SpeakToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.SpeakToolStripMenuItem.Text = "Speak"
         '
         'yesnospeak
@@ -1015,7 +1011,7 @@ Partial Class Form1
         '
         Me.LabelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.labelshow, Me.TextToolStripMenuItem, Me.SpeedToolStripMenuItem1, Me.labelbackcolor})
         Me.LabelToolStripMenuItem.Name = "LabelToolStripMenuItem"
-        Me.LabelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LabelToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.LabelToolStripMenuItem.Text = "Label"
         '
         'labelshow
@@ -1036,7 +1032,7 @@ Partial Class Form1
         '
         Me.labeltext.Name = "labeltext"
         Me.labeltext.Size = New System.Drawing.Size(500, 23)
-        Me.labeltext.Text = "Let's Play KMDI Bingo"
+        Me.labeltext.Text = "Let's Play Bingo!"
         '
         'SpeedToolStripMenuItem1
         '
@@ -1062,7 +1058,7 @@ Partial Class Form1
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Timer1
@@ -1077,7 +1073,7 @@ Partial Class Form1
         Me.KryptonButton157.Name = "KryptonButton157"
         Me.KryptonButton157.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton157.Size = New System.Drawing.Size(339, 28)
-        Me.KryptonButton157.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
+        Me.KryptonButton157.StateCommon.Back.Color1 = System.Drawing.Color.White
         Me.KryptonButton157.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
         Me.KryptonButton157.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
@@ -3813,11 +3809,11 @@ Partial Class Form1
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.letterstart)
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.animestarter)
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.PAUSE)
-        Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.PictureBox2)
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.PictureBox3)
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.PictureBox1)
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.Label1)
         Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.KryptonLabel1)
+        Me.KryptonHeaderGroup3.Panel.Controls.Add(Me.PictureBox2)
         Me.KryptonHeaderGroup3.Size = New System.Drawing.Size(605, 305)
         Me.KryptonHeaderGroup3.StateCommon.Back.Color1 = System.Drawing.Color.White
         Me.KryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -3868,20 +3864,6 @@ Partial Class Form1
         Me.animestarter.TabIndex = 791
         Me.animestarter.Values.Text = "START"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 1)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(596, 233)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 792
-        Me.PictureBox2.TabStop = False
-        '
         'PictureBox3
         '
         Me.PictureBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -3891,7 +3873,7 @@ Partial Class Form1
         Me.PictureBox3.Location = New System.Drawing.Point(3, 0)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(305, 230)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 793
         Me.PictureBox3.TabStop = False
         '
@@ -3900,7 +3882,7 @@ Partial Class Form1
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(300, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(315, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(300, 230)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -3923,11 +3905,25 @@ Partial Class Form1
         Me.KryptonLabel1.TabIndex = 791
         Me.KryptonLabel1.Values.Text = "0"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(4, 1)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(596, 233)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 792
+        Me.PictureBox2.TabStop = False
+        '
         'KryptonHeaderGroup4
         '
         Me.KryptonHeaderGroup4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KryptonHeaderGroup4.Location = New System.Drawing.Point(12, 391)
+        Me.KryptonHeaderGroup4.Location = New System.Drawing.Point(12, 390)
         Me.KryptonHeaderGroup4.Name = "KryptonHeaderGroup4"
         '
         'KryptonHeaderGroup4.Panel
@@ -4968,7 +4964,7 @@ Partial Class Form1
         '
         Me.KryptonHeaderGroup7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KryptonHeaderGroup7.Location = New System.Drawing.Point(12, 391)
+        Me.KryptonHeaderGroup7.Location = New System.Drawing.Point(12, 390)
         Me.KryptonHeaderGroup7.Name = "KryptonHeaderGroup7"
         '
         'KryptonHeaderGroup7.Panel
@@ -7114,7 +7110,7 @@ Partial Class Form1
         Me.KryptonPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.KryptonPanel1.Controls.Add(Me.KryptonLabel4)
-        Me.KryptonPanel1.Location = New System.Drawing.Point(0, 344)
+        Me.KryptonPanel1.Location = New System.Drawing.Point(0, 343)
         Me.KryptonPanel1.Name = "KryptonPanel1"
         Me.KryptonPanel1.Size = New System.Drawing.Size(1351, 43)
         Me.KryptonPanel1.StateCommon.Color1 = System.Drawing.Color.LightGoldenrodYellow
@@ -7123,12 +7119,74 @@ Partial Class Form1
         'lettertimer
         '
         '
+        'KryptonButton1
+        '
+        Me.KryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.KryptonButton1.Location = New System.Drawing.Point(305, 30)
+        Me.KryptonButton1.Name = "KryptonButton1"
+        Me.KryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.KryptonButton1.Size = New System.Drawing.Size(67, 28)
+        Me.KryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
+        Me.KryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton1.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.KryptonButton1.StateCommon.Border.Rounding = 0
+        Me.KryptonButton1.StateCommon.Border.Width = 0
+        Me.KryptonButton1.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KryptonButton1.TabIndex = 809
+        Me.KryptonButton1.Values.Text = "reset"
+        '
+        'KryptonButton2
+        '
+        Me.KryptonButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.KryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.KryptonButton2.Location = New System.Drawing.Point(840, 30)
+        Me.KryptonButton2.Name = "KryptonButton2"
+        Me.KryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.KryptonButton2.Size = New System.Drawing.Size(67, 28)
+        Me.KryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
+        Me.KryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton2.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.KryptonButton2.StateCommon.Border.Rounding = 0
+        Me.KryptonButton2.StateCommon.Border.Width = 0
+        Me.KryptonButton2.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KryptonButton2.TabIndex = 810
+        Me.KryptonButton2.Values.Text = "check"
+        '
+        'manualselectbtn
+        '
+        Me.manualselectbtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.manualselectbtn.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.manualselectbtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.manualselectbtn.Location = New System.Drawing.Point(13, 364)
+        Me.manualselectbtn.Name = "manualselectbtn"
+        Me.manualselectbtn.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.manualselectbtn.Size = New System.Drawing.Size(140, 24)
+        Me.manualselectbtn.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.manualselectbtn.StateCommon.Border.Rounding = 0
+        Me.manualselectbtn.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manualselectbtn.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.manualselectbtn.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.manualselectbtn.StateNormal.Border.Rounding = 0
+        Me.manualselectbtn.TabIndex = 808
+        Me.manualselectbtn.Values.Text = "manual picking"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1351, 750)
+        Me.ClientSize = New System.Drawing.Size(1351, 749)
+        Me.Controls.Add(Me.manualselectbtn)
+        Me.Controls.Add(Me.KryptonButton2)
+        Me.Controls.Add(Me.KryptonButton1)
         Me.Controls.Add(Me.KryptonHeaderGroup3)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.KryptonCheckButton76)
@@ -7163,9 +7221,9 @@ Partial Class Form1
         Me.KryptonHeaderGroup3.Panel.ResumeLayout(False)
         CType(Me.KryptonHeaderGroup3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonHeaderGroup3.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KryptonHeaderGroup4.Panel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonHeaderGroup4.Panel.ResumeLayout(False)
         CType(Me.KryptonHeaderGroup4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -7196,7 +7254,6 @@ Partial Class Form1
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ResetToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SpeedToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Timer1 As Timer
     Friend WithEvents KryptonButton157 As ComponentFactory.Krypton.Toolkit.KryptonButton
@@ -7548,4 +7605,7 @@ Partial Class Form1
     Friend WithEvents interwin As ToolStripTextBox
     Friend WithEvents PriceToolStripMenuItem12 As ToolStripMenuItem
     Friend WithEvents interprice As ToolStripTextBox
+    Friend WithEvents KryptonButton1 As ComponentFactory.Krypton.Toolkit.KryptonButton
+    Friend WithEvents KryptonButton2 As ComponentFactory.Krypton.Toolkit.KryptonButton
+    Friend WithEvents manualselectbtn As ComponentFactory.Krypton.Toolkit.KryptonCheckButton
 End Class

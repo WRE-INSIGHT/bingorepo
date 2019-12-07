@@ -712,8 +712,4 @@ WHERE ID = '" & ID & "'"
         Timer2.Start()
         Timer2.Interval = 100
     End Sub
-
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
-
-    End Sub
 End Class

@@ -52,36 +52,37 @@ Partial Class Form4
         Me.KryptonLabel160 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TXT = New System.Windows.Forms.ComboBox()
-        Me.KryptonButton5 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.EMPNAME = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.a11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.TXT = New System.Windows.Forms.ComboBox()
+        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.KryptonButton5 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.KryptonLabel1 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.EMPNAME = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.c33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.c44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.e55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.c22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.a22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.c55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.e44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.c11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.a33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.d11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.e33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.b55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.a44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.d22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.e22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.b44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.a55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.d33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.e11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.b33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.b11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.d44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.d55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.b22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.d44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.b33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.d33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.b44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.d22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.b55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.d11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.c11 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.c55 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.c22 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.c44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.c33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
-        Me.KryptonLabel1 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
-        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.KryptonDataGridView37 = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
         Me.KryptonCheckButton1 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
@@ -100,12 +101,11 @@ Partial Class Form4
         Me.id = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.KryptonButton3 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton2 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TabControl1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.KryptonDataGridView37, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'B1
@@ -405,41 +405,43 @@ Partial Class Form4
         Me.TabPage2.Text = "Checker"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TXT
+        'Panel1
         '
-        Me.TXT.FormattingEnabled = True
-        Me.TXT.Location = New System.Drawing.Point(72, 280)
-        Me.TXT.Name = "TXT"
-        Me.TXT.Size = New System.Drawing.Size(146, 21)
-        Me.TXT.TabIndex = 839
-        '
-        'KryptonButton5
-        '
-        Me.KryptonButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton5.Location = New System.Drawing.Point(287, 280)
-        Me.KryptonButton5.Name = "KryptonButton5"
-        Me.KryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.KryptonButton5.Size = New System.Drawing.Size(25, 23)
-        Me.KryptonButton5.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.KryptonButton5.StateCommon.Border.Rounding = 0
-        Me.KryptonButton5.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton5.TabIndex = 838
-        Me.KryptonButton5.Values.Text = "X"
-        '
-        'EMPNAME
-        '
-        Me.EMPNAME.AutoSize = False
-        Me.EMPNAME.Location = New System.Drawing.Point(-29, 309)
-        Me.EMPNAME.Name = "EMPNAME"
-        Me.EMPNAME.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
-        Me.EMPNAME.Size = New System.Drawing.Size(380, 31)
-        Me.EMPNAME.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EMPNAME.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.EMPNAME.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.EMPNAME.TabIndex = 837
-        Me.EMPNAME.Values.Text = "***"
+        Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel1.Controls.Add(Me.a11)
+        Me.Panel1.Controls.Add(Me.TXT)
+        Me.Panel1.Controls.Add(Me.KryptonButton1)
+        Me.Panel1.Controls.Add(Me.KryptonButton5)
+        Me.Panel1.Controls.Add(Me.KryptonLabel1)
+        Me.Panel1.Controls.Add(Me.EMPNAME)
+        Me.Panel1.Controls.Add(Me.c33)
+        Me.Panel1.Controls.Add(Me.c44)
+        Me.Panel1.Controls.Add(Me.e55)
+        Me.Panel1.Controls.Add(Me.c22)
+        Me.Panel1.Controls.Add(Me.a22)
+        Me.Panel1.Controls.Add(Me.c55)
+        Me.Panel1.Controls.Add(Me.e44)
+        Me.Panel1.Controls.Add(Me.c11)
+        Me.Panel1.Controls.Add(Me.a33)
+        Me.Panel1.Controls.Add(Me.d11)
+        Me.Panel1.Controls.Add(Me.e33)
+        Me.Panel1.Controls.Add(Me.b55)
+        Me.Panel1.Controls.Add(Me.a44)
+        Me.Panel1.Controls.Add(Me.d22)
+        Me.Panel1.Controls.Add(Me.e22)
+        Me.Panel1.Controls.Add(Me.b44)
+        Me.Panel1.Controls.Add(Me.a55)
+        Me.Panel1.Controls.Add(Me.d33)
+        Me.Panel1.Controls.Add(Me.e11)
+        Me.Panel1.Controls.Add(Me.b33)
+        Me.Panel1.Controls.Add(Me.b11)
+        Me.Panel1.Controls.Add(Me.d44)
+        Me.Panel1.Controls.Add(Me.d55)
+        Me.Panel1.Controls.Add(Me.b22)
+        Me.Panel1.Location = New System.Drawing.Point(6, 6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(330, 343)
+        Me.Panel1.TabIndex = 840
         '
         'a11
         '
@@ -468,6 +470,128 @@ Partial Class Form4
         Me.a11.TabIndex = 812
         Me.a11.Values.Text = ""
         '
+        'TXT
+        '
+        Me.TXT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.TXT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.TXT.DropDownHeight = 200
+        Me.TXT.FormattingEnabled = True
+        Me.TXT.IntegralHeight = False
+        Me.TXT.Location = New System.Drawing.Point(72, 280)
+        Me.TXT.Name = "TXT"
+        Me.TXT.Size = New System.Drawing.Size(146, 21)
+        Me.TXT.TabIndex = 839
+        '
+        'KryptonButton1
+        '
+        Me.KryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.KryptonButton1.Location = New System.Drawing.Point(224, 280)
+        Me.KryptonButton1.Name = "KryptonButton1"
+        Me.KryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.KryptonButton1.Size = New System.Drawing.Size(57, 23)
+        Me.KryptonButton1.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.KryptonButton1.StateCommon.Border.Rounding = 0
+        Me.KryptonButton1.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KryptonButton1.TabIndex = 809
+        Me.KryptonButton1.Values.Text = "FIND"
+        '
+        'KryptonButton5
+        '
+        Me.KryptonButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.KryptonButton5.Location = New System.Drawing.Point(287, 280)
+        Me.KryptonButton5.Name = "KryptonButton5"
+        Me.KryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.KryptonButton5.Size = New System.Drawing.Size(25, 23)
+        Me.KryptonButton5.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.KryptonButton5.StateCommon.Border.Rounding = 0
+        Me.KryptonButton5.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KryptonButton5.TabIndex = 838
+        Me.KryptonButton5.Values.Text = "X"
+        '
+        'KryptonLabel1
+        '
+        Me.KryptonLabel1.Location = New System.Drawing.Point(7, 280)
+        Me.KryptonLabel1.Name = "KryptonLabel1"
+        Me.KryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
+        Me.KryptonLabel1.Size = New System.Drawing.Size(58, 17)
+        Me.KryptonLabel1.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KryptonLabel1.TabIndex = 811
+        Me.KryptonLabel1.Values.Text = "SERIAL #"
+        '
+        'EMPNAME
+        '
+        Me.EMPNAME.AutoSize = False
+        Me.EMPNAME.Location = New System.Drawing.Point(-29, 309)
+        Me.EMPNAME.Name = "EMPNAME"
+        Me.EMPNAME.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
+        Me.EMPNAME.Size = New System.Drawing.Size(380, 31)
+        Me.EMPNAME.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EMPNAME.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.EMPNAME.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.EMPNAME.TabIndex = 837
+        Me.EMPNAME.Values.Text = "***"
+        '
+        'c33
+        '
+        Me.c33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.c33.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.c33.Enabled = False
+        Me.c33.Location = New System.Drawing.Point(132, 118)
+        Me.c33.Name = "c33"
+        Me.c33.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.c33.Size = New System.Drawing.Size(60, 52)
+        Me.c33.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.c33.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.c33.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c33.StateCheckedNormal.Border.Rounding = 5
+        Me.c33.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c33.StateCommon.Border.Rounding = 0
+        Me.c33.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.c33.StateDisabled.Back.Color1 = System.Drawing.Color.Black
+        Me.c33.StateDisabled.Back.Color2 = System.Drawing.Color.Black
+        Me.c33.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White
+        Me.c33.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c33.StateNormal.Border.Rounding = 5
+        Me.c33.TabIndex = 824
+        Me.c33.Values.Text = "FREE"
+        '
+        'c44
+        '
+        Me.c44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.c44.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.c44.Location = New System.Drawing.Point(132, 170)
+        Me.c44.Name = "c44"
+        Me.c44.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.c44.Size = New System.Drawing.Size(60, 52)
+        Me.c44.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.c44.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.c44.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c44.StateCheckedNormal.Border.Rounding = 5
+        Me.c44.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c44.StateCommon.Border.Rounding = 0
+        Me.c44.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.c44.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.c44.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c44.StateNormal.Border.Rounding = 5
+        Me.c44.TabIndex = 825
+        Me.c44.Values.Text = ""
+        '
         'e55
         '
         Me.e55.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
@@ -494,6 +618,33 @@ Partial Class Form4
         Me.e55.StateNormal.Border.Rounding = 5
         Me.e55.TabIndex = 836
         Me.e55.Values.Text = ""
+        '
+        'c22
+        '
+        Me.c22.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.c22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.c22.Location = New System.Drawing.Point(132, 66)
+        Me.c22.Name = "c22"
+        Me.c22.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.c22.Size = New System.Drawing.Size(60, 52)
+        Me.c22.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.c22.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.c22.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c22.StateCheckedNormal.Border.Rounding = 5
+        Me.c22.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c22.StateCommon.Border.Rounding = 0
+        Me.c22.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.c22.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.c22.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c22.StateNormal.Border.Rounding = 5
+        Me.c22.TabIndex = 823
+        Me.c22.Values.Text = ""
         '
         'a22
         '
@@ -522,6 +673,33 @@ Partial Class Form4
         Me.a22.TabIndex = 813
         Me.a22.Values.Text = ""
         '
+        'c55
+        '
+        Me.c55.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.c55.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.c55.Location = New System.Drawing.Point(132, 222)
+        Me.c55.Name = "c55"
+        Me.c55.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.c55.Size = New System.Drawing.Size(60, 52)
+        Me.c55.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.c55.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.c55.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c55.StateCheckedNormal.Border.Rounding = 5
+        Me.c55.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c55.StateCommon.Border.Rounding = 0
+        Me.c55.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.c55.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.c55.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c55.StateNormal.Border.Rounding = 5
+        Me.c55.TabIndex = 826
+        Me.c55.Values.Text = ""
+        '
         'e44
         '
         Me.e44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
@@ -548,6 +726,33 @@ Partial Class Form4
         Me.e44.StateNormal.Border.Rounding = 5
         Me.e44.TabIndex = 835
         Me.e44.Values.Text = ""
+        '
+        'c11
+        '
+        Me.c11.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.c11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.c11.Location = New System.Drawing.Point(132, 14)
+        Me.c11.Name = "c11"
+        Me.c11.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.c11.Size = New System.Drawing.Size(60, 52)
+        Me.c11.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.c11.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.c11.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c11.StateCheckedNormal.Border.Rounding = 5
+        Me.c11.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c11.StateCommon.Border.Rounding = 0
+        Me.c11.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.c11.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.c11.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.c11.StateNormal.Border.Rounding = 5
+        Me.c11.TabIndex = 822
+        Me.c11.Values.Text = ""
         '
         'a33
         '
@@ -576,6 +781,33 @@ Partial Class Form4
         Me.a33.TabIndex = 814
         Me.a33.Values.Text = ""
         '
+        'd11
+        '
+        Me.d11.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.d11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.d11.Location = New System.Drawing.Point(192, 14)
+        Me.d11.Name = "d11"
+        Me.d11.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.d11.Size = New System.Drawing.Size(60, 52)
+        Me.d11.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.d11.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.d11.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d11.StateCheckedNormal.Border.Rounding = 5
+        Me.d11.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d11.StateCommon.Border.Rounding = 0
+        Me.d11.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.d11.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.d11.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d11.StateNormal.Border.Rounding = 5
+        Me.d11.TabIndex = 827
+        Me.d11.Values.Text = ""
+        '
         'e33
         '
         Me.e33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
@@ -602,6 +834,33 @@ Partial Class Form4
         Me.e33.StateNormal.Border.Rounding = 5
         Me.e33.TabIndex = 834
         Me.e33.Values.Text = ""
+        '
+        'b55
+        '
+        Me.b55.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.b55.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.b55.Location = New System.Drawing.Point(72, 222)
+        Me.b55.Name = "b55"
+        Me.b55.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.b55.Size = New System.Drawing.Size(60, 52)
+        Me.b55.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.b55.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.b55.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b55.StateCheckedNormal.Border.Rounding = 5
+        Me.b55.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b55.StateCommon.Border.Rounding = 0
+        Me.b55.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.b55.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.b55.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b55.StateNormal.Border.Rounding = 5
+        Me.b55.TabIndex = 821
+        Me.b55.Values.Text = ""
         '
         'a44
         '
@@ -630,6 +889,33 @@ Partial Class Form4
         Me.a44.TabIndex = 815
         Me.a44.Values.Text = ""
         '
+        'd22
+        '
+        Me.d22.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.d22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.d22.Location = New System.Drawing.Point(192, 66)
+        Me.d22.Name = "d22"
+        Me.d22.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.d22.Size = New System.Drawing.Size(60, 52)
+        Me.d22.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.d22.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.d22.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d22.StateCheckedNormal.Border.Rounding = 5
+        Me.d22.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d22.StateCommon.Border.Rounding = 0
+        Me.d22.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.d22.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.d22.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d22.StateNormal.Border.Rounding = 5
+        Me.d22.TabIndex = 828
+        Me.d22.Values.Text = ""
+        '
         'e22
         '
         Me.e22.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
@@ -656,6 +942,33 @@ Partial Class Form4
         Me.e22.StateNormal.Border.Rounding = 5
         Me.e22.TabIndex = 833
         Me.e22.Values.Text = ""
+        '
+        'b44
+        '
+        Me.b44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.b44.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.b44.Location = New System.Drawing.Point(72, 170)
+        Me.b44.Name = "b44"
+        Me.b44.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.b44.Size = New System.Drawing.Size(60, 52)
+        Me.b44.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.b44.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.b44.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b44.StateCheckedNormal.Border.Rounding = 5
+        Me.b44.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b44.StateCommon.Border.Rounding = 0
+        Me.b44.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.b44.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.b44.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b44.StateNormal.Border.Rounding = 5
+        Me.b44.TabIndex = 820
+        Me.b44.Values.Text = ""
         '
         'a55
         '
@@ -684,6 +997,33 @@ Partial Class Form4
         Me.a55.TabIndex = 816
         Me.a55.Values.Text = ""
         '
+        'd33
+        '
+        Me.d33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.d33.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.d33.Location = New System.Drawing.Point(192, 118)
+        Me.d33.Name = "d33"
+        Me.d33.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.d33.Size = New System.Drawing.Size(60, 52)
+        Me.d33.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.d33.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.d33.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d33.StateCheckedNormal.Border.Rounding = 5
+        Me.d33.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d33.StateCommon.Border.Rounding = 0
+        Me.d33.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.d33.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.d33.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d33.StateNormal.Border.Rounding = 5
+        Me.d33.TabIndex = 829
+        Me.d33.Values.Text = ""
+        '
         'e11
         '
         Me.e11.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
@@ -711,6 +1051,33 @@ Partial Class Form4
         Me.e11.TabIndex = 832
         Me.e11.Values.Text = ""
         '
+        'b33
+        '
+        Me.b33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.b33.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.b33.Location = New System.Drawing.Point(72, 118)
+        Me.b33.Name = "b33"
+        Me.b33.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.b33.Size = New System.Drawing.Size(60, 52)
+        Me.b33.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.b33.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.b33.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b33.StateCheckedNormal.Border.Rounding = 5
+        Me.b33.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b33.StateCommon.Border.Rounding = 0
+        Me.b33.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.b33.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.b33.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.b33.StateNormal.Border.Rounding = 5
+        Me.b33.TabIndex = 819
+        Me.b33.Values.Text = ""
+        '
         'b11
         '
         Me.b11.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
@@ -737,6 +1104,33 @@ Partial Class Form4
         Me.b11.StateNormal.Border.Rounding = 5
         Me.b11.TabIndex = 817
         Me.b11.Values.Text = ""
+        '
+        'd44
+        '
+        Me.d44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
+        Me.d44.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.d44.Location = New System.Drawing.Point(192, 170)
+        Me.d44.Name = "d44"
+        Me.d44.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.d44.Size = New System.Drawing.Size(60, 52)
+        Me.d44.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
+        Me.d44.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
+        Me.d44.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d44.StateCheckedNormal.Border.Rounding = 5
+        Me.d44.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d44.StateCommon.Border.Rounding = 0
+        Me.d44.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.d44.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.d44.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.d44.StateNormal.Border.Rounding = 5
+        Me.d44.TabIndex = 830
+        Me.d44.Values.Text = ""
         '
         'd55
         '
@@ -792,358 +1186,6 @@ Partial Class Form4
         Me.b22.TabIndex = 818
         Me.b22.Values.Text = ""
         '
-        'd44
-        '
-        Me.d44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.d44.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.d44.Location = New System.Drawing.Point(192, 170)
-        Me.d44.Name = "d44"
-        Me.d44.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.d44.Size = New System.Drawing.Size(60, 52)
-        Me.d44.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.d44.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.d44.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d44.StateCheckedNormal.Border.Rounding = 5
-        Me.d44.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d44.StateCommon.Border.Rounding = 0
-        Me.d44.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.d44.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.d44.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d44.StateNormal.Border.Rounding = 5
-        Me.d44.TabIndex = 830
-        Me.d44.Values.Text = ""
-        '
-        'b33
-        '
-        Me.b33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.b33.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.b33.Location = New System.Drawing.Point(72, 118)
-        Me.b33.Name = "b33"
-        Me.b33.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.b33.Size = New System.Drawing.Size(60, 52)
-        Me.b33.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.b33.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.b33.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b33.StateCheckedNormal.Border.Rounding = 5
-        Me.b33.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b33.StateCommon.Border.Rounding = 0
-        Me.b33.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.b33.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.b33.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b33.StateNormal.Border.Rounding = 5
-        Me.b33.TabIndex = 819
-        Me.b33.Values.Text = ""
-        '
-        'd33
-        '
-        Me.d33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.d33.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.d33.Location = New System.Drawing.Point(192, 118)
-        Me.d33.Name = "d33"
-        Me.d33.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.d33.Size = New System.Drawing.Size(60, 52)
-        Me.d33.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.d33.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.d33.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d33.StateCheckedNormal.Border.Rounding = 5
-        Me.d33.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d33.StateCommon.Border.Rounding = 0
-        Me.d33.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.d33.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.d33.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d33.StateNormal.Border.Rounding = 5
-        Me.d33.TabIndex = 829
-        Me.d33.Values.Text = ""
-        '
-        'b44
-        '
-        Me.b44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.b44.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.b44.Location = New System.Drawing.Point(72, 170)
-        Me.b44.Name = "b44"
-        Me.b44.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.b44.Size = New System.Drawing.Size(60, 52)
-        Me.b44.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.b44.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.b44.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b44.StateCheckedNormal.Border.Rounding = 5
-        Me.b44.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b44.StateCommon.Border.Rounding = 0
-        Me.b44.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.b44.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.b44.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b44.StateNormal.Border.Rounding = 5
-        Me.b44.TabIndex = 820
-        Me.b44.Values.Text = ""
-        '
-        'd22
-        '
-        Me.d22.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.d22.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.d22.Location = New System.Drawing.Point(192, 66)
-        Me.d22.Name = "d22"
-        Me.d22.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.d22.Size = New System.Drawing.Size(60, 52)
-        Me.d22.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.d22.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.d22.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d22.StateCheckedNormal.Border.Rounding = 5
-        Me.d22.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d22.StateCommon.Border.Rounding = 0
-        Me.d22.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.d22.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.d22.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d22.StateNormal.Border.Rounding = 5
-        Me.d22.TabIndex = 828
-        Me.d22.Values.Text = ""
-        '
-        'b55
-        '
-        Me.b55.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.b55.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.b55.Location = New System.Drawing.Point(72, 222)
-        Me.b55.Name = "b55"
-        Me.b55.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.b55.Size = New System.Drawing.Size(60, 52)
-        Me.b55.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.b55.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.b55.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b55.StateCheckedNormal.Border.Rounding = 5
-        Me.b55.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b55.StateCommon.Border.Rounding = 0
-        Me.b55.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.b55.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.b55.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.b55.StateNormal.Border.Rounding = 5
-        Me.b55.TabIndex = 821
-        Me.b55.Values.Text = ""
-        '
-        'd11
-        '
-        Me.d11.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.d11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.d11.Location = New System.Drawing.Point(192, 14)
-        Me.d11.Name = "d11"
-        Me.d11.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.d11.Size = New System.Drawing.Size(60, 52)
-        Me.d11.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.d11.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.d11.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d11.StateCheckedNormal.Border.Rounding = 5
-        Me.d11.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d11.StateCommon.Border.Rounding = 0
-        Me.d11.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.d11.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.d11.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.d11.StateNormal.Border.Rounding = 5
-        Me.d11.TabIndex = 827
-        Me.d11.Values.Text = ""
-        '
-        'c11
-        '
-        Me.c11.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.c11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.c11.Location = New System.Drawing.Point(132, 14)
-        Me.c11.Name = "c11"
-        Me.c11.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.c11.Size = New System.Drawing.Size(60, 52)
-        Me.c11.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.c11.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.c11.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c11.StateCheckedNormal.Border.Rounding = 5
-        Me.c11.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c11.StateCommon.Border.Rounding = 0
-        Me.c11.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.c11.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.c11.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c11.StateNormal.Border.Rounding = 5
-        Me.c11.TabIndex = 822
-        Me.c11.Values.Text = ""
-        '
-        'c55
-        '
-        Me.c55.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.c55.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.c55.Location = New System.Drawing.Point(132, 222)
-        Me.c55.Name = "c55"
-        Me.c55.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.c55.Size = New System.Drawing.Size(60, 52)
-        Me.c55.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.c55.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.c55.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c55.StateCheckedNormal.Border.Rounding = 5
-        Me.c55.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c55.StateCommon.Border.Rounding = 0
-        Me.c55.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.c55.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.c55.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c55.StateNormal.Border.Rounding = 5
-        Me.c55.TabIndex = 826
-        Me.c55.Values.Text = ""
-        '
-        'c22
-        '
-        Me.c22.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.c22.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.c22.Location = New System.Drawing.Point(132, 66)
-        Me.c22.Name = "c22"
-        Me.c22.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.c22.Size = New System.Drawing.Size(60, 52)
-        Me.c22.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.c22.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.c22.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c22.StateCheckedNormal.Border.Rounding = 5
-        Me.c22.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c22.StateCommon.Border.Rounding = 0
-        Me.c22.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.c22.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.c22.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c22.StateNormal.Border.Rounding = 5
-        Me.c22.TabIndex = 823
-        Me.c22.Values.Text = ""
-        '
-        'c44
-        '
-        Me.c44.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.c44.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.c44.Location = New System.Drawing.Point(132, 170)
-        Me.c44.Name = "c44"
-        Me.c44.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.c44.Size = New System.Drawing.Size(60, 52)
-        Me.c44.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.c44.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.c44.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c44.StateCheckedNormal.Border.Rounding = 5
-        Me.c44.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c44.StateCommon.Border.Rounding = 0
-        Me.c44.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.c44.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.c44.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c44.StateNormal.Border.Rounding = 5
-        Me.c44.TabIndex = 825
-        Me.c44.Values.Text = ""
-        '
-        'c33
-        '
-        Me.c33.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3
-        Me.c33.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.c33.Enabled = False
-        Me.c33.Location = New System.Drawing.Point(132, 118)
-        Me.c33.Name = "c33"
-        Me.c33.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.c33.Size = New System.Drawing.Size(60, 52)
-        Me.c33.StateCheckedNormal.Back.Color1 = System.Drawing.Color.Yellow
-        Me.c33.StateCheckedNormal.Back.Color2 = System.Drawing.Color.Yellow
-        Me.c33.StateCheckedNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c33.StateCheckedNormal.Border.Rounding = 5
-        Me.c33.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c33.StateCommon.Border.Rounding = 0
-        Me.c33.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.c33.StateDisabled.Back.Color1 = System.Drawing.Color.Black
-        Me.c33.StateDisabled.Back.Color2 = System.Drawing.Color.Black
-        Me.c33.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White
-        Me.c33.StateNormal.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.c33.StateNormal.Border.Rounding = 5
-        Me.c33.TabIndex = 824
-        Me.c33.Values.Text = "FREE"
-        '
-        'KryptonLabel1
-        '
-        Me.KryptonLabel1.Location = New System.Drawing.Point(7, 280)
-        Me.KryptonLabel1.Name = "KryptonLabel1"
-        Me.KryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
-        Me.KryptonLabel1.Size = New System.Drawing.Size(58, 17)
-        Me.KryptonLabel1.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonLabel1.TabIndex = 811
-        Me.KryptonLabel1.Values.Text = "SERIAL #"
-        '
-        'KryptonButton1
-        '
-        Me.KryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton1.Location = New System.Drawing.Point(224, 280)
-        Me.KryptonButton1.Name = "KryptonButton1"
-        Me.KryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.KryptonButton1.Size = New System.Drawing.Size(57, 23)
-        Me.KryptonButton1.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.KryptonButton1.StateCommon.Border.Rounding = 0
-        Me.KryptonButton1.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton1.TabIndex = 809
-        Me.KryptonButton1.Values.Text = "FIND"
-        '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.WhiteSmoke
@@ -1194,7 +1236,7 @@ Partial Class Form4
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(328, 428)
+        Me.TabPage1.Size = New System.Drawing.Size(341, 356)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Database"
         '
@@ -1481,44 +1523,6 @@ Partial Class Form4
         Me.KryptonButton2.TabIndex = 409
         Me.KryptonButton2.Values.Text = "update"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel1.Controls.Add(Me.a11)
-        Me.Panel1.Controls.Add(Me.TXT)
-        Me.Panel1.Controls.Add(Me.KryptonButton1)
-        Me.Panel1.Controls.Add(Me.KryptonButton5)
-        Me.Panel1.Controls.Add(Me.KryptonLabel1)
-        Me.Panel1.Controls.Add(Me.EMPNAME)
-        Me.Panel1.Controls.Add(Me.c33)
-        Me.Panel1.Controls.Add(Me.c44)
-        Me.Panel1.Controls.Add(Me.e55)
-        Me.Panel1.Controls.Add(Me.c22)
-        Me.Panel1.Controls.Add(Me.a22)
-        Me.Panel1.Controls.Add(Me.c55)
-        Me.Panel1.Controls.Add(Me.e44)
-        Me.Panel1.Controls.Add(Me.c11)
-        Me.Panel1.Controls.Add(Me.a33)
-        Me.Panel1.Controls.Add(Me.d11)
-        Me.Panel1.Controls.Add(Me.e33)
-        Me.Panel1.Controls.Add(Me.b55)
-        Me.Panel1.Controls.Add(Me.a44)
-        Me.Panel1.Controls.Add(Me.d22)
-        Me.Panel1.Controls.Add(Me.e22)
-        Me.Panel1.Controls.Add(Me.b44)
-        Me.Panel1.Controls.Add(Me.a55)
-        Me.Panel1.Controls.Add(Me.d33)
-        Me.Panel1.Controls.Add(Me.e11)
-        Me.Panel1.Controls.Add(Me.b33)
-        Me.Panel1.Controls.Add(Me.b11)
-        Me.Panel1.Controls.Add(Me.d44)
-        Me.Panel1.Controls.Add(Me.d55)
-        Me.Panel1.Controls.Add(Me.b22)
-        Me.Panel1.Location = New System.Drawing.Point(6, 6)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(330, 343)
-        Me.Panel1.TabIndex = 840
-        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1529,11 +1533,11 @@ Partial Class Form4
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         CType(Me.KryptonDataGridView37, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
