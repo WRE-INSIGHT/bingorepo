@@ -55,3 +55,7 @@ C:\Users\kmdim\Documents\Visual Studio 2015\Projects\BINGO2O\BINGO2O\bin\Debug\B
 C:\Users\kmdim\Documents\Visual Studio 2015\Projects\BINGO2O\BINGO2O\bin\Debug\BINGO2O.application
 C:\Users\kmdim\Documents\Visual Studio 2015\Projects\BINGO2O\BINGO2O\obj\Debug\BINGO2O.exe.manifest
 C:\Users\kmdim\Documents\Visual Studio 2015\Projects\BINGO2O\BINGO2O\obj\Debug\BINGO2O.application
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\bin\Debug\BINGO2O.exe.config
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.exe
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.xml
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.pdb
