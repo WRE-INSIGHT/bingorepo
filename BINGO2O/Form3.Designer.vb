@@ -61,7 +61,6 @@ Partial Class Form3
         Me.KryptonButton2.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
         Me.KryptonButton2.TabIndex = 1
         Me.KryptonButton2.Values.Text = "RAFFLE"
-        Me.KryptonButton2.Visible = False
         '
         'KryptonButton3
         '

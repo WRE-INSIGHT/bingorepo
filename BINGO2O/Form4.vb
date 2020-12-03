@@ -276,819 +276,819 @@ O5) VALUES(
         End If
     End Sub
     Public Sub checked()
-        If a11.Text = 1 And Form1.KryptonCheckButton1.Checked = True Then
+        If a11.Text = "1" And Form1.KryptonCheckButton1.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 2 And Form1.KryptonCheckButton2.Checked = True Then
+        ElseIf a11.Text = "2" And Form1.KryptonCheckButton2.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 3 And Form1.KryptonCheckButton3.Checked = True Then
+        ElseIf a11.Text = "3" And Form1.KryptonCheckButton3.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 4 And Form1.KryptonCheckButton4.Checked = True Then
+        ElseIf a11.Text = "4" And Form1.KryptonCheckButton4.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 5 And Form1.KryptonCheckButton5.Checked = True Then
+        ElseIf a11.Text = "5" And Form1.KryptonCheckButton5.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 6 And Form1.KryptonCheckButton6.Checked = True Then
+        ElseIf a11.Text = "6" And Form1.KryptonCheckButton6.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 7 And Form1.KryptonCheckButton7.Checked = True Then
+        ElseIf a11.Text = "7" And Form1.KryptonCheckButton7.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 8 And Form1.KryptonCheckButton8.Checked = True Then
+        ElseIf a11.Text = "8" And Form1.KryptonCheckButton8.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 9 And Form1.KryptonCheckButton9.Checked = True Then
+        ElseIf a11.Text = "9" And Form1.KryptonCheckButton9.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 10 And Form1.KryptonCheckButton10.Checked = True Then
+        ElseIf a11.Text = "10" And Form1.KryptonCheckButton10.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 11 And Form1.KryptonCheckButton11.Checked = True Then
+        ElseIf a11.Text = "11" And Form1.KryptonCheckButton11.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 12 And Form1.KryptonCheckButton12.Checked = True Then
+        ElseIf a11.Text = "12" And Form1.KryptonCheckButton12.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 13 And Form1.KryptonCheckButton13.Checked = True Then
+        ElseIf a11.Text = "13" And Form1.KryptonCheckButton13.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 14 And Form1.KryptonCheckButton14.Checked = True Then
+        ElseIf a11.Text = "14" And Form1.KryptonCheckButton14.Checked = True Then
             a11.Checked = True
-        ElseIf a11.Text = 15 And Form1.KryptonCheckButton15.Checked = True Then
+        ElseIf a11.Text = "15" And Form1.KryptonCheckButton15.Checked = True Then
             a11.Checked = True
         Else
             a11.Checked = False
         End If
 
-        If a22.Text = 1 And Form1.KryptonCheckButton1.Checked = True Then
+        If a22.Text = "1" And Form1.KryptonCheckButton1.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 2 And Form1.KryptonCheckButton2.Checked = True Then
+        ElseIf a22.Text = "2" And Form1.KryptonCheckButton2.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 3 And Form1.KryptonCheckButton3.Checked = True Then
+        ElseIf a22.Text = "3" And Form1.KryptonCheckButton3.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 4 And Form1.KryptonCheckButton4.Checked = True Then
+        ElseIf a22.Text = "4" And Form1.KryptonCheckButton4.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 5 And Form1.KryptonCheckButton5.Checked = True Then
+        ElseIf a22.Text = "5" And Form1.KryptonCheckButton5.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 6 And Form1.KryptonCheckButton6.Checked = True Then
+        ElseIf a22.Text = "6" And Form1.KryptonCheckButton6.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 7 And Form1.KryptonCheckButton7.Checked = True Then
+        ElseIf a22.Text = "7" And Form1.KryptonCheckButton7.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 8 And Form1.KryptonCheckButton8.Checked = True Then
+        ElseIf a22.Text = "8" And Form1.KryptonCheckButton8.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 9 And Form1.KryptonCheckButton9.Checked = True Then
+        ElseIf a22.Text = "9" And Form1.KryptonCheckButton9.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 10 And Form1.KryptonCheckButton10.Checked = True Then
+        ElseIf a22.Text = "10" And Form1.KryptonCheckButton10.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 11 And Form1.KryptonCheckButton11.Checked = True Then
+        ElseIf a22.Text = "11" And Form1.KryptonCheckButton11.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 12 And Form1.KryptonCheckButton12.Checked = True Then
+        ElseIf a22.Text = "12" And Form1.KryptonCheckButton12.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 13 And Form1.KryptonCheckButton13.Checked = True Then
+        ElseIf a22.Text = "13" And Form1.KryptonCheckButton13.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 14 And Form1.KryptonCheckButton14.Checked = True Then
+        ElseIf a22.Text = "14" And Form1.KryptonCheckButton14.Checked = True Then
             a22.Checked = True
-        ElseIf a22.Text = 15 And Form1.KryptonCheckButton15.Checked = True Then
+        ElseIf a22.Text = "15" And Form1.KryptonCheckButton15.Checked = True Then
             a22.Checked = True
         Else
             a22.Checked = False
         End If
 
-        If a33.Text = 1 And Form1.KryptonCheckButton1.Checked = True Then
+        If a33.Text = "1" And Form1.KryptonCheckButton1.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 2 And Form1.KryptonCheckButton2.Checked = True Then
+        ElseIf a33.Text = "2" And Form1.KryptonCheckButton2.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 3 And Form1.KryptonCheckButton3.Checked = True Then
+        ElseIf a33.Text = "3" And Form1.KryptonCheckButton3.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 4 And Form1.KryptonCheckButton4.Checked = True Then
+        ElseIf a33.Text = "4" And Form1.KryptonCheckButton4.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 5 And Form1.KryptonCheckButton5.Checked = True Then
+        ElseIf a33.Text = "5" And Form1.KryptonCheckButton5.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 6 And Form1.KryptonCheckButton6.Checked = True Then
+        ElseIf a33.Text = "6" And Form1.KryptonCheckButton6.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 7 And Form1.KryptonCheckButton7.Checked = True Then
+        ElseIf a33.Text = "7" And Form1.KryptonCheckButton7.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 8 And Form1.KryptonCheckButton8.Checked = True Then
+        ElseIf a33.Text = "8" And Form1.KryptonCheckButton8.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 9 And Form1.KryptonCheckButton9.Checked = True Then
+        ElseIf a33.Text = "9" And Form1.KryptonCheckButton9.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 10 And Form1.KryptonCheckButton10.Checked = True Then
+        ElseIf a33.Text = "10" And Form1.KryptonCheckButton10.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 11 And Form1.KryptonCheckButton11.Checked = True Then
+        ElseIf a33.Text = "11" And Form1.KryptonCheckButton11.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 12 And Form1.KryptonCheckButton12.Checked = True Then
+        ElseIf a33.Text = "12" And Form1.KryptonCheckButton12.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 13 And Form1.KryptonCheckButton13.Checked = True Then
+        ElseIf a33.Text = "13" And Form1.KryptonCheckButton13.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 14 And Form1.KryptonCheckButton14.Checked = True Then
+        ElseIf a33.Text = "14" And Form1.KryptonCheckButton14.Checked = True Then
             a33.Checked = True
-        ElseIf a33.Text = 15 And Form1.KryptonCheckButton15.Checked = True Then
+        ElseIf a33.Text = "15" And Form1.KryptonCheckButton15.Checked = True Then
             a33.Checked = True
         Else
             a33.Checked = False
         End If
 
-        If a44.Text = 1 And Form1.KryptonCheckButton1.Checked = True Then
+        If a44.Text = "1" And Form1.KryptonCheckButton1.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 2 And Form1.KryptonCheckButton2.Checked = True Then
+        ElseIf a44.Text = "2" And Form1.KryptonCheckButton2.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 3 And Form1.KryptonCheckButton3.Checked = True Then
+        ElseIf a44.Text = "3" And Form1.KryptonCheckButton3.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 4 And Form1.KryptonCheckButton4.Checked = True Then
+        ElseIf a44.Text = "4" And Form1.KryptonCheckButton4.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 5 And Form1.KryptonCheckButton5.Checked = True Then
+        ElseIf a44.Text = "5" And Form1.KryptonCheckButton5.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 6 And Form1.KryptonCheckButton6.Checked = True Then
+        ElseIf a44.Text = "6" And Form1.KryptonCheckButton6.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 7 And Form1.KryptonCheckButton7.Checked = True Then
+        ElseIf a44.Text = "7" And Form1.KryptonCheckButton7.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 8 And Form1.KryptonCheckButton8.Checked = True Then
+        ElseIf a44.Text = "8" And Form1.KryptonCheckButton8.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 9 And Form1.KryptonCheckButton9.Checked = True Then
+        ElseIf a44.Text = "9" And Form1.KryptonCheckButton9.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 10 And Form1.KryptonCheckButton10.Checked = True Then
+        ElseIf a44.Text = "10" And Form1.KryptonCheckButton10.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 11 And Form1.KryptonCheckButton11.Checked = True Then
+        ElseIf a44.Text = "11" And Form1.KryptonCheckButton11.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 12 And Form1.KryptonCheckButton12.Checked = True Then
+        ElseIf a44.Text = "12" And Form1.KryptonCheckButton12.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 13 And Form1.KryptonCheckButton13.Checked = True Then
+        ElseIf a44.Text = "13" And Form1.KryptonCheckButton13.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 14 And Form1.KryptonCheckButton14.Checked = True Then
+        ElseIf a44.Text = "14" And Form1.KryptonCheckButton14.Checked = True Then
             a44.Checked = True
-        ElseIf a44.Text = 15 And Form1.KryptonCheckButton15.Checked = True Then
+        ElseIf a44.Text = "15" And Form1.KryptonCheckButton15.Checked = True Then
             a44.Checked = True
         Else
             a44.Checked = False
         End If
 
-        If a55.Text = 1 And Form1.KryptonCheckButton1.Checked = True Then
+        If a55.Text = "1" And Form1.KryptonCheckButton1.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 2 And Form1.KryptonCheckButton2.Checked = True Then
+        ElseIf a55.Text = "2" And Form1.KryptonCheckButton2.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 3 And Form1.KryptonCheckButton3.Checked = True Then
+        ElseIf a55.Text = "3" And Form1.KryptonCheckButton3.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 4 And Form1.KryptonCheckButton4.Checked = True Then
+        ElseIf a55.Text = "4" And Form1.KryptonCheckButton4.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 5 And Form1.KryptonCheckButton5.Checked = True Then
+        ElseIf a55.Text = "5" And Form1.KryptonCheckButton5.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 6 And Form1.KryptonCheckButton6.Checked = True Then
+        ElseIf a55.Text = "6" And Form1.KryptonCheckButton6.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 7 And Form1.KryptonCheckButton7.Checked = True Then
+        ElseIf a55.Text = "7" And Form1.KryptonCheckButton7.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 8 And Form1.KryptonCheckButton8.Checked = True Then
+        ElseIf a55.Text = "8" And Form1.KryptonCheckButton8.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 9 And Form1.KryptonCheckButton9.Checked = True Then
+        ElseIf a55.Text = "9" And Form1.KryptonCheckButton9.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 10 And Form1.KryptonCheckButton10.Checked = True Then
+        ElseIf a55.Text = "10" And Form1.KryptonCheckButton10.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 11 And Form1.KryptonCheckButton11.Checked = True Then
+        ElseIf a55.Text = "11" And Form1.KryptonCheckButton11.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 12 And Form1.KryptonCheckButton12.Checked = True Then
+        ElseIf a55.Text = "12" And Form1.KryptonCheckButton12.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 13 And Form1.KryptonCheckButton13.Checked = True Then
+        ElseIf a55.Text = "13" And Form1.KryptonCheckButton13.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 14 And Form1.KryptonCheckButton14.Checked = True Then
+        ElseIf a55.Text = "14" And Form1.KryptonCheckButton14.Checked = True Then
             a55.Checked = True
-        ElseIf a55.Text = 15 And Form1.KryptonCheckButton15.Checked = True Then
+        ElseIf a55.Text = "15" And Form1.KryptonCheckButton15.Checked = True Then
             a55.Checked = True
         Else
             a55.Checked = False
         End If
 
 
-        If b11.Text = 16 And Form1.KryptonCheckButton16.Checked = True Then
+        If b11.Text = "16" And Form1.KryptonCheckButton16.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 17 And Form1.KryptonCheckButton17.Checked = True Then
+        ElseIf b11.Text = "17" And Form1.KryptonCheckButton17.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 18 And Form1.KryptonCheckButton18.Checked = True Then
+        ElseIf b11.Text = "18" And Form1.KryptonCheckButton18.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 19 And Form1.KryptonCheckButton19.Checked = True Then
+        ElseIf b11.Text = "19" And Form1.KryptonCheckButton19.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 20 And Form1.KryptonCheckButton20.Checked = True Then
+        ElseIf b11.Text = "20" And Form1.KryptonCheckButton20.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 21 And Form1.KryptonCheckButton21.Checked = True Then
+        ElseIf b11.Text = "21" And Form1.KryptonCheckButton21.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 22 And Form1.KryptonCheckButton22.Checked = True Then
+        ElseIf b11.Text = "22" And Form1.KryptonCheckButton22.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 23 And Form1.KryptonCheckButton23.Checked = True Then
+        ElseIf b11.Text = "23" And Form1.KryptonCheckButton23.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 24 And Form1.KryptonCheckButton24.Checked = True Then
+        ElseIf b11.Text = "24" And Form1.KryptonCheckButton24.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 25 And Form1.KryptonCheckButton25.Checked = True Then
+        ElseIf b11.Text = "25" And Form1.KryptonCheckButton25.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 26 And Form1.KryptonCheckButton26.Checked = True Then
+        ElseIf b11.Text = "26" And Form1.KryptonCheckButton26.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 27 And Form1.KryptonCheckButton27.Checked = True Then
+        ElseIf b11.Text = "27" And Form1.KryptonCheckButton27.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 28 And Form1.KryptonCheckButton28.Checked = True Then
+        ElseIf b11.Text = "28" And Form1.KryptonCheckButton28.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 29 And Form1.KryptonCheckButton29.Checked = True Then
+        ElseIf b11.Text = "29" And Form1.KryptonCheckButton29.Checked = True Then
             b11.Checked = True
-        ElseIf b11.Text = 30 And Form1.KryptonCheckButton30.Checked = True Then
+        ElseIf b11.Text = "30" And Form1.KryptonCheckButton30.Checked = True Then
             b11.Checked = True
         Else
             b11.Checked = False
         End If
 
-        If b22.Text = 16 And Form1.KryptonCheckButton16.Checked = True Then
+        If b22.Text = "16" And Form1.KryptonCheckButton16.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 17 And Form1.KryptonCheckButton17.Checked = True Then
+        ElseIf b22.Text = "17" And Form1.KryptonCheckButton17.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 18 And Form1.KryptonCheckButton18.Checked = True Then
+        ElseIf b22.Text = "18" And Form1.KryptonCheckButton18.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 19 And Form1.KryptonCheckButton19.Checked = True Then
+        ElseIf b22.Text = "19" And Form1.KryptonCheckButton19.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 20 And Form1.KryptonCheckButton20.Checked = True Then
+        ElseIf b22.Text = "20" And Form1.KryptonCheckButton20.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 21 And Form1.KryptonCheckButton21.Checked = True Then
+        ElseIf b22.Text = "21" And Form1.KryptonCheckButton21.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 22 And Form1.KryptonCheckButton22.Checked = True Then
+        ElseIf b22.Text = "22" And Form1.KryptonCheckButton22.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 23 And Form1.KryptonCheckButton23.Checked = True Then
+        ElseIf b22.Text = "23" And Form1.KryptonCheckButton23.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 24 And Form1.KryptonCheckButton24.Checked = True Then
+        ElseIf b22.Text = "24" And Form1.KryptonCheckButton24.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 25 And Form1.KryptonCheckButton25.Checked = True Then
+        ElseIf b22.Text = "25" And Form1.KryptonCheckButton25.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 26 And Form1.KryptonCheckButton26.Checked = True Then
+        ElseIf b22.Text = "26" And Form1.KryptonCheckButton26.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 27 And Form1.KryptonCheckButton27.Checked = True Then
+        ElseIf b22.Text = "27" And Form1.KryptonCheckButton27.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 28 And Form1.KryptonCheckButton28.Checked = True Then
+        ElseIf b22.Text = "28" And Form1.KryptonCheckButton28.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 29 And Form1.KryptonCheckButton29.Checked = True Then
+        ElseIf b22.Text = "29" And Form1.KryptonCheckButton29.Checked = True Then
             b22.Checked = True
-        ElseIf b22.Text = 30 And Form1.KryptonCheckButton30.Checked = True Then
+        ElseIf b22.Text = "30" And Form1.KryptonCheckButton30.Checked = True Then
             b22.Checked = True
         Else
             b22.Checked = False
         End If
 
 
-        If b33.Text = 16 And Form1.KryptonCheckButton16.Checked = True Then
+        If b33.Text = "16" And Form1.KryptonCheckButton16.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 17 And Form1.KryptonCheckButton17.Checked = True Then
+        ElseIf b33.Text = "17" And Form1.KryptonCheckButton17.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 18 And Form1.KryptonCheckButton18.Checked = True Then
+        ElseIf b33.Text = "18" And Form1.KryptonCheckButton18.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 19 And Form1.KryptonCheckButton19.Checked = True Then
+        ElseIf b33.Text = "19" And Form1.KryptonCheckButton19.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 20 And Form1.KryptonCheckButton20.Checked = True Then
+        ElseIf b33.Text = "20" And Form1.KryptonCheckButton20.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 21 And Form1.KryptonCheckButton21.Checked = True Then
+        ElseIf b33.Text = "21" And Form1.KryptonCheckButton21.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 22 And Form1.KryptonCheckButton22.Checked = True Then
+        ElseIf b33.Text = "22" And Form1.KryptonCheckButton22.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 23 And Form1.KryptonCheckButton23.Checked = True Then
+        ElseIf b33.Text = "23" And Form1.KryptonCheckButton23.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 24 And Form1.KryptonCheckButton24.Checked = True Then
+        ElseIf b33.Text = "24" And Form1.KryptonCheckButton24.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 25 And Form1.KryptonCheckButton25.Checked = True Then
+        ElseIf b33.Text = "25" And Form1.KryptonCheckButton25.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 26 And Form1.KryptonCheckButton26.Checked = True Then
+        ElseIf b33.Text = "26" And Form1.KryptonCheckButton26.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 27 And Form1.KryptonCheckButton27.Checked = True Then
+        ElseIf b33.Text = "27" And Form1.KryptonCheckButton27.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 28 And Form1.KryptonCheckButton28.Checked = True Then
+        ElseIf b33.Text = "28" And Form1.KryptonCheckButton28.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 29 And Form1.KryptonCheckButton29.Checked = True Then
+        ElseIf b33.Text = "29" And Form1.KryptonCheckButton29.Checked = True Then
             b33.Checked = True
-        ElseIf b33.Text = 30 And Form1.KryptonCheckButton30.Checked = True Then
+        ElseIf b33.Text = "30" And Form1.KryptonCheckButton30.Checked = True Then
             b33.Checked = True
         Else
             b33.Checked = False
         End If
 
-        If b44.Text = 16 And Form1.KryptonCheckButton16.Checked = True Then
+        If b44.Text = "16" And Form1.KryptonCheckButton16.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 17 And Form1.KryptonCheckButton17.Checked = True Then
+        ElseIf b44.Text = "17" And Form1.KryptonCheckButton17.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 18 And Form1.KryptonCheckButton18.Checked = True Then
+        ElseIf b44.Text = "18" And Form1.KryptonCheckButton18.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 19 And Form1.KryptonCheckButton19.Checked = True Then
+        ElseIf b44.Text = "19" And Form1.KryptonCheckButton19.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 20 And Form1.KryptonCheckButton20.Checked = True Then
+        ElseIf b44.Text = "20" And Form1.KryptonCheckButton20.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 21 And Form1.KryptonCheckButton21.Checked = True Then
+        ElseIf b44.Text = "21" And Form1.KryptonCheckButton21.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 22 And Form1.KryptonCheckButton22.Checked = True Then
+        ElseIf b44.Text = "22" And Form1.KryptonCheckButton22.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 23 And Form1.KryptonCheckButton23.Checked = True Then
+        ElseIf b44.Text = "23" And Form1.KryptonCheckButton23.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 24 And Form1.KryptonCheckButton24.Checked = True Then
+        ElseIf b44.Text = "24" And Form1.KryptonCheckButton24.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 25 And Form1.KryptonCheckButton25.Checked = True Then
+        ElseIf b44.Text = "25" And Form1.KryptonCheckButton25.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 26 And Form1.KryptonCheckButton26.Checked = True Then
+        ElseIf b44.Text = "26" And Form1.KryptonCheckButton26.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 27 And Form1.KryptonCheckButton27.Checked = True Then
+        ElseIf b44.Text = "27" And Form1.KryptonCheckButton27.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 28 And Form1.KryptonCheckButton28.Checked = True Then
+        ElseIf b44.Text = "28" And Form1.KryptonCheckButton28.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 29 And Form1.KryptonCheckButton29.Checked = True Then
+        ElseIf b44.Text = "29" And Form1.KryptonCheckButton29.Checked = True Then
             b44.Checked = True
-        ElseIf b44.Text = 30 And Form1.KryptonCheckButton30.Checked = True Then
+        ElseIf b44.Text = "30" And Form1.KryptonCheckButton30.Checked = True Then
             b44.Checked = True
         Else
             b44.Checked = False
         End If
 
-        If b55.Text = 16 And Form1.KryptonCheckButton16.Checked = True Then
+        If b55.Text = "16" And Form1.KryptonCheckButton16.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 17 And Form1.KryptonCheckButton17.Checked = True Then
+        ElseIf b55.Text = "17" And Form1.KryptonCheckButton17.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 18 And Form1.KryptonCheckButton18.Checked = True Then
+        ElseIf b55.Text = "18" And Form1.KryptonCheckButton18.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 19 And Form1.KryptonCheckButton19.Checked = True Then
+        ElseIf b55.Text = "19" And Form1.KryptonCheckButton19.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 20 And Form1.KryptonCheckButton20.Checked = True Then
+        ElseIf b55.Text = "20" And Form1.KryptonCheckButton20.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 21 And Form1.KryptonCheckButton21.Checked = True Then
+        ElseIf b55.Text = "21" And Form1.KryptonCheckButton21.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 22 And Form1.KryptonCheckButton22.Checked = True Then
+        ElseIf b55.Text = "22" And Form1.KryptonCheckButton22.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 23 And Form1.KryptonCheckButton23.Checked = True Then
+        ElseIf b55.Text = "23" And Form1.KryptonCheckButton23.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 24 And Form1.KryptonCheckButton24.Checked = True Then
+        ElseIf b55.Text = "24" And Form1.KryptonCheckButton24.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 25 And Form1.KryptonCheckButton25.Checked = True Then
+        ElseIf b55.Text = "25" And Form1.KryptonCheckButton25.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 26 And Form1.KryptonCheckButton26.Checked = True Then
+        ElseIf b55.Text = "26" And Form1.KryptonCheckButton26.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 27 And Form1.KryptonCheckButton27.Checked = True Then
+        ElseIf b55.Text = "27" And Form1.KryptonCheckButton27.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 28 And Form1.KryptonCheckButton28.Checked = True Then
+        ElseIf b55.Text = "28" And Form1.KryptonCheckButton28.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 29 And Form1.KryptonCheckButton29.Checked = True Then
+        ElseIf b55.Text = "29" And Form1.KryptonCheckButton29.Checked = True Then
             b55.Checked = True
-        ElseIf b55.Text = 30 And Form1.KryptonCheckButton30.Checked = True Then
+        ElseIf b55.Text = "30" And Form1.KryptonCheckButton30.Checked = True Then
             b55.Checked = True
         Else
             b55.Checked = False
         End If
 
-        If c11.Text = 31 And Form1.KryptonCheckButton31.Checked = True Then
+        If c11.Text = "31" And Form1.KryptonCheckButton31.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 32 And Form1.KryptonCheckButton32.Checked = True Then
+        ElseIf c11.Text = "32" And Form1.KryptonCheckButton32.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 33 And Form1.KryptonCheckButton33.Checked = True Then
+        ElseIf c11.Text = "33" And Form1.KryptonCheckButton33.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 34 And Form1.KryptonCheckButton34.Checked = True Then
+        ElseIf c11.Text = "34" And Form1.KryptonCheckButton34.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 35 And Form1.KryptonCheckButton35.Checked = True Then
+        ElseIf c11.Text = "35" And Form1.KryptonCheckButton35.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 36 And Form1.KryptonCheckButton36.Checked = True Then
+        ElseIf c11.Text = "36" And Form1.KryptonCheckButton36.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 37 And Form1.KryptonCheckButton37.Checked = True Then
+        ElseIf c11.Text = "37" And Form1.KryptonCheckButton37.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 38 And Form1.KryptonCheckButton38.Checked = True Then
+        ElseIf c11.Text = "38" And Form1.KryptonCheckButton38.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 39 And Form1.KryptonCheckButton39.Checked = True Then
+        ElseIf c11.Text = "39" And Form1.KryptonCheckButton39.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 40 And Form1.KryptonCheckButton40.Checked = True Then
+        ElseIf c11.Text = "40" And Form1.KryptonCheckButton40.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 41 And Form1.KryptonCheckButton41.Checked = True Then
+        ElseIf c11.Text = "41" And Form1.KryptonCheckButton41.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 42 And Form1.KryptonCheckButton42.Checked = True Then
+        ElseIf c11.Text = "42" And Form1.KryptonCheckButton42.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 43 And Form1.KryptonCheckButton43.Checked = True Then
+        ElseIf c11.Text = "43" And Form1.KryptonCheckButton43.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 44 And Form1.KryptonCheckButton44.Checked = True Then
+        ElseIf c11.Text = "44" And Form1.KryptonCheckButton44.Checked = True Then
             c11.Checked = True
-        ElseIf c11.Text = 45 And Form1.KryptonCheckButton45.Checked = True Then
+        ElseIf c11.Text = "45" And Form1.KryptonCheckButton45.Checked = True Then
             c11.Checked = True
         Else
             c11.Checked = False
         End If
 
-        If c22.Text = 31 And Form1.KryptonCheckButton31.Checked = True Then
+        If c22.Text = "31" And Form1.KryptonCheckButton31.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 32 And Form1.KryptonCheckButton32.Checked = True Then
+        ElseIf c22.Text = "32" And Form1.KryptonCheckButton32.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 33 And Form1.KryptonCheckButton33.Checked = True Then
+        ElseIf c22.Text = "33" And Form1.KryptonCheckButton33.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 34 And Form1.KryptonCheckButton34.Checked = True Then
+        ElseIf c22.Text = "34" And Form1.KryptonCheckButton34.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 35 And Form1.KryptonCheckButton35.Checked = True Then
+        ElseIf c22.Text = "35" And Form1.KryptonCheckButton35.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 36 And Form1.KryptonCheckButton36.Checked = True Then
+        ElseIf c22.Text = "36" And Form1.KryptonCheckButton36.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 37 And Form1.KryptonCheckButton37.Checked = True Then
+        ElseIf c22.Text = "37" And Form1.KryptonCheckButton37.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 38 And Form1.KryptonCheckButton38.Checked = True Then
+        ElseIf c22.Text = "38" And Form1.KryptonCheckButton38.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 39 And Form1.KryptonCheckButton39.Checked = True Then
+        ElseIf c22.Text = "39" And Form1.KryptonCheckButton39.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 40 And Form1.KryptonCheckButton40.Checked = True Then
+        ElseIf c22.Text = "40" And Form1.KryptonCheckButton40.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 41 And Form1.KryptonCheckButton41.Checked = True Then
+        ElseIf c22.Text = "41" And Form1.KryptonCheckButton41.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 42 And Form1.KryptonCheckButton42.Checked = True Then
+        ElseIf c22.Text = "42" And Form1.KryptonCheckButton42.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 43 And Form1.KryptonCheckButton43.Checked = True Then
+        ElseIf c22.Text = "43" And Form1.KryptonCheckButton43.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 44 And Form1.KryptonCheckButton44.Checked = True Then
+        ElseIf c22.Text = "44" And Form1.KryptonCheckButton44.Checked = True Then
             c22.Checked = True
-        ElseIf c22.Text = 45 And Form1.KryptonCheckButton45.Checked = True Then
+        ElseIf c22.Text = "45" And Form1.KryptonCheckButton45.Checked = True Then
             c22.Checked = True
         Else
             c22.Checked = False
         End If
 
-        If c44.Text = 31 And Form1.KryptonCheckButton31.Checked = True Then
+        If c44.Text = "31" And Form1.KryptonCheckButton31.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 32 And Form1.KryptonCheckButton32.Checked = True Then
+        ElseIf c44.Text = "32" And Form1.KryptonCheckButton32.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 33 And Form1.KryptonCheckButton33.Checked = True Then
+        ElseIf c44.Text = "33" And Form1.KryptonCheckButton33.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 34 And Form1.KryptonCheckButton34.Checked = True Then
+        ElseIf c44.Text = "34" And Form1.KryptonCheckButton34.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 35 And Form1.KryptonCheckButton35.Checked = True Then
+        ElseIf c44.Text = "35" And Form1.KryptonCheckButton35.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 36 And Form1.KryptonCheckButton36.Checked = True Then
+        ElseIf c44.Text = "36" And Form1.KryptonCheckButton36.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 37 And Form1.KryptonCheckButton37.Checked = True Then
+        ElseIf c44.Text = "37" And Form1.KryptonCheckButton37.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 38 And Form1.KryptonCheckButton38.Checked = True Then
+        ElseIf c44.Text = "38" And Form1.KryptonCheckButton38.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 39 And Form1.KryptonCheckButton39.Checked = True Then
+        ElseIf c44.Text = "39" And Form1.KryptonCheckButton39.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 40 And Form1.KryptonCheckButton40.Checked = True Then
+        ElseIf c44.Text = "40" And Form1.KryptonCheckButton40.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 41 And Form1.KryptonCheckButton41.Checked = True Then
+        ElseIf c44.Text = "41" And Form1.KryptonCheckButton41.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 42 And Form1.KryptonCheckButton42.Checked = True Then
+        ElseIf c44.Text = "42" And Form1.KryptonCheckButton42.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 43 And Form1.KryptonCheckButton43.Checked = True Then
+        ElseIf c44.Text = "43" And Form1.KryptonCheckButton43.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 44 And Form1.KryptonCheckButton44.Checked = True Then
+        ElseIf c44.Text = "44" And Form1.KryptonCheckButton44.Checked = True Then
             c44.Checked = True
-        ElseIf c44.Text = 45 And Form1.KryptonCheckButton45.Checked = True Then
+        ElseIf c44.Text = "45" And Form1.KryptonCheckButton45.Checked = True Then
             c44.Checked = True
         Else
             c44.Checked = False
         End If
 
-        If c55.Text = 31 And Form1.KryptonCheckButton31.Checked = True Then
+        If c55.Text = "31" And Form1.KryptonCheckButton31.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 32 And Form1.KryptonCheckButton32.Checked = True Then
+        ElseIf c55.Text = "32" And Form1.KryptonCheckButton32.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 33 And Form1.KryptonCheckButton33.Checked = True Then
+        ElseIf c55.Text = "33" And Form1.KryptonCheckButton33.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 34 And Form1.KryptonCheckButton34.Checked = True Then
+        ElseIf c55.Text = "34" And Form1.KryptonCheckButton34.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 35 And Form1.KryptonCheckButton35.Checked = True Then
+        ElseIf c55.Text = "35" And Form1.KryptonCheckButton35.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 36 And Form1.KryptonCheckButton36.Checked = True Then
+        ElseIf c55.Text = "36" And Form1.KryptonCheckButton36.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 37 And Form1.KryptonCheckButton37.Checked = True Then
+        ElseIf c55.Text = "37" And Form1.KryptonCheckButton37.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 38 And Form1.KryptonCheckButton38.Checked = True Then
+        ElseIf c55.Text = "38" And Form1.KryptonCheckButton38.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 39 And Form1.KryptonCheckButton39.Checked = True Then
+        ElseIf c55.Text = "39" And Form1.KryptonCheckButton39.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 40 And Form1.KryptonCheckButton40.Checked = True Then
+        ElseIf c55.Text = "40" And Form1.KryptonCheckButton40.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 41 And Form1.KryptonCheckButton41.Checked = True Then
+        ElseIf c55.Text = "41" And Form1.KryptonCheckButton41.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 42 And Form1.KryptonCheckButton42.Checked = True Then
+        ElseIf c55.Text = "42" And Form1.KryptonCheckButton42.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 43 And Form1.KryptonCheckButton43.Checked = True Then
+        ElseIf c55.Text = "43" And Form1.KryptonCheckButton43.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 44 And Form1.KryptonCheckButton44.Checked = True Then
+        ElseIf c55.Text = "44" And Form1.KryptonCheckButton44.Checked = True Then
             c55.Checked = True
-        ElseIf c55.Text = 45 And Form1.KryptonCheckButton45.Checked = True Then
+        ElseIf c55.Text = "45" And Form1.KryptonCheckButton45.Checked = True Then
             c55.Checked = True
         Else
             c55.Checked = False
         End If
 
-        If d11.Text = 46 And Form1.KryptonCheckButton46.Checked = True Then
+        If d11.Text = "46" And Form1.KryptonCheckButton46.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 47 And Form1.KryptonCheckButton47.Checked = True Then
+        ElseIf d11.Text = "47" And Form1.KryptonCheckButton47.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 48 And Form1.KryptonCheckButton48.Checked = True Then
+        ElseIf d11.Text = "48" And Form1.KryptonCheckButton48.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 49 And Form1.KryptonCheckButton49.Checked = True Then
+        ElseIf d11.Text = "49" And Form1.KryptonCheckButton49.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 50 And Form1.KryptonCheckButton50.Checked = True Then
+        ElseIf d11.Text = "50" And Form1.KryptonCheckButton50.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 51 And Form1.KryptonCheckButton51.Checked = True Then
+        ElseIf d11.Text = "51" And Form1.KryptonCheckButton51.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 52 And Form1.KryptonCheckButton52.Checked = True Then
+        ElseIf d11.Text = "52" And Form1.KryptonCheckButton52.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 53 And Form1.KryptonCheckButton53.Checked = True Then
+        ElseIf d11.Text = "53" And Form1.KryptonCheckButton53.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 54 And Form1.KryptonCheckButton54.Checked = True Then
+        ElseIf d11.Text = "54" And Form1.KryptonCheckButton54.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 55 And Form1.KryptonCheckButton55.Checked = True Then
+        ElseIf d11.Text = "55" And Form1.KryptonCheckButton55.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 56 And Form1.KryptonCheckButton56.Checked = True Then
+        ElseIf d11.Text = "56" And Form1.KryptonCheckButton56.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 57 And Form1.KryptonCheckButton57.Checked = True Then
+        ElseIf d11.Text = "57" And Form1.KryptonCheckButton57.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 58 And Form1.KryptonCheckButton58.Checked = True Then
+        ElseIf d11.Text = "58" And Form1.KryptonCheckButton58.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 59 And Form1.KryptonCheckButton59.Checked = True Then
+        ElseIf d11.Text = "59" And Form1.KryptonCheckButton59.Checked = True Then
             d11.Checked = True
-        ElseIf d11.Text = 60 And Form1.KryptonCheckButton60.Checked = True Then
+        ElseIf d11.Text = "60" And Form1.KryptonCheckButton60.Checked = True Then
             d11.Checked = True
         Else
             d11.Checked = False
         End If
 
-        If d22.Text = 46 And Form1.KryptonCheckButton46.Checked = True Then
+        If d22.Text = "46" And Form1.KryptonCheckButton46.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 47 And Form1.KryptonCheckButton47.Checked = True Then
+        ElseIf d22.Text = "47" And Form1.KryptonCheckButton47.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 48 And Form1.KryptonCheckButton48.Checked = True Then
+        ElseIf d22.Text = "48" And Form1.KryptonCheckButton48.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 49 And Form1.KryptonCheckButton49.Checked = True Then
+        ElseIf d22.Text = "49" And Form1.KryptonCheckButton49.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 50 And Form1.KryptonCheckButton50.Checked = True Then
+        ElseIf d22.Text = "50" And Form1.KryptonCheckButton50.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 51 And Form1.KryptonCheckButton51.Checked = True Then
+        ElseIf d22.Text = "51" And Form1.KryptonCheckButton51.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 52 And Form1.KryptonCheckButton52.Checked = True Then
+        ElseIf d22.Text = "52" And Form1.KryptonCheckButton52.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 53 And Form1.KryptonCheckButton53.Checked = True Then
+        ElseIf d22.Text = "53" And Form1.KryptonCheckButton53.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 54 And Form1.KryptonCheckButton54.Checked = True Then
+        ElseIf d22.Text = "54" And Form1.KryptonCheckButton54.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 55 And Form1.KryptonCheckButton55.Checked = True Then
+        ElseIf d22.Text = "55" And Form1.KryptonCheckButton55.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 56 And Form1.KryptonCheckButton56.Checked = True Then
+        ElseIf d22.Text = "56" And Form1.KryptonCheckButton56.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 57 And Form1.KryptonCheckButton57.Checked = True Then
+        ElseIf d22.Text = "57" And Form1.KryptonCheckButton57.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 58 And Form1.KryptonCheckButton58.Checked = True Then
+        ElseIf d22.Text = "58" And Form1.KryptonCheckButton58.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 59 And Form1.KryptonCheckButton59.Checked = True Then
+        ElseIf d22.Text = "59" And Form1.KryptonCheckButton59.Checked = True Then
             d22.Checked = True
-        ElseIf d22.Text = 60 And Form1.KryptonCheckButton60.Checked = True Then
+        ElseIf d22.Text = "60" And Form1.KryptonCheckButton60.Checked = True Then
             d22.Checked = True
         Else
             d22.Checked = False
         End If
 
-        If d33.Text = 46 And Form1.KryptonCheckButton46.Checked = True Then
+        If d33.Text = "46" And Form1.KryptonCheckButton46.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 47 And Form1.KryptonCheckButton47.Checked = True Then
+        ElseIf d33.Text = "47" And Form1.KryptonCheckButton47.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 48 And Form1.KryptonCheckButton48.Checked = True Then
+        ElseIf d33.Text = "48" And Form1.KryptonCheckButton48.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 49 And Form1.KryptonCheckButton49.Checked = True Then
+        ElseIf d33.Text = "49" And Form1.KryptonCheckButton49.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 50 And Form1.KryptonCheckButton50.Checked = True Then
+        ElseIf d33.Text = "50" And Form1.KryptonCheckButton50.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 51 And Form1.KryptonCheckButton51.Checked = True Then
+        ElseIf d33.Text = "51" And Form1.KryptonCheckButton51.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 52 And Form1.KryptonCheckButton52.Checked = True Then
+        ElseIf d33.Text = "52" And Form1.KryptonCheckButton52.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 53 And Form1.KryptonCheckButton53.Checked = True Then
+        ElseIf d33.Text = "53" And Form1.KryptonCheckButton53.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 54 And Form1.KryptonCheckButton54.Checked = True Then
+        ElseIf d33.Text = "54" And Form1.KryptonCheckButton54.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 55 And Form1.KryptonCheckButton55.Checked = True Then
+        ElseIf d33.Text = "55" And Form1.KryptonCheckButton55.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 56 And Form1.KryptonCheckButton56.Checked = True Then
+        ElseIf d33.Text = "56" And Form1.KryptonCheckButton56.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 57 And Form1.KryptonCheckButton57.Checked = True Then
+        ElseIf d33.Text = "57" And Form1.KryptonCheckButton57.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 58 And Form1.KryptonCheckButton58.Checked = True Then
+        ElseIf d33.Text = "58" And Form1.KryptonCheckButton58.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 59 And Form1.KryptonCheckButton59.Checked = True Then
+        ElseIf d33.Text = "59" And Form1.KryptonCheckButton59.Checked = True Then
             d33.Checked = True
-        ElseIf d33.Text = 60 And Form1.KryptonCheckButton60.Checked = True Then
+        ElseIf d33.Text = "60" And Form1.KryptonCheckButton60.Checked = True Then
             d33.Checked = True
         Else
             d33.Checked = False
         End If
 
-        If d44.Text = 46 And Form1.KryptonCheckButton46.Checked = True Then
+        If d44.Text = " Then Then46" And Form1.KryptonCheckButton46.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 47 And Form1.KryptonCheckButton47.Checked = True Then
+        ElseIf d44.Text = "47" And Form1.KryptonCheckButton47.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 48 And Form1.KryptonCheckButton48.Checked = True Then
+        ElseIf d44.Text = "48" And Form1.KryptonCheckButton48.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 49 And Form1.KryptonCheckButton49.Checked = True Then
+        ElseIf d44.Text = "49" And Form1.KryptonCheckButton49.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 50 And Form1.KryptonCheckButton50.Checked = True Then
+        ElseIf d44.Text = "50" And Form1.KryptonCheckButton50.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 51 And Form1.KryptonCheckButton51.Checked = True Then
+        ElseIf d44.Text = "51" And Form1.KryptonCheckButton51.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 52 And Form1.KryptonCheckButton52.Checked = True Then
+        ElseIf d44.Text = "52" And Form1.KryptonCheckButton52.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 53 And Form1.KryptonCheckButton53.Checked = True Then
+        ElseIf d44.Text = "53" And Form1.KryptonCheckButton53.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 54 And Form1.KryptonCheckButton54.Checked = True Then
+        ElseIf d44.Text = "54" And Form1.KryptonCheckButton54.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 55 And Form1.KryptonCheckButton55.Checked = True Then
+        ElseIf d44.Text = "55" And Form1.KryptonCheckButton55.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 56 And Form1.KryptonCheckButton56.Checked = True Then
+        ElseIf d44.Text = "56" And Form1.KryptonCheckButton56.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 57 And Form1.KryptonCheckButton57.Checked = True Then
+        ElseIf d44.Text = "57" And Form1.KryptonCheckButton57.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 58 And Form1.KryptonCheckButton58.Checked = True Then
+        ElseIf d44.Text = "58" And Form1.KryptonCheckButton58.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 59 And Form1.KryptonCheckButton59.Checked = True Then
+        ElseIf d44.Text = "59" And Form1.KryptonCheckButton59.Checked = True Then
             d44.Checked = True
-        ElseIf d44.Text = 60 And Form1.KryptonCheckButton60.Checked = True Then
+        ElseIf d44.Text = "60" And Form1.KryptonCheckButton60.Checked = True Then
             d44.Checked = True
         Else
             d44.Checked = False
         End If
 
-        If d55.Text = 46 And Form1.KryptonCheckButton46.Checked = True Then
+        If d55.Text = "46" And Form1.KryptonCheckButton46.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 47 And Form1.KryptonCheckButton47.Checked = True Then
+        ElseIf d55.Text = "47" And Form1.KryptonCheckButton47.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 48 And Form1.KryptonCheckButton48.Checked = True Then
+        ElseIf d55.Text = "48" And Form1.KryptonCheckButton48.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 49 And Form1.KryptonCheckButton49.Checked = True Then
+        ElseIf d55.Text = "49" And Form1.KryptonCheckButton49.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 50 And Form1.KryptonCheckButton50.Checked = True Then
+        ElseIf d55.Text = "50" And Form1.KryptonCheckButton50.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 51 And Form1.KryptonCheckButton51.Checked = True Then
+        ElseIf d55.Text = "51" And Form1.KryptonCheckButton51.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 52 And Form1.KryptonCheckButton52.Checked = True Then
+        ElseIf d55.Text = "52" And Form1.KryptonCheckButton52.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 53 And Form1.KryptonCheckButton53.Checked = True Then
+        ElseIf d55.Text = "53" And Form1.KryptonCheckButton53.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 54 And Form1.KryptonCheckButton54.Checked = True Then
+        ElseIf d55.Text = "54" And Form1.KryptonCheckButton54.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 55 And Form1.KryptonCheckButton55.Checked = True Then
+        ElseIf d55.Text = "55" And Form1.KryptonCheckButton55.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 56 And Form1.KryptonCheckButton56.Checked = True Then
+        ElseIf d55.Text = "56" And Form1.KryptonCheckButton56.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 57 And Form1.KryptonCheckButton57.Checked = True Then
+        ElseIf d55.Text = "57" And Form1.KryptonCheckButton57.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 58 And Form1.KryptonCheckButton58.Checked = True Then
+        ElseIf d55.Text = "58" And Form1.KryptonCheckButton58.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 59 And Form1.KryptonCheckButton59.Checked = True Then
+        ElseIf d55.Text = "59" And Form1.KryptonCheckButton59.Checked = True Then
             d55.Checked = True
-        ElseIf d55.Text = 60 And Form1.KryptonCheckButton60.Checked = True Then
+        ElseIf d55.Text = "60" And Form1.KryptonCheckButton60.Checked = True Then
             d55.Checked = True
         Else
             d55.Checked = False
         End If
 
-        If e11.Text = 61 And Form1.KryptonCheckButton61.Checked = True Then
+        If e11.Text = "61" And Form1.KryptonCheckButton61.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 62 And Form1.KryptonCheckButton62.Checked = True Then
+        ElseIf e11.Text = "62" And Form1.KryptonCheckButton62.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 63 And Form1.KryptonCheckButton63.Checked = True Then
+        ElseIf e11.Text = "63" And Form1.KryptonCheckButton63.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 64 And Form1.KryptonCheckButton64.Checked = True Then
+        ElseIf e11.Text = "64" And Form1.KryptonCheckButton64.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 65 And Form1.KryptonCheckButton65.Checked = True Then
+        ElseIf e11.Text = "65" And Form1.KryptonCheckButton65.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 66 And Form1.KryptonCheckButton66.Checked = True Then
+        ElseIf e11.Text = "66" And Form1.KryptonCheckButton66.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 67 And Form1.KryptonCheckButton67.Checked = True Then
+        ElseIf e11.Text = "67" And Form1.KryptonCheckButton67.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 68 And Form1.KryptonCheckButton68.Checked = True Then
+        ElseIf e11.Text = "68" And Form1.KryptonCheckButton68.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 69 And Form1.KryptonCheckButton69.Checked = True Then
+        ElseIf e11.Text = "69" And Form1.KryptonCheckButton69.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 70 And Form1.KryptonCheckButton70.Checked = True Then
+        ElseIf e11.Text = "70" And Form1.KryptonCheckButton70.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 71 And Form1.KryptonCheckButton71.Checked = True Then
+        ElseIf e11.Text = "71" And Form1.KryptonCheckButton71.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 72 And Form1.KryptonCheckButton72.Checked = True Then
+        ElseIf e11.Text = "72" And Form1.KryptonCheckButton72.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 73 And Form1.KryptonCheckButton73.Checked = True Then
+        ElseIf e11.Text = "73" And Form1.KryptonCheckButton73.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 74 And Form1.KryptonCheckButton74.Checked = True Then
+        ElseIf e11.Text = "74" And Form1.KryptonCheckButton74.Checked = True Then
             e11.Checked = True
-        ElseIf e11.Text = 75 And Form1.KryptonCheckButton75.Checked = True Then
+        ElseIf e11.Text = "75" And Form1.KryptonCheckButton75.Checked = True Then
             e11.Checked = True
         Else
             e11.Checked = False
         End If
 
-        If e22.Text = 61 And Form1.KryptonCheckButton61.Checked = True Then
+        If e22.Text = "61" And Form1.KryptonCheckButton61.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 62 And Form1.KryptonCheckButton62.Checked = True Then
+        ElseIf e22.Text = "62" And Form1.KryptonCheckButton62.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 63 And Form1.KryptonCheckButton63.Checked = True Then
+        ElseIf e22.Text = "63" And Form1.KryptonCheckButton63.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 64 And Form1.KryptonCheckButton64.Checked = True Then
+        ElseIf e22.Text = "64" And Form1.KryptonCheckButton64.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 65 And Form1.KryptonCheckButton65.Checked = True Then
+        ElseIf e22.Text = "65" And Form1.KryptonCheckButton65.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 66 And Form1.KryptonCheckButton66.Checked = True Then
+        ElseIf e22.Text = "66" And Form1.KryptonCheckButton66.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 67 And Form1.KryptonCheckButton67.Checked = True Then
+        ElseIf e22.Text = "67" And Form1.KryptonCheckButton67.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 68 And Form1.KryptonCheckButton68.Checked = True Then
+        ElseIf e22.Text = "68" And Form1.KryptonCheckButton68.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 69 And Form1.KryptonCheckButton69.Checked = True Then
+        ElseIf e22.Text = "69" And Form1.KryptonCheckButton69.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 70 And Form1.KryptonCheckButton70.Checked = True Then
+        ElseIf e22.Text = "70" And Form1.KryptonCheckButton70.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 71 And Form1.KryptonCheckButton71.Checked = True Then
+        ElseIf e22.Text = "71" And Form1.KryptonCheckButton71.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 72 And Form1.KryptonCheckButton72.Checked = True Then
+        ElseIf e22.Text = "72" And Form1.KryptonCheckButton72.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 73 And Form1.KryptonCheckButton73.Checked = True Then
+        ElseIf e22.Text = "73" And Form1.KryptonCheckButton73.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 74 And Form1.KryptonCheckButton74.Checked = True Then
+        ElseIf e22.Text = "74" And Form1.KryptonCheckButton74.Checked = True Then
             e22.Checked = True
-        ElseIf e22.Text = 75 And Form1.KryptonCheckButton75.Checked = True Then
+        ElseIf e22.Text = "75" And Form1.KryptonCheckButton75.Checked = True Then
             e22.Checked = True
         Else
             e22.Checked = False
         End If
 
-        If e33.Text = 61 And Form1.KryptonCheckButton61.Checked = True Then
+        If e33.Text = "61" And Form1.KryptonCheckButton61.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 62 And Form1.KryptonCheckButton62.Checked = True Then
+        ElseIf e33.Text = "62" And Form1.KryptonCheckButton62.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 63 And Form1.KryptonCheckButton63.Checked = True Then
+        ElseIf e33.Text = "63" And Form1.KryptonCheckButton63.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 64 And Form1.KryptonCheckButton64.Checked = True Then
+        ElseIf e33.Text = "64" And Form1.KryptonCheckButton64.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 65 And Form1.KryptonCheckButton65.Checked = True Then
+        ElseIf e33.Text = "65" And Form1.KryptonCheckButton65.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 66 And Form1.KryptonCheckButton66.Checked = True Then
+        ElseIf e33.Text = "66" And Form1.KryptonCheckButton66.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 67 And Form1.KryptonCheckButton67.Checked = True Then
+        ElseIf e33.Text = "67" And Form1.KryptonCheckButton67.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 68 And Form1.KryptonCheckButton68.Checked = True Then
+        ElseIf e33.Text = "68" And Form1.KryptonCheckButton68.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 69 And Form1.KryptonCheckButton69.Checked = True Then
+        ElseIf e33.Text = "69" And Form1.KryptonCheckButton69.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 70 And Form1.KryptonCheckButton70.Checked = True Then
+        ElseIf e33.Text = "70" And Form1.KryptonCheckButton70.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 71 And Form1.KryptonCheckButton71.Checked = True Then
+        ElseIf e33.Text = "71" And Form1.KryptonCheckButton71.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 72 And Form1.KryptonCheckButton72.Checked = True Then
+        ElseIf e33.Text = "72" And Form1.KryptonCheckButton72.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 73 And Form1.KryptonCheckButton73.Checked = True Then
+        ElseIf e33.Text = "73" And Form1.KryptonCheckButton73.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 74 And Form1.KryptonCheckButton74.Checked = True Then
+        ElseIf e33.Text = "74" And Form1.KryptonCheckButton74.Checked = True Then
             e33.Checked = True
-        ElseIf e33.Text = 75 And Form1.KryptonCheckButton75.Checked = True Then
+        ElseIf e33.Text = "75" And Form1.KryptonCheckButton75.Checked = True Then
             e33.Checked = True
         Else
             e33.Checked = False
         End If
 
-        If e44.Text = 61 And Form1.KryptonCheckButton61.Checked = True Then
+        If e44.Text = "61" And Form1.KryptonCheckButton61.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 62 And Form1.KryptonCheckButton62.Checked = True Then
+        ElseIf e44.Text = "62" And Form1.KryptonCheckButton62.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 63 And Form1.KryptonCheckButton63.Checked = True Then
+        ElseIf e44.Text = "63" And Form1.KryptonCheckButton63.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 64 And Form1.KryptonCheckButton64.Checked = True Then
+        ElseIf e44.Text = "64" And Form1.KryptonCheckButton64.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 65 And Form1.KryptonCheckButton65.Checked = True Then
+        ElseIf e44.Text = "65" And Form1.KryptonCheckButton65.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 66 And Form1.KryptonCheckButton66.Checked = True Then
+        ElseIf e44.Text = "66" And Form1.KryptonCheckButton66.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 67 And Form1.KryptonCheckButton67.Checked = True Then
+        ElseIf e44.Text = "67" And Form1.KryptonCheckButton67.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 68 And Form1.KryptonCheckButton68.Checked = True Then
+        ElseIf e44.Text = "68" And Form1.KryptonCheckButton68.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 69 And Form1.KryptonCheckButton69.Checked = True Then
+        ElseIf e44.Text = "69" And Form1.KryptonCheckButton69.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 70 And Form1.KryptonCheckButton70.Checked = True Then
+        ElseIf e44.Text = "70" And Form1.KryptonCheckButton70.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 71 And Form1.KryptonCheckButton71.Checked = True Then
+        ElseIf e44.Text = "71" And Form1.KryptonCheckButton71.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 72 And Form1.KryptonCheckButton72.Checked = True Then
+        ElseIf e44.Text = "72" And Form1.KryptonCheckButton72.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 73 And Form1.KryptonCheckButton73.Checked = True Then
+        ElseIf e44.Text = "73" And Form1.KryptonCheckButton73.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 74 And Form1.KryptonCheckButton74.Checked = True Then
+        ElseIf e44.Text = "74" And Form1.KryptonCheckButton74.Checked = True Then
             e44.Checked = True
-        ElseIf e44.Text = 75 And Form1.KryptonCheckButton75.Checked = True Then
+        ElseIf e44.Text = "75" And Form1.KryptonCheckButton75.Checked = True Then
             e44.Checked = True
         Else
             e44.Checked = False
         End If
 
-        If e55.Text = 61 And Form1.KryptonCheckButton61.Checked = True Then
+        If e55.Text = "61" And Form1.KryptonCheckButton61.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 62 And Form1.KryptonCheckButton62.Checked = True Then
+        ElseIf e55.Text = "62" And Form1.KryptonCheckButton62.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 63 And Form1.KryptonCheckButton63.Checked = True Then
+        ElseIf e55.Text = "63" And Form1.KryptonCheckButton63.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 64 And Form1.KryptonCheckButton64.Checked = True Then
+        ElseIf e55.Text = "64" And Form1.KryptonCheckButton64.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 65 And Form1.KryptonCheckButton65.Checked = True Then
+        ElseIf e55.Text = "65" And Form1.KryptonCheckButton65.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 66 And Form1.KryptonCheckButton66.Checked = True Then
+        ElseIf e55.Text = "66" And Form1.KryptonCheckButton66.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 67 And Form1.KryptonCheckButton67.Checked = True Then
+        ElseIf e55.Text = "67" And Form1.KryptonCheckButton67.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 68 And Form1.KryptonCheckButton68.Checked = True Then
+        ElseIf e55.Text = "68" And Form1.KryptonCheckButton68.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 69 And Form1.KryptonCheckButton69.Checked = True Then
+        ElseIf e55.Text = "69" And Form1.KryptonCheckButton69.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 70 And Form1.KryptonCheckButton70.Checked = True Then
+        ElseIf e55.Text = "70" And Form1.KryptonCheckButton70.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 71 And Form1.KryptonCheckButton71.Checked = True Then
+        ElseIf e55.Text = "71" And Form1.KryptonCheckButton71.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 72 And Form1.KryptonCheckButton72.Checked = True Then
+        ElseIf e55.Text = "72" And Form1.KryptonCheckButton72.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 73 And Form1.KryptonCheckButton73.Checked = True Then
+        ElseIf e55.Text = "73" And Form1.KryptonCheckButton73.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 74 And Form1.KryptonCheckButton74.Checked = True Then
+        ElseIf e55.Text = "74" And Form1.KryptonCheckButton74.Checked = True Then
             e55.Checked = True
-        ElseIf e55.Text = 75 And Form1.KryptonCheckButton75.Checked = True Then
+        ElseIf e55.Text = "75" And Form1.KryptonCheckButton75.Checked = True Then
             e55.Checked = True
         Else
             e55.Checked = False
@@ -1103,7 +1103,7 @@ O5) VALUES(
         Try
             REMOVE()
             sqlcon.Open()
-            Dim update As String = "update checker set serial='" & SERIAL.Text & "',
+            Dim update As String = "update checker Set serial='" & SERIAL.Text & "',
 EMPLOYEE='" & employee.Text & "',
 TYPE='" & type.Text & "',
 B1='" & B1.Text & "',
