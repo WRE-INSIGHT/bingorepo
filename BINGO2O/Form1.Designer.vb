@@ -7205,7 +7205,6 @@ Partial Class Form1
         Me.Controls.Add(Me.KryptonPanel1)
         Me.Controls.Add(Me.KryptonHeaderGroup4)
         Me.Controls.Add(Me.KryptonHeaderGroup7)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -856,7 +856,7 @@ O5) VALUES(
             d33.Checked = False
         End If
 
-        If d44.Text = " Then Then46" And Form1.KryptonCheckButton46.Checked = True Then
+        If d44.Text = "46" And Form1.KryptonCheckButton46.Checked = True Then
             d44.Checked = True
         ElseIf d44.Text = "47" And Form1.KryptonCheckButton47.Checked = True Then
             d44.Checked = True
