@@ -109,35 +109,41 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="BingoFRM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="BingoFRM.Designer.vb">
+      <DependentUpon>BingoFRM.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="imageviewFRM.Designer.vb">
+      <DependentUpon>imageviewFRM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="imageviewFRM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="RaffleFRM.Designer.vb">
+      <DependentUpon>RaffleFRM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="RaffleFRM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="HomeFRM.Designer.vb">
+      <DependentUpon>HomeFRM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="HomeFRM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.vb">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <Compile Include="CheckerFRM.Designer.vb">
+      <DependentUpon>CheckerFRM.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form5.vb">
+    <Compile Include="CheckerFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SongsFRM.Designer.vb">
+      <DependentUpon>SongsFRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SongsFRM.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="module\partyModule.vb" />
@@ -158,20 +164,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="BingoFRM.resx">
+      <DependentUpon>BingoFRM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="imageviewFRM.resx">
+      <DependentUpon>imageviewFRM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="RaffleFRM.resx">
+      <DependentUpon>RaffleFRM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="HomeFRM.resx">
+      <DependentUpon>HomeFRM.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <EmbeddedResource Include="CheckerFRM.resx">
+      <DependentUpon>CheckerFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SongsFRM.resx">
+      <DependentUpon>SongsFRM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
