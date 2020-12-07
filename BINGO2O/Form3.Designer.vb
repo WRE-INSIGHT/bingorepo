@@ -29,6 +29,7 @@ Partial Class Form3
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.KryptonButton4 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.TBOXdatasource = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -36,7 +37,7 @@ Partial Class Form3
         'KryptonButton1
         '
         Me.KryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton1.Location = New System.Drawing.Point(189, 149)
+        Me.KryptonButton1.Location = New System.Drawing.Point(189, 209)
         Me.KryptonButton1.Name = "KryptonButton1"
         Me.KryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton1.Size = New System.Drawing.Size(247, 59)
@@ -50,7 +51,7 @@ Partial Class Form3
         'KryptonButton2
         '
         Me.KryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton2.Location = New System.Drawing.Point(189, 214)
+        Me.KryptonButton2.Location = New System.Drawing.Point(189, 274)
         Me.KryptonButton2.Name = "KryptonButton2"
         Me.KryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton2.Size = New System.Drawing.Size(247, 59)
@@ -100,7 +101,7 @@ Partial Class Form3
         'KryptonButton4
         '
         Me.KryptonButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton4.Location = New System.Drawing.Point(189, 279)
+        Me.KryptonButton4.Location = New System.Drawing.Point(491, 344)
         Me.KryptonButton4.Name = "KryptonButton4"
         Me.KryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton4.Size = New System.Drawing.Size(247, 59)
@@ -113,12 +114,23 @@ Partial Class Form3
         Me.KryptonButton4.Values.Text = "VIDEOKE CHALLENGE"
         Me.KryptonButton4.Visible = False
         '
+        'TBOXdatasource
+        '
+        Me.TBOXdatasource.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TBOXdatasource.FormattingEnabled = True
+        Me.TBOXdatasource.Items.AddRange(New Object() {"KMDI-ACER-E15\KMDISQLSERVER", "121.58.229.248,49107", "124.105.102.151,49107"})
+        Me.TBOXdatasource.Location = New System.Drawing.Point(189, 172)
+        Me.TBOXdatasource.Name = "TBOXdatasource"
+        Me.TBOXdatasource.Size = New System.Drawing.Size(247, 28)
+        Me.TBOXdatasource.TabIndex = 7
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(448, 413)
+        Me.ClientSize = New System.Drawing.Size(455, 422)
+        Me.Controls.Add(Me.TBOXdatasource)
         Me.Controls.Add(Me.KryptonButton4)
         Me.Controls.Add(Me.KryptonButton3)
         Me.Controls.Add(Me.KryptonButton2)
@@ -126,7 +138,6 @@ Partial Class Form3
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximumSize = New System.Drawing.Size(464, 452)
         Me.MinimumSize = New System.Drawing.Size(464, 452)
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -142,4 +153,5 @@ Partial Class Form3
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents KryptonButton4 As ComponentFactory.Krypton.Toolkit.KryptonButton
+    Friend WithEvents TBOXdatasource As ComboBox
 End Class

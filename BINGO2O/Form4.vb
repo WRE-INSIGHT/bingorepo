@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Form4
-    Public sqlcon As New SqlConnection With {.ConnectionString = "Data Source=KMDI-ACER-E15\KMDISQLSERVER;Network Library=DBMSSOCN;Initial Catalog=RAFFLEDATA;User ID=kmdiadmin;Password=kmdiadmin;"}
+    'Public SQLconnection As New SQLconnectionnection With {.ConnectionString = "Data Source=KMDI-ACER-E15\KMDISQLSERVER;Network Library=DBMSSOCN;Initial Catalog=RAFFLEDATA;User ID=kmdiadmin;Password=kmdiadmin;"}
     Dim SQLCMD As SqlCommand
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         loaddata()
@@ -9,13 +9,13 @@ Public Class Form4
     End Sub
     Public Sub TXTCOMBO()
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim DS As New DataSet
             Dim DA As New SqlDataAdapter
             Dim BS As New BindingSource
             DS.Clear()
             Dim S As String = "SELECT DISTINCT(SERIAL) FROM checker"
-            SQLCMD = New SqlCommand(S, sqlcon)
+            SQLCMD = New SqlCommand(S, SQLconnection)
             DA.SelectCommand = SQLCMD
             DA.Fill(DS, "checker")
             BS.DataSource = DS
@@ -25,7 +25,7 @@ Public Class Form4
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
     Public Sub REMOVE()
@@ -130,7 +130,7 @@ Public Class Form4
         End If
         Try
             REMOVE()
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim STR As String = " INSERT INTO checker (SERIAL,EMPLOYEE,TYPE,
 B1,
 B2,
@@ -183,28 +183,29 @@ O5) VALUES(
   "'" & O3.Text & "'," &
   "'" & O4.Text & "'," &
   "'" & O5.Text & "')"
-            SQLCMD = New SqlCommand(STR, sqlcon)
+            SQLCMD = New SqlCommand(STR, SQLconnection)
             SQLCMD.ExecuteNonQuery()
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
         loaddata()
     End Sub
 
     Private Sub KryptonButton1_Click(sender As Object, e As EventArgs) Handles KryptonButton1.Click
+
         If TXT.Text = "" Then
         Else
 
             Try
-                sqlcon.Open()
+                SQLconnection.Open()
                 Dim DS As New DataSet
                 Dim da As New SqlDataAdapter
                 Dim bs As New BindingSource
                 DS.Clear()
                 Dim STR As String = "SELECT * FROM checker WHERE SERIAL = '" & TXT.Text & "'"
-                SQLCMD = New SqlCommand(STR, sqlcon)
+                SQLCMD = New SqlCommand(STR, SQLconnection)
                 da.SelectCommand = SQLCMD
                 da.Fill(DS, "checker")
                 bs.DataSource = DS
@@ -271,7 +272,7 @@ O5) VALUES(
             Catch ex As Exception
                 MsgBox(ex.ToString)
             Finally
-                sqlcon.Close()
+                SQLconnection.Close()
             End Try
         End If
     End Sub
@@ -1102,7 +1103,7 @@ O5) VALUES(
     Private Sub KryptonButton2_Click(sender As Object, e As EventArgs) Handles KryptonButton2.Click
         Try
             REMOVE()
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim update As String = "update checker Set serial='" & SERIAL.Text & "',
 EMPLOYEE='" & employee.Text & "',
 TYPE='" & type.Text & "',
@@ -1130,24 +1131,24 @@ O2='" & O2.Text & "',
 O3='" & O3.Text & "',
 O4='" & O4.Text & "',
 O5='" & O5.Text & "' where serial = '" & id.Text & "'"
-            SQLCMD = New SqlCommand(update, sqlcon)
+            SQLCMD = New SqlCommand(update, SQLconnection)
             SQLCMD.ExecuteNonQuery()
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
         loaddata()
     End Sub
     Public Sub loaddata()
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim ds As New DataSet
             Dim da As New SqlDataAdapter
             Dim bs As New BindingSource
             ds.Clear()
             Dim str As String = "select * from checker"
-            SQLCMD = New SqlCommand(str, sqlcon)
+            SQLCMD = New SqlCommand(str, SQLconnection)
             da.SelectCommand = SQLCMD
             da.Fill(ds, "checker")
             bs.DataSource = ds
@@ -1156,7 +1157,7 @@ O5='" & O5.Text & "' where serial = '" & id.Text & "'"
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -1206,17 +1207,17 @@ O5='" & O5.Text & "' where serial = '" & id.Text & "'"
             Exit Sub
         End If
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             For i As Integer = 0 To ComboBox1.Items.Count - 1
                 Dim x As String = ComboBox1.Items(i)
                 Dim delete As String = "delete from checker where serial = '" & x & "'"
-                SQLCMD = New SqlCommand(delete, sqlcon)
+                SQLCMD = New SqlCommand(delete, SQLconnection)
                 SQLCMD.ExecuteNonQuery()
             Next
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
         loaddata()
     End Sub

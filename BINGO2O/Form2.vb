@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 
 Public Class Form2
-    Public sqlcon As New SqlConnection With {.ConnectionString = "Data Source=KMDI-ACER-E15\KMDISQLSERVER;Network Library=DBMSSOCN;Initial Catalog=RAFFLEDATA;User ID=kmdiadmin;Password=kmdiadmin;"}
+    'Public SQLconnection As New SQLconnectionnection With {.ConnectionString = "Data Source=KMDI-ACER-E15\KMDISQLSERVER;Network Library=DBMSSOCN;Initial Catalog=RAFFLEDATA;User ID=kmdiadmin;Password=kmdiadmin;"}
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MYFILL()
@@ -14,13 +14,13 @@ Public Class Form2
 
     Public Sub MYFILL()
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim ds As New DataSet
             Dim da As New SqlDataAdapter
             Dim bs As New BindingSource
             ds.Clear()
             Dim load As String = "select ID,NUMBER,ITEM,RECEIVED,LABEL from raffletable WHERE LABEL = '1'"
-            Dim scmd As SqlCommand = New SqlCommand(load, sqlcon)
+            Dim scmd As SqlCommand = New SqlCommand(load, SQLconnection)
             da.SelectCommand = scmd
             da.Fill(ds, "raffletable")
             bs.DataSource = ds
@@ -35,18 +35,18 @@ Public Class Form2
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
     Public Sub MYFILL2()
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim ds As New DataSet
             Dim da As New SqlDataAdapter
             Dim bs As New BindingSource
             ds.Clear()
             Dim load As String = "select ID,NUMBER,ITEM,RECEIVED,LABEL from raffletable WHERE LABEL = '2'"
-            Dim scmd As SqlCommand = New SqlCommand(load, sqlcon)
+            Dim scmd As SqlCommand = New SqlCommand(load, SQLconnection)
             da.SelectCommand = scmd
             da.Fill(ds, "raffletable")
             bs.DataSource = ds
@@ -61,7 +61,7 @@ Public Class Form2
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -78,17 +78,17 @@ Public Class Form2
     End Sub
     Public Sub additem(ByVal NUMBER As String, ByVal ITEM As String, ByVal LABEL As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim add As String = "insert into raffletable (number,item,LABEL)
 values('" & NUMBER & "'," &
 "'" & ITEM & "'," &
 "'" & LABEL & "')"
-            Dim sqlcmd As SqlCommand = New SqlCommand(add, sqlcon)
+            Dim sqlcmd As SqlCommand = New SqlCommand(add, SQLconnection)
             sqlcmd.ExecuteNonQuery()
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -109,15 +109,15 @@ values('" & NUMBER & "'," &
     End Sub
     Public Sub UPDATEITEM(ByVal ID As String, ByVal NUMBER As String, ByVal ITEM As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim update As String = "update raffletable set number='" & NUMBER & "',item='" & ITEM & "' 
 where id ='" & ID & "'"
-            Dim sqlcmd As SqlCommand = New SqlCommand(update, sqlcon)
+            Dim sqlcmd As SqlCommand = New SqlCommand(update, SQLconnection)
             sqlcmd.ExecuteNonQuery()
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -149,14 +149,14 @@ where id ='" & ID & "'"
     End Sub
     Public Sub deleteitem(ByVal id As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim delete As String = "delete from raffletable where id ='" & id & "'"
-            Dim sqlcmd As SqlCommand = New SqlCommand(delete, sqlcon)
+            Dim sqlcmd As SqlCommand = New SqlCommand(delete, SQLconnection)
             sqlcmd.ExecuteNonQuery()
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -166,7 +166,7 @@ where id ='" & ID & "'"
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        KryptonLabel3.Text = ""
+        priceLABEL.Text = ""
         ProgressBar1.Increment(1)
         ComboBox5.SelectedIndex = ProgressBar1.Value - 1
         search(ComboBox5.Text)
@@ -254,13 +254,13 @@ where id ='" & ID & "'"
 
     Public Sub search(ByVal number As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim ds As New DataSet
             Dim da As New SqlDataAdapter
             Dim bs As New BindingSource
             ds.Clear()
             Dim search As String = "select * from raffletable where number ='" & number & "'"
-            Dim sqlcmd As SqlCommand = New SqlCommand(search, sqlcon)
+            Dim sqlcmd As SqlCommand = New SqlCommand(search, SQLconnection)
             da.SelectCommand = sqlcmd
             da.Fill(ds, "raffletable")
             bs.DataSource = ds
@@ -274,7 +274,7 @@ where id ='" & ID & "'"
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -292,11 +292,11 @@ where id ='" & ID & "'"
             My.Computer.Audio.PlaySystemSound(Media.SystemSounds.Beep)
             Dim mystr As String = KryptonLabel4.Text
             Dim separate = mystr.Split(" ")
-            KryptonLabel3.Text = ""
+            priceLABEL.Text = ""
             For i As Integer = 0 To separate.Length - 1
                 Dim myrandom As New Random()
                 Dim ShuffledItems = separate(i).OrderBy(Function() myrandom.Next).ToArray()
-                KryptonLabel3.Text = KryptonLabel3.Text + " " + ShuffledItems
+                priceLABEL.Text = priceLABEL.Text + " " + ShuffledItems
             Next
         End If
     End Sub
@@ -305,16 +305,16 @@ where id ='" & ID & "'"
 
         Dim mystr As String = KryptonLabel4.Text
         Dim separate = mystr.Split(" ")
-        KryptonLabel3.Text = ""
+        priceLABEL.Text = ""
         For i As Integer = 0 To separate.Length - 1
             Dim myrandom As New Random()
             Dim ShuffledItems = separate(i).OrderBy(Function() myrandom.Next).ToArray()
-            KryptonLabel3.Text = KryptonLabel3.Text + " " + ShuffledItems
+            priceLABEL.Text = priceLABEL.Text + " " + ShuffledItems
         Next
     End Sub
 
     Private Sub KryptonButton3_Click(sender As Object, e As EventArgs) Handles KryptonButton3.Click
-        KryptonLabel3.Text = KryptonLabel4.Text
+        priceLABEL.Text = KryptonLabel4.Text
     End Sub
 
     Private Sub KryptonButton4_Click(sender As Object, e As EventArgs) Handles KryptonButton4.Click
@@ -324,28 +324,28 @@ where id ='" & ID & "'"
     End Sub
     Public Sub received(ByVal number As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim rec As String = "update raffletable set received = '" & KryptonTextBox1.Text & "' where number = '" & number & "'"
-            Dim sqlcmd As SqlCommand = New SqlCommand(rec, sqlcon)
+            Dim sqlcmd As SqlCommand = New SqlCommand(rec, SQLconnection)
             sqlcmd.ExecuteNonQuery()
             KryptonTextBox1.Clear()
             KryptonTextBox1.Focus()
             KryptonButton4.Visible = False
             KryptonLabel5.Text = ""
-            KryptonLabel3.Text = ""
+            priceLABEL.Text = ""
             countitem2()
             countitem1()
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
     Public Sub countitem2()
         Try
             Dim str As String = "select count(item) from raffletable where label = 2 and received=''"
-            Dim cmd As SqlCommand = New SqlCommand(str, sqlcon)
+            Dim cmd As SqlCommand = New SqlCommand(str, SQLconnection)
             Dim read As SqlDataReader = cmd.ExecuteReader
             While read.Read
                 KryptonButton9.Text = read(0).ToString
@@ -358,7 +358,7 @@ where id ='" & ID & "'"
     Public Sub countitem1()
         Try
             Dim str As String = "select count(item) from raffletable where label = 1 and received=''"
-            Dim cmd As SqlCommand = New SqlCommand(str, sqlcon)
+            Dim cmd As SqlCommand = New SqlCommand(str, SQLconnection)
             Dim read As SqlDataReader = cmd.ExecuteReader
             While read.Read
                 KryptonButton1.Text = read(0).ToString
@@ -425,7 +425,7 @@ where id ='" & ID & "'"
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        KryptonLabel3.Text = ""
+        priceLABEL.Text = ""
         ProgressBar3.Increment(1)
         ComboBox7.SelectedIndex = ProgressBar3.Value - 1
         search(ComboBox7.Text)
@@ -454,11 +454,11 @@ where id ='" & ID & "'"
 
             Dim mystr As String = KryptonLabel4.Text
             Dim separate = mystr.Split(" ")
-            KryptonLabel3.Text = ""
+            priceLABEL.Text = ""
             For i As Integer = 0 To separate.Length - 1
                 Dim myrandom As New Random()
                 Dim ShuffledItems = separate(i).OrderBy(Function() myrandom.Next).ToArray()
-                KryptonLabel3.Text = KryptonLabel3.Text + " " + ShuffledItems
+                priceLABEL.Text = priceLABEL.Text + " " + ShuffledItems
             Next
         End If
     End Sub
@@ -473,7 +473,7 @@ where id ='" & ID & "'"
     Private Sub KryptonButton8_Click(sender As Object, e As EventArgs) Handles KryptonButton8.Click
         MYFILL2()
     End Sub
-    Private Sub KryptonLabel3_MouseDown(sender As Object, e As MouseEventArgs) Handles KryptonLabel3.MouseDown
+    Private Sub KryptonLabel3_MouseDown(sender As Object, e As MouseEventArgs) Handles priceLABEL.MouseDown
         If e.Button = MouseButtons.Right Then
             KryptonButton1.Enabled = False
             KryptonButton9.Enabled = True
@@ -512,13 +512,13 @@ where id ='" & ID & "'"
     End Sub
     Public Sub MYFILL3()
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim DS As New DataSet
             Dim DA As New SqlDataAdapter
             Dim BS As New BindingSource
             DS.Clear()
             Dim STR As String = "SELECT * FROM RAFFLETABLE"
-            Dim SQLCMD As SqlCommand = New SqlCommand(STR, sqlcon)
+            Dim SQLCMD As SqlCommand = New SqlCommand(STR, SQLconnection)
             DA.SelectCommand = SQLCMD
             DA.Fill(DS, "RAFFLETABLE")
             BS.DataSource = DS
@@ -534,7 +534,7 @@ where id ='" & ID & "'"
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -579,9 +579,9 @@ where id ='" & ID & "'"
                         ByVal ITEM As String,
                         ByVal LABEL As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
             Dim FIND As String = "SELECT * FROM RAFFLETABLE WHERE NUMBER = '" & NUMBER & "'"
-            Dim CMD As SqlCommand = New SqlCommand(FIND, sqlcon)
+            Dim CMD As SqlCommand = New SqlCommand(FIND, SQLconnection)
             Dim README As SqlDataReader = CMD.ExecuteReader
             If README.HasRows = True Then
                 README.Close()
@@ -590,7 +590,7 @@ where id ='" & ID & "'"
                 README.Close()
                 Dim INSERT As String = "INSERT INTO RAFFLETABLE (NUMBER,ITEM,LABEL) VALUES
 ('" & NUMBER & "','" & ITEM & "','" & LABEL & "')"
-                Dim SQLCMD As SqlCommand = New SqlCommand(INSERT, sqlcon)
+                Dim SQLCMD As SqlCommand = New SqlCommand(INSERT, SQLconnection)
                 SQLCMD.ExecuteNonQuery()
             End If
 
@@ -599,7 +599,7 @@ where id ='" & ID & "'"
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -626,17 +626,17 @@ where id ='" & ID & "'"
                            ByVal RECEIVED As String,
                         ByVal LABEL As String)
         Try
-            sqlcon.Open()
+            SQLconnection.Open()
 
             Dim UPDATE As String = "UPDATE RAFFLETABLE SET  NUMBER='" & NUMBER & "',ITEM='" & ITEM & "',RECEIVED='" & RECEIVED & "',LABEL='" & LABEL & "'
 WHERE ID = '" & ID & "'"
-            Dim SQLCMD As SqlCommand = New SqlCommand(UPDATE, sqlcon)
-                SQLCMD.ExecuteNonQuery()
+            Dim SQLCMD As SqlCommand = New SqlCommand(UPDATE, SQLconnection)
+            SQLCMD.ExecuteNonQuery()
 
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
-            sqlcon.Close()
+            SQLconnection.Close()
         End Try
     End Sub
 
@@ -679,8 +679,8 @@ WHERE ID = '" & ID & "'"
             result = result + " " + (firstletter + word + lastletter)
             word = ""
         Next
-        KryptonLabel3.Text = ""
-        KryptonLabel3.Text = Trim(result)
+        priceLABEL.Text = ""
+        priceLABEL.Text = Trim(result)
     End Sub
 
 
@@ -690,7 +690,7 @@ WHERE ID = '" & ID & "'"
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        KryptonLabel3.Text = ""
+        priceLABEL.Text = ""
         ProgressBar1.Increment(1)
         ComboBox5.SelectedIndex = ProgressBar1.Value - 1
         search(ComboBox5.Text)
@@ -704,7 +704,7 @@ WHERE ID = '" & ID & "'"
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        KryptonLabel3.Text = ""
+        priceLABEL.Text = ""
         ProgressBar3.Increment(1)
         ComboBox7.SelectedIndex = ProgressBar3.Value - 1
         search(ComboBox7.Text)

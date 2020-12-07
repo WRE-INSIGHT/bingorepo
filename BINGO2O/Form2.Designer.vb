@@ -59,7 +59,7 @@ Partial Class Form2
         Me.KryptonButton14 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton3 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton2 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.KryptonLabel3 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.priceLABEL = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
@@ -538,7 +538,7 @@ Partial Class Form2
         Me.KryptonPanel1.Controls.Add(Me.KryptonButton14)
         Me.KryptonPanel1.Controls.Add(Me.KryptonButton3)
         Me.KryptonPanel1.Controls.Add(Me.KryptonButton2)
-        Me.KryptonPanel1.Controls.Add(Me.KryptonLabel3)
+        Me.KryptonPanel1.Controls.Add(Me.priceLABEL)
         Me.KryptonPanel1.Location = New System.Drawing.Point(3, 431)
         Me.KryptonPanel1.Name = "KryptonPanel1"
         Me.KryptonPanel1.Size = New System.Drawing.Size(953, 115)
@@ -624,21 +624,21 @@ Partial Class Form2
         Me.KryptonButton2.TabIndex = 802
         Me.KryptonButton2.Values.Text = "SHUFFLE"
         '
-        'KryptonLabel3
+        'priceLABEL
         '
-        Me.KryptonLabel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.priceLABEL.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KryptonLabel3.AutoSize = False
-        Me.KryptonLabel3.Location = New System.Drawing.Point(-3, -67)
-        Me.KryptonLabel3.Name = "KryptonLabel3"
-        Me.KryptonLabel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
-        Me.KryptonLabel3.Size = New System.Drawing.Size(954, 230)
-        Me.KryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White
-        Me.KryptonLabel3.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 60.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonLabel3.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.KryptonLabel3.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.KryptonLabel3.TabIndex = 803
-        Me.KryptonLabel3.Values.Text = "PRICE"
+        Me.priceLABEL.AutoSize = False
+        Me.priceLABEL.Location = New System.Drawing.Point(-3, -67)
+        Me.priceLABEL.Name = "priceLABEL"
+        Me.priceLABEL.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
+        Me.priceLABEL.Size = New System.Drawing.Size(954, 230)
+        Me.priceLABEL.StateCommon.ShortText.Color1 = System.Drawing.Color.White
+        Me.priceLABEL.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 60.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.priceLABEL.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.priceLABEL.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.priceLABEL.TabIndex = 803
+        Me.priceLABEL.Values.Text = "PRICE"
         '
         'ComboBox6
         '
@@ -1307,7 +1307,7 @@ Partial Class Form2
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox5 As ComboBox
     Friend WithEvents KryptonButton2 As ComponentFactory.Krypton.Toolkit.KryptonButton
-    Friend WithEvents KryptonLabel3 As ComponentFactory.Krypton.Toolkit.KryptonLabel
+    Friend WithEvents priceLABEL As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonButton3 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents KryptonLabel4 As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonButton4 As ComponentFactory.Krypton.Toolkit.KryptonButton

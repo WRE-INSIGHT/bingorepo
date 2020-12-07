@@ -1,9 +1,11 @@
 ﻿Public Class Form3
     Private Sub KryptonButton1_Click(sender As Object, e As EventArgs) Handles KryptonButton1.Click
+        getConnectionString(TBOXdatasource.Text)
         Form1.Show()
     End Sub
 
     Private Sub KryptonButton2_Click(sender As Object, e As EventArgs) Handles KryptonButton2.Click
+        getConnectionString(TBOXdatasource.Text)
         Form2.Show()
     End Sub
 
@@ -12,6 +14,7 @@
     End Sub
 
     Private Sub KryptonButton4_Click(sender As Object, e As EventArgs) Handles KryptonButton4.Click
+        getConnectionString(TBOXdatasource.Text)
         Form5.Show()
     End Sub
 
