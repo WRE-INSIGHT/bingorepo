@@ -275,14 +275,13 @@ Partial Class BingoFRM
         Me.c44 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.c33 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.myanimation = New System.Windows.Forms.Timer(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.KryptonHeaderGroup5 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
-        Me.KryptonLabel2 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.LastCallLabel = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
         Me.KryptonHeaderGroup6 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
-        Me.KryptonLabel3 = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.TotalCallsLabel = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
         Me.KryptonNumericUpDown1 = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
         Me.KryptonCheckButton76 = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
         Me.KryptonHeaderGroup7 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
@@ -380,6 +379,7 @@ Partial Class BingoFRM
         Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton2 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.manualselectbtn = New ComponentFactory.Krypton.Toolkit.KryptonCheckButton()
+        Me.KryptonButton3 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -437,7 +437,7 @@ Partial Class BingoFRM
         '
         Me.SpeedToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CallToolStripMenuItem, Me.AnimationToolStripMenuItem})
         Me.SpeedToolStripMenuItem.Name = "SpeedToolStripMenuItem"
-        Me.SpeedToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.SpeedToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SpeedToolStripMenuItem.Text = "Speed"
         '
         'CallToolStripMenuItem
@@ -472,7 +472,7 @@ Partial Class BingoFRM
         '
         Me.PatternToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsideSquareToolStripMenuItem, Me.HorizontalToolStripMenuItem, Me.IntersectingHVLinesToolStripMenuItem, Me.DoubleHorizontalToolStripMenuItem, Me.DoubleVerticalToolStripMenuItem, Me.KMDIToolStripMenuItem, Me.LastManStandingToolStripMenuItem, Me.SemiBlackoutToolStripMenuItem, Me.BlackoutToolStripMenuItem, Me.CustomToolStripMenuItem})
         Me.PatternToolStripMenuItem.Name = "PatternToolStripMenuItem"
-        Me.PatternToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.PatternToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.PatternToolStripMenuItem.Text = "Pattern"
         '
         'InsideSquareToolStripMenuItem
@@ -486,7 +486,7 @@ Partial Class BingoFRM
         '
         Me.WinnerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.insidesquarewinner})
         Me.WinnerToolStripMenuItem.Name = "WinnerToolStripMenuItem"
-        Me.WinnerToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.WinnerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.WinnerToolStripMenuItem.Text = "Winner"
         '
         'insidesquarewinner
@@ -499,7 +499,7 @@ Partial Class BingoFRM
         '
         Me.PriceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.insidesquareprice})
         Me.PriceToolStripMenuItem.Name = "PriceToolStripMenuItem"
-        Me.PriceToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.PriceToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.PriceToolStripMenuItem.Text = "Price"
         '
         'insidesquareprice
@@ -914,20 +914,20 @@ Partial Class BingoFRM
         'SwitchViewToolStripMenuItem
         '
         Me.SwitchViewToolStripMenuItem.Name = "SwitchViewToolStripMenuItem"
-        Me.SwitchViewToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.SwitchViewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SwitchViewToolStripMenuItem.Text = "Switch View"
         '
         'CheckerToolStripMenuItem
         '
         Me.CheckerToolStripMenuItem.Name = "CheckerToolStripMenuItem"
-        Me.CheckerToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.CheckerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CheckerToolStripMenuItem.Text = "Checker"
         '
         'SpeakToolStripMenuItem
         '
         Me.SpeakToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.yesnospeak, Me.VoiceToolStripMenuItem, Me.RateToolStripMenuItem, Me.RepeatVoiceToolStripMenuItem, Me.RepeatRateToolStripMenuItem, Me.RepeatTimesToolStripMenuItem})
         Me.SpeakToolStripMenuItem.Name = "SpeakToolStripMenuItem"
-        Me.SpeakToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.SpeakToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SpeakToolStripMenuItem.Text = "Speak"
         '
         'yesnospeak
@@ -1011,7 +1011,7 @@ Partial Class BingoFRM
         '
         Me.LabelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.labelshow, Me.TextToolStripMenuItem, Me.SpeedToolStripMenuItem1, Me.labelbackcolor})
         Me.LabelToolStripMenuItem.Name = "LabelToolStripMenuItem"
-        Me.LabelToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.LabelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LabelToolStripMenuItem.Text = "Label"
         '
         'labelshow
@@ -1058,7 +1058,7 @@ Partial Class BingoFRM
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Timer1
@@ -4833,15 +4833,6 @@ Partial Class BingoFRM
         'myanimation
         '
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(468, 201)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
-        Me.Label2.TabIndex = 792
-        Me.Label2.Text = "PATTERN"
-        '
         'Timer2
         '
         '
@@ -4870,7 +4861,7 @@ Partial Class BingoFRM
         '
         'KryptonHeaderGroup5.Panel
         '
-        Me.KryptonHeaderGroup5.Panel.Controls.Add(Me.KryptonLabel2)
+        Me.KryptonHeaderGroup5.Panel.Controls.Add(Me.LastCallLabel)
         Me.KryptonHeaderGroup5.Size = New System.Drawing.Size(134, 128)
         Me.KryptonHeaderGroup5.StateCommon.Back.Color1 = System.Drawing.Color.Black
         Me.KryptonHeaderGroup5.StateCommon.HeaderPrimary.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -4880,20 +4871,20 @@ Partial Class BingoFRM
         Me.KryptonHeaderGroup5.ValuesPrimary.Image = Nothing
         Me.KryptonHeaderGroup5.ValuesSecondary.Heading = ""
         '
-        'KryptonLabel2
+        'LastCallLabel
         '
-        Me.KryptonLabel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KryptonLabel2.AutoSize = False
-        Me.KryptonLabel2.Location = New System.Drawing.Point(3, 3)
-        Me.KryptonLabel2.Name = "KryptonLabel2"
-        Me.KryptonLabel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
-        Me.KryptonLabel2.Size = New System.Drawing.Size(126, 96)
-        Me.KryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White
-        Me.KryptonLabel2.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonLabel2.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.KryptonLabel2.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.KryptonLabel2.TabIndex = 759
-        Me.KryptonLabel2.Values.Text = ""
+        Me.LastCallLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LastCallLabel.AutoSize = False
+        Me.LastCallLabel.Location = New System.Drawing.Point(3, 3)
+        Me.LastCallLabel.Name = "LastCallLabel"
+        Me.LastCallLabel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
+        Me.LastCallLabel.Size = New System.Drawing.Size(126, 96)
+        Me.LastCallLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.White
+        Me.LastCallLabel.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastCallLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.LastCallLabel.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.LastCallLabel.TabIndex = 759
+        Me.LastCallLabel.Values.Text = ""
         '
         'KryptonHeaderGroup6
         '
@@ -4903,7 +4894,7 @@ Partial Class BingoFRM
         '
         'KryptonHeaderGroup6.Panel
         '
-        Me.KryptonHeaderGroup6.Panel.Controls.Add(Me.KryptonLabel3)
+        Me.KryptonHeaderGroup6.Panel.Controls.Add(Me.TotalCallsLabel)
         Me.KryptonHeaderGroup6.Size = New System.Drawing.Size(134, 128)
         Me.KryptonHeaderGroup6.StateCommon.Back.Color1 = System.Drawing.Color.Black
         Me.KryptonHeaderGroup6.StateCommon.HeaderPrimary.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -4913,20 +4904,20 @@ Partial Class BingoFRM
         Me.KryptonHeaderGroup6.ValuesPrimary.Image = Nothing
         Me.KryptonHeaderGroup6.ValuesSecondary.Heading = ""
         '
-        'KryptonLabel3
+        'TotalCallsLabel
         '
-        Me.KryptonLabel3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KryptonLabel3.AutoSize = False
-        Me.KryptonLabel3.Location = New System.Drawing.Point(3, 3)
-        Me.KryptonLabel3.Name = "KryptonLabel3"
-        Me.KryptonLabel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
-        Me.KryptonLabel3.Size = New System.Drawing.Size(126, 96)
-        Me.KryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White
-        Me.KryptonLabel3.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonLabel3.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.KryptonLabel3.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.KryptonLabel3.TabIndex = 759
-        Me.KryptonLabel3.Values.Text = ""
+        Me.TotalCallsLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TotalCallsLabel.AutoSize = False
+        Me.TotalCallsLabel.Location = New System.Drawing.Point(3, 3)
+        Me.TotalCallsLabel.Name = "TotalCallsLabel"
+        Me.TotalCallsLabel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
+        Me.TotalCallsLabel.Size = New System.Drawing.Size(126, 96)
+        Me.TotalCallsLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.White
+        Me.TotalCallsLabel.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalCallsLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.TotalCallsLabel.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.TotalCallsLabel.TabIndex = 759
+        Me.TotalCallsLabel.Values.Text = ""
         '
         'KryptonNumericUpDown1
         '
@@ -7178,12 +7169,31 @@ Partial Class BingoFRM
         Me.manualselectbtn.TabIndex = 808
         Me.manualselectbtn.Values.Text = "manual picking"
         '
-        'Form1
+        'KryptonButton3
+        '
+        Me.KryptonButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.KryptonButton3.Location = New System.Drawing.Point(377, 30)
+        Me.KryptonButton3.Name = "KryptonButton3"
+        Me.KryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.KryptonButton3.Size = New System.Drawing.Size(67, 28)
+        Me.KryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
+        Me.KryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton3.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.KryptonButton3.StateCommon.Border.Rounding = 0
+        Me.KryptonButton3.StateCommon.Border.Width = 0
+        Me.KryptonButton3.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KryptonButton3.TabIndex = 811
+        Me.KryptonButton3.Values.Text = "option"
+        '
+        'BingoFRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(1351, 749)
+        Me.Controls.Add(Me.KryptonButton3)
         Me.Controls.Add(Me.manualselectbtn)
         Me.Controls.Add(Me.KryptonButton2)
         Me.Controls.Add(Me.KryptonButton1)
@@ -7198,7 +7208,6 @@ Partial Class BingoFRM
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ComboBox2)
@@ -7206,7 +7215,7 @@ Partial Class BingoFRM
         Me.Controls.Add(Me.KryptonHeaderGroup4)
         Me.Controls.Add(Me.KryptonHeaderGroup7)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.Name = "BingoFRM"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LETS GO BINGO"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -7416,14 +7425,13 @@ Partial Class BingoFRM
     Friend WithEvents animestarter As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents CallToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AnimationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label2 As Label
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents KryptonHeaderGroup5 As ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup
-    Friend WithEvents KryptonLabel2 As ComponentFactory.Krypton.Toolkit.KryptonLabel
+    Friend WithEvents LastCallLabel As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonHeaderGroup6 As ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup
-    Friend WithEvents KryptonLabel3 As ComponentFactory.Krypton.Toolkit.KryptonLabel
+    Friend WithEvents TotalCallsLabel As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonNumericUpDown1 As ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown
     Friend WithEvents KryptonCheckButton76 As ComponentFactory.Krypton.Toolkit.KryptonCheckButton
     Friend WithEvents WinnerToolStripMenuItem As ToolStripMenuItem
@@ -7607,4 +7615,5 @@ Partial Class BingoFRM
     Friend WithEvents KryptonButton1 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents KryptonButton2 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents manualselectbtn As ComponentFactory.Krypton.Toolkit.KryptonCheckButton
+    Friend WithEvents KryptonButton3 As ComponentFactory.Krypton.Toolkit.KryptonButton
 End Class

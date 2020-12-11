@@ -30,6 +30,7 @@ Partial Class HomeFRM
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.KryptonButton4 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.TBOXdatasource = New System.Windows.Forms.ComboBox()
+        Me.KryptonButton5 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +52,7 @@ Partial Class HomeFRM
         'KryptonButton2
         '
         Me.KryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton2.Location = New System.Drawing.Point(189, 274)
+        Me.KryptonButton2.Location = New System.Drawing.Point(491, 279)
         Me.KryptonButton2.Name = "KryptonButton2"
         Me.KryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton2.Size = New System.Drawing.Size(247, 59)
@@ -124,12 +125,28 @@ Partial Class HomeFRM
         Me.TBOXdatasource.Size = New System.Drawing.Size(247, 28)
         Me.TBOXdatasource.TabIndex = 7
         '
-        'Form3
+        'KryptonButton5
+        '
+        Me.KryptonButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.KryptonButton5.Location = New System.Drawing.Point(189, 274)
+        Me.KryptonButton5.Name = "KryptonButton5"
+        Me.KryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.KryptonButton5.Size = New System.Drawing.Size(247, 59)
+        Me.KryptonButton5.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.KryptonButton5.StateCommon.Border.Rounding = 0
+        Me.KryptonButton5.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.KryptonButton5.TabIndex = 8
+        Me.KryptonButton5.Values.Text = "RAFFLE"
+        '
+        'HomeFRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(455, 422)
+        Me.ClientSize = New System.Drawing.Size(453, 422)
+        Me.Controls.Add(Me.KryptonButton5)
         Me.Controls.Add(Me.TBOXdatasource)
         Me.Controls.Add(Me.KryptonButton4)
         Me.Controls.Add(Me.KryptonButton3)
@@ -139,7 +156,7 @@ Partial Class HomeFRM
         Me.Controls.Add(Me.PictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MinimumSize = New System.Drawing.Size(464, 452)
-        Me.Name = "Form3"
+        Me.Name = "HomeFRM"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -154,4 +171,5 @@ Partial Class HomeFRM
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents KryptonButton4 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents TBOXdatasource As ComboBox
+    Friend WithEvents KryptonButton5 As ComponentFactory.Krypton.Toolkit.KryptonButton
 End Class

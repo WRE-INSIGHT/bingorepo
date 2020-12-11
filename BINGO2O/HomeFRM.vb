@@ -21,4 +21,9 @@
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TBOXdatasource.SelectedIndex = 1
     End Sub
+
+    Private Sub KryptonButton5_Click(sender As Object, e As EventArgs) Handles KryptonButton5.Click
+        getConnectionString(TBOXdatasource.Text)
+        DisplayRaffleDrawWinnersFRM.Show()
+    End Sub
 End Class

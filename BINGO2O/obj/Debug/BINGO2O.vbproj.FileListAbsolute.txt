@@ -87,3 +87,5 @@ C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.HomeFRM.resources
 C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.CheckerFRM.resources
 C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.SongsFRM.resources
 C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.imageviewFRM.resources
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.BingoOption.resources
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.DisplayRaffleDrawWinnersFRM.resources

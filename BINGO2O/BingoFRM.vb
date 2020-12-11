@@ -7,11 +7,11 @@ Public Class BingoFRM
     Dim speech As Object = CreateObject("SAPI.SpVoice")
 
     Private Sub reset()
-        KryptonLabel2.Text = ""
-        labeltext.Text = "Let's play Bingo!"
+        LastCallLabel.Text = ""
+        patternSTR = "Let's play Bingo!"
         letsgoprice = "PATTERN"
         KryptonNumericUpDown1.Text = "0"
-        Label2.Text = letsgoprice
+        priceSTR = letsgoprice
         a1.Checked = False
         a2.Checked = False
         a3.Checked = False
@@ -69,8 +69,8 @@ Public Class BingoFRM
 
         Label1.Text = ""
         KryptonLabel1.Text = ""
-        KryptonLabel2.Text = ""
-        KryptonLabel3.Text = ""
+        LastCallLabel.Text = ""
+        TotalCallsLabel.Text = ""
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
         ComboBox3.Items.Clear()
@@ -562,7 +562,7 @@ Public Class BingoFRM
     End Sub
     Public Sub mynumbers(ByVal val As Integer)
 
-        KryptonLabel3.Text = ComboBox4.Items.Count
+        TotalCallsLabel.Text = ComboBox4.Items.Count
         If BCheckButton.Checked = True Then
 
             If val = 1 Then
@@ -806,7 +806,7 @@ Public Class BingoFRM
     End Sub
 
     Public Sub mynumbersoff(ByVal val As Integer)
-        KryptonLabel3.Text = ComboBox4.Items.Count
+        TotalCallsLabel.Text = ComboBox4.Items.Count
         If val = 1 Then
             KryptonCheckButton1.Checked = False
         End If
@@ -1120,31 +1120,31 @@ Public Class BingoFRM
             Dim num2 As Integer = Integer.Parse(ComboBox3.Text)
             If BCheckButton.Checked = True Then
                 If num2 >= 1 And num2 <= 15 Then
-                    KryptonLabel2.Text = "B" + "" & num2 & ""
+                    LastCallLabel.Text = "B" + "" & num2 & ""
                 End If
             End If
 
             If ICheckButton.Checked = True Then
                 If num2 >= 16 And num2 <= 30 Then
-                    KryptonLabel2.Text = "I" + "" & num2 & ""
+                    LastCallLabel.Text = "I" + "" & num2 & ""
                 End If
             End If
 
             If NCheckButton.Checked = True Then
                 If num2 >= 31 And num2 <= 45 Then
-                    KryptonLabel2.Text = "N" + "" & num2 & ""
+                    LastCallLabel.Text = "N" + "" & num2 & ""
                 End If
             End If
 
             If GCheckButton.Checked = True Then
                 If num2 >= 46 And num2 <= 60 Then
-                    KryptonLabel2.Text = "G" + "" & num2 & ""
+                    LastCallLabel.Text = "G" + "" & num2 & ""
                 End If
             End If
 
             If OCheckButton.Checked = True Then
                 If num2 >= 61 And num2 <= 75 Then
-                    KryptonLabel2.Text = "O" + "" & num2 & ""
+                    LastCallLabel.Text = "O" + "" & num2 & ""
                 End If
             End If
         End If
@@ -1403,8 +1403,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + insidesquareprice.Text
         KryptonNumericUpDown1.Text = insidesquarewinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Any Horizontal Line"
+        priceSTR = letsgoprice
+        patternSTR = "Any Horizontal Line"
 
     End Sub
 
@@ -1420,13 +1420,13 @@ Public Class BingoFRM
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If Label2.Text = letsgoprice Then
-            Label2.Text = " "
-        ElseIf Label2.Text = " " Then
-            Label2.Text = letsgoprice
-        End If
-        KryptonHeaderGroup1.ValuesSecondary.Heading = Label2.Text
-        KryptonHeaderGroup2.ValuesSecondary.Heading = Label2.Text
+        'If priceSTR = letsgoprice Then
+        '    priceSTR = " "
+        'ElseIf priceSTR = " " Then
+        '    priceSTR = letsgoprice
+        'End If
+        KryptonHeaderGroup1.ValuesSecondary.Heading = priceSTR
+        KryptonHeaderGroup2.ValuesSecondary.Heading = priceSTR
     End Sub
 
     Private Sub HorizontalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HorizontalToolStripMenuItem.Click
@@ -1484,8 +1484,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + horizontalprice.Text
         KryptonNumericUpDown1.Text = horizontalwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Any Vertical Line"
+        priceSTR = letsgoprice
+        patternSTR = "Any Vertical Line"
     End Sub
 
     Private Sub KToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KToolStripMenuItem.Click
@@ -1543,8 +1543,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + kprice.Text
         KryptonNumericUpDown1.Text = kwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "K"
+        priceSTR = letsgoprice
+        patternSTR = "K"
     End Sub
 
     Private Sub MToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MToolStripMenuItem.Click
@@ -1602,8 +1602,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + mprice.Text
         KryptonNumericUpDown1.Text = mwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "M"
+        priceSTR = letsgoprice
+        patternSTR = "M"
     End Sub
 
     Private Sub DToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DToolStripMenuItem.Click
@@ -1661,8 +1661,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + dprice.Text
         KryptonNumericUpDown1.Text = dwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "D"
+        priceSTR = letsgoprice
+        patternSTR = "D"
     End Sub
 
     Private Sub IToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IToolStripMenuItem.Click
@@ -1720,8 +1720,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + iprice.Text
         KryptonNumericUpDown1.Text = iwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "I"
+        priceSTR = letsgoprice
+        patternSTR = "I"
     End Sub
 
 
@@ -2718,8 +2718,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + customprice.Text
         KryptonNumericUpDown1.Text = customwinner.Text
-        labeltext.Text = "Custom Pattern"
-        Label2.Text = letsgoprice
+        patternSTR = "Custom Pattern"
+        priceSTR = letsgoprice
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
@@ -2740,7 +2740,7 @@ Public Class BingoFRM
 
         Dim x = KryptonPanel1.Size.Width - KryptonLabel4.Size.Width
 
-        KryptonLabel4.Text = labeltext.Text
+        KryptonLabel4.Text = patternSTR
         Timer3.Interval = labelspeed.Text
         KryptonLabel4.Location = New Point(KryptonLabel4.Location.X + 4, KryptonLabel4.Location.Y)
         If KryptonLabel4.Location.X > x Then
@@ -2765,7 +2765,7 @@ Public Class BingoFRM
             KryptonPanel1.StateCommon.Color2 = Color.White
             KryptonLabel4.BackColor = Color.White
         End If
-        KryptonLabel4.Text = labeltext.Text
+        KryptonLabel4.Text = patternSTR
         Timer4.Interval = labelspeed.Text
         KryptonLabel4.Location = New Point(KryptonLabel4.Location.X - 4, KryptonLabel4.Location.Y)
         If KryptonLabel4.Location.X < 10 Then
@@ -2871,8 +2871,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + blackprice.Text
         KryptonNumericUpDown1.Text = blackwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Blackout"
+        priceSTR = letsgoprice
+        patternSTR = "Blackout"
     End Sub
 
     Private Sub SemiBlackoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SemiBlackoutToolStripMenuItem.Click
@@ -2930,8 +2930,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + semiprice.Text
         KryptonNumericUpDown1.Text = semiwinner.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Semi-Blackout"
+        priceSTR = letsgoprice
+        patternSTR = "Semi-Blackout"
     End Sub
 
     Private Sub DoubleVerticalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DoubleVerticalToolStripMenuItem.Click
@@ -2989,8 +2989,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + doublehprice.Text
         KryptonNumericUpDown1.Text = doublevwin.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Any Double Vertical Line"
+        priceSTR = letsgoprice
+        patternSTR = "Any Double Vertical Line"
     End Sub
 
     Private Sub DoubleHorizontalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DoubleHorizontalToolStripMenuItem.Click
@@ -3048,8 +3048,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + doublevprice.Text
         KryptonNumericUpDown1.Text = doublehwin.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Any Double Horizontal Line"
+        priceSTR = letsgoprice
+        patternSTR = "Any Double Horizontal Line"
     End Sub
 
     Private Sub IntersectingHVLinesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IntersectingHVLinesToolStripMenuItem.Click
@@ -3107,8 +3107,8 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + interprice.Text
         KryptonNumericUpDown1.Text = interwin.Text
-        Label2.Text = letsgoprice
-        labeltext.Text = "Any Intersecting Vertical And Horizontal Line"
+        priceSTR = letsgoprice
+        patternSTR = "Any Intersecting Vertical And Horizontal Line"
     End Sub
 
     Private Sub LastManStandingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LastManStandingToolStripMenuItem.Click
@@ -3166,7 +3166,7 @@ Public Class BingoFRM
 
         letsgoprice = "PRICE: " + lastprice.Text
         KryptonNumericUpDown1.Text = lastwinner.Text
-        labeltext.Text = "Last Man Standing"
+        patternSTR = "Last Man Standing"
     End Sub
 
     Private Sub KryptonButton1_Click(sender As Object, e As EventArgs) Handles KryptonButton1.Click
@@ -3192,5 +3192,9 @@ Public Class BingoFRM
             PAUSE.PerformClick()
         End If
         CheckerFRM.ShowDialog()
+    End Sub
+
+    Private Sub KryptonButton3_Click(sender As Object, e As EventArgs) Handles KryptonButton3.Click
+        BingoOption.ShowDialog()
     End Sub
 End Class

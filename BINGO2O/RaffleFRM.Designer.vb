@@ -50,6 +50,7 @@ Partial Class RaffleFRM
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.KryptonPanel2 = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
+        Me.receiverTBOX = New System.Windows.Forms.ComboBox()
         Me.KryptonButton9 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -105,7 +106,6 @@ Partial Class RaffleFRM
         Me.KryptonButton7 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton8 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.receiverTBOX = New System.Windows.Forms.ComboBox()
         CType(Me.KryptonDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -453,6 +453,19 @@ Partial Class RaffleFRM
         Me.KryptonPanel2.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Dashed
         Me.KryptonPanel2.StateCommon.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch
         Me.KryptonPanel2.TabIndex = 815
+        '
+        'receiverTBOX
+        '
+        Me.receiverTBOX.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.receiverTBOX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.receiverTBOX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.receiverTBOX.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.receiverTBOX.FormattingEnabled = True
+        Me.receiverTBOX.Location = New System.Drawing.Point(399, 536)
+        Me.receiverTBOX.Name = "receiverTBOX"
+        Me.receiverTBOX.Size = New System.Drawing.Size(121, 26)
+        Me.receiverTBOX.TabIndex = 814
         '
         'KryptonButton9
         '
@@ -1236,19 +1249,6 @@ Partial Class RaffleFRM
         '
         'Timer2
         '
-        '
-        'receiverTBOX
-        '
-        Me.receiverTBOX.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.receiverTBOX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
-        Me.receiverTBOX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.receiverTBOX.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.receiverTBOX.FormattingEnabled = True
-        Me.receiverTBOX.Location = New System.Drawing.Point(399, 536)
-        Me.receiverTBOX.Name = "receiverTBOX"
-        Me.receiverTBOX.Size = New System.Drawing.Size(121, 26)
-        Me.receiverTBOX.TabIndex = 814
         '
         'RaffleFRM
         '

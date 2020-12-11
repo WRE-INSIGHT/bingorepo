@@ -116,6 +116,18 @@
       <DependentUpon>BingoFRM.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BingoOption.Designer.vb">
+      <DependentUpon>BingoOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BingoOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayRaffleDrawWinnersFRM.Designer.vb">
+      <DependentUpon>DisplayRaffleDrawWinnersFRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayRaffleDrawWinnersFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="imageviewFRM.Designer.vb">
       <DependentUpon>imageviewFRM.vb</DependentUpon>
     </Compile>
@@ -140,6 +152,7 @@
     <Compile Include="CheckerFRM.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Model\RaffleModel.vb" />
     <Compile Include="SongsFRM.Designer.vb">
       <DependentUpon>SongsFRM.vb</DependentUpon>
     </Compile>
@@ -162,10 +175,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Model\WinnerModel.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BingoFRM.resx">
       <DependentUpon>BingoFRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BingoOption.resx">
+      <DependentUpon>BingoOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayRaffleDrawWinnersFRM.resx">
+      <DependentUpon>DisplayRaffleDrawWinnersFRM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="imageviewFRM.resx">
       <DependentUpon>imageviewFRM.vb</DependentUpon>
