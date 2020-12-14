@@ -36,7 +36,7 @@ Partial Class RaffleFRM
         Me.KryptonButton140 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton141 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.rBTN = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,7 +51,7 @@ Partial Class RaffleFRM
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.KryptonPanel2 = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.receiverTBOX = New System.Windows.Forms.ComboBox()
-        Me.KryptonButton9 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.cBTN = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.KryptonButton4 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
@@ -59,7 +59,7 @@ Partial Class RaffleFRM
         Me.KryptonButton14 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton3 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton2 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.priceLABEL = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
+        Me.raffleItemLABEL = New ComponentFactory.Krypton.Toolkit.KryptonLabel()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
@@ -106,6 +106,7 @@ Partial Class RaffleFRM
         Me.KryptonButton7 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton8 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.WinnersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -297,27 +298,27 @@ Partial Class RaffleFRM
         Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox1.TabIndex = 445
         '
-        'KryptonButton1
+        'rBTN
         '
-        Me.KryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton1.Enabled = False
-        Me.KryptonButton1.Location = New System.Drawing.Point(3, 325)
-        Me.KryptonButton1.Name = "KryptonButton1"
-        Me.KryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.KryptonButton1.Size = New System.Drawing.Size(100, 100)
-        Me.KryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Yellow
-        Me.KryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Yellow
-        Me.KryptonButton1.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.rBTN.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.rBTN.Enabled = False
+        Me.rBTN.Location = New System.Drawing.Point(3, 325)
+        Me.rBTN.Name = "rBTN"
+        Me.rBTN.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.rBTN.Size = New System.Drawing.Size(100, 100)
+        Me.rBTN.StateCommon.Back.Color1 = System.Drawing.Color.Yellow
+        Me.rBTN.StateCommon.Back.Color2 = System.Drawing.Color.Yellow
+        Me.rBTN.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.KryptonButton1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias
-        Me.KryptonButton1.StateCommon.Border.Rounding = 50
-        Me.KryptonButton1.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton1.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.KryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.Red
-        Me.KryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.Red
-        Me.KryptonButton1.TabIndex = 448
-        Me.KryptonButton1.Values.Text = "000"
+        Me.rBTN.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias
+        Me.rBTN.StateCommon.Border.Rounding = 50
+        Me.rBTN.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rBTN.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.rBTN.StatePressed.Back.Color1 = System.Drawing.Color.Red
+        Me.rBTN.StatePressed.Back.Color2 = System.Drawing.Color.Red
+        Me.rBTN.TabIndex = 448
+        Me.rBTN.Values.Text = "000"
         '
         'MenuStrip1
         '
@@ -331,7 +332,7 @@ Partial Class RaffleFRM
         '
         'GameToolStripMenuItem
         '
-        Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResetToolStripMenuItem, Me.EditItemsToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResetToolStripMenuItem, Me.EditItemsToolStripMenuItem, Me.WinnersToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
         Me.GameToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.GameToolStripMenuItem.Text = "Game"
@@ -387,7 +388,7 @@ Partial Class RaffleFRM
         Me.KryptonLabel5.AutoSize = False
         Me.KryptonLabel5.Location = New System.Drawing.Point(0, 3)
         Me.KryptonLabel5.Name = "KryptonLabel5"
-        Me.KryptonLabel5.Size = New System.Drawing.Size(956, 565)
+        Me.KryptonLabel5.Size = New System.Drawing.Size(956, 592)
         Me.KryptonLabel5.StateCommon.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
         Me.KryptonLabel5.StateCommon.Image.ImageV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
         Me.KryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.LemonChiffon
@@ -407,10 +408,10 @@ Partial Class RaffleFRM
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Location = New System.Drawing.Point(3, 27)
+        Me.TabControl1.Location = New System.Drawing.Point(3, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(973, 603)
+        Me.TabControl1.Size = New System.Drawing.Size(973, 630)
         Me.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.TabControl1.TabIndex = 799
         '
@@ -430,24 +431,24 @@ Partial Class RaffleFRM
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(965, 577)
+        Me.TabPage2.Size = New System.Drawing.Size(965, 604)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Raffle"
         '
         'KryptonPanel2
         '
         Me.KryptonPanel2.Controls.Add(Me.receiverTBOX)
-        Me.KryptonPanel2.Controls.Add(Me.KryptonButton9)
+        Me.KryptonPanel2.Controls.Add(Me.cBTN)
         Me.KryptonPanel2.Controls.Add(Me.PictureBox1)
         Me.KryptonPanel2.Controls.Add(Me.PictureBox2)
         Me.KryptonPanel2.Controls.Add(Me.KryptonButton4)
-        Me.KryptonPanel2.Controls.Add(Me.KryptonButton1)
+        Me.KryptonPanel2.Controls.Add(Me.rBTN)
         Me.KryptonPanel2.Controls.Add(Me.KryptonPanel1)
         Me.KryptonPanel2.Controls.Add(Me.KryptonLabel5)
         Me.KryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KryptonPanel2.Location = New System.Drawing.Point(3, 3)
         Me.KryptonPanel2.Name = "KryptonPanel2"
-        Me.KryptonPanel2.Size = New System.Drawing.Size(959, 571)
+        Me.KryptonPanel2.Size = New System.Drawing.Size(959, 598)
         Me.KryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Purple
         Me.KryptonPanel2.StateCommon.Color2 = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.KryptonPanel2.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Dashed
@@ -462,34 +463,34 @@ Partial Class RaffleFRM
         Me.receiverTBOX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.receiverTBOX.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.receiverTBOX.FormattingEnabled = True
-        Me.receiverTBOX.Location = New System.Drawing.Point(399, 536)
+        Me.receiverTBOX.Location = New System.Drawing.Point(399, 563)
         Me.receiverTBOX.Name = "receiverTBOX"
         Me.receiverTBOX.Size = New System.Drawing.Size(121, 26)
         Me.receiverTBOX.TabIndex = 814
         '
-        'KryptonButton9
+        'cBTN
         '
-        Me.KryptonButton9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KryptonButton9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton9.Enabled = False
-        Me.KryptonButton9.Location = New System.Drawing.Point(851, 325)
-        Me.KryptonButton9.Name = "KryptonButton9"
-        Me.KryptonButton9.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
-        Me.KryptonButton9.Size = New System.Drawing.Size(100, 100)
-        Me.KryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.Aqua
-        Me.KryptonButton9.StateCommon.Back.Color2 = System.Drawing.Color.Cyan
-        Me.KryptonButton9.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.cBTN.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cBTN.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cBTN.Enabled = False
+        Me.cBTN.Location = New System.Drawing.Point(851, 325)
+        Me.cBTN.Name = "cBTN"
+        Me.cBTN.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
+        Me.cBTN.Size = New System.Drawing.Size(100, 100)
+        Me.cBTN.StateCommon.Back.Color1 = System.Drawing.Color.Aqua
+        Me.cBTN.StateCommon.Back.Color2 = System.Drawing.Color.Cyan
+        Me.cBTN.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.KryptonButton9.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias
-        Me.KryptonButton9.StateCommon.Border.Rounding = 50
-        Me.KryptonButton9.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton9.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.KryptonButton9.StatePressed.Back.Color1 = System.Drawing.Color.Red
-        Me.KryptonButton9.StatePressed.Back.Color2 = System.Drawing.Color.Red
-        Me.KryptonButton9.TabIndex = 812
-        Me.KryptonButton9.Values.Text = "000"
-        Me.KryptonButton9.Visible = False
+        Me.cBTN.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias
+        Me.cBTN.StateCommon.Border.Rounding = 50
+        Me.cBTN.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cBTN.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.cBTN.StatePressed.Back.Color1 = System.Drawing.Color.Red
+        Me.cBTN.StatePressed.Back.Color2 = System.Drawing.Color.Red
+        Me.cBTN.TabIndex = 812
+        Me.cBTN.Values.Text = "000"
+        Me.cBTN.Visible = False
         '
         'PictureBox1
         '
@@ -520,7 +521,7 @@ Partial Class RaffleFRM
         '
         Me.KryptonButton4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.KryptonButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton4.Location = New System.Drawing.Point(526, 536)
+        Me.KryptonButton4.Location = New System.Drawing.Point(526, 563)
         Me.KryptonButton4.Name = "KryptonButton4"
         Me.KryptonButton4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton4.Size = New System.Drawing.Size(79, 26)
@@ -540,8 +541,8 @@ Partial Class RaffleFRM
         Me.KryptonPanel1.Controls.Add(Me.KryptonButton14)
         Me.KryptonPanel1.Controls.Add(Me.KryptonButton3)
         Me.KryptonPanel1.Controls.Add(Me.KryptonButton2)
-        Me.KryptonPanel1.Controls.Add(Me.priceLABEL)
-        Me.KryptonPanel1.Location = New System.Drawing.Point(3, 406)
+        Me.KryptonPanel1.Controls.Add(Me.raffleItemLABEL)
+        Me.KryptonPanel1.Location = New System.Drawing.Point(3, 433)
         Me.KryptonPanel1.Name = "KryptonPanel1"
         Me.KryptonPanel1.Size = New System.Drawing.Size(953, 115)
         Me.KryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Black
@@ -554,10 +555,9 @@ Partial Class RaffleFRM
         Me.KryptonButton14.Cursor = System.Windows.Forms.Cursors.Hand
         Me.KryptonButton14.Location = New System.Drawing.Point(437, 77)
         Me.KryptonButton14.Name = "KryptonButton14"
-        Me.KryptonButton14.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton14.Size = New System.Drawing.Size(78, 41)
-        Me.KryptonButton14.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton14.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton14.StateCommon.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton14.StateCommon.Back.Color2 = System.Drawing.Color.Black
         Me.KryptonButton14.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -565,12 +565,14 @@ Partial Class RaffleFRM
         Me.KryptonButton14.StateCommon.Border.Width = 0
         Me.KryptonButton14.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
         Me.KryptonButton14.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton14.StateNormal.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton14.StateNormal.Back.Color2 = System.Drawing.Color.Transparent
-        Me.KryptonButton14.StatePressed.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton14.StatePressed.Back.Color2 = System.Drawing.Color.Transparent
-        Me.KryptonButton14.StateTracking.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton14.StateTracking.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton14.StateDisabled.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton14.StateDisabled.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton14.StateNormal.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton14.StateNormal.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton14.StatePressed.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton14.StatePressed.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton14.StateTracking.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton14.StateTracking.Back.Color2 = System.Drawing.Color.Black
         Me.KryptonButton14.TabIndex = 805
         Me.KryptonButton14.Values.Text = "HINT"
         '
@@ -580,10 +582,9 @@ Partial Class RaffleFRM
         Me.KryptonButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.KryptonButton3.Location = New System.Drawing.Point(634, 77)
         Me.KryptonButton3.Name = "KryptonButton3"
-        Me.KryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton3.Size = New System.Drawing.Size(78, 41)
-        Me.KryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Black
         Me.KryptonButton3.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -591,12 +592,14 @@ Partial Class RaffleFRM
         Me.KryptonButton3.StateCommon.Border.Width = 0
         Me.KryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
         Me.KryptonButton3.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton3.StateNormal.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton3.StateNormal.Back.Color2 = System.Drawing.Color.Transparent
-        Me.KryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton3.StatePressed.Back.Color2 = System.Drawing.Color.Transparent
-        Me.KryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton3.StateDisabled.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton3.StateDisabled.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton3.StateNormal.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton3.StateNormal.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton3.StatePressed.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton3.StatePressed.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton3.StateTracking.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Black
         Me.KryptonButton3.TabIndex = 804
         Me.KryptonButton3.Values.Text = "GIVE UP"
         '
@@ -606,10 +609,9 @@ Partial Class RaffleFRM
         Me.KryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.KryptonButton2.Location = New System.Drawing.Point(240, 77)
         Me.KryptonButton2.Name = "KryptonButton2"
-        Me.KryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton2.Size = New System.Drawing.Size(78, 41)
-        Me.KryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Black
         Me.KryptonButton2.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
@@ -617,30 +619,32 @@ Partial Class RaffleFRM
         Me.KryptonButton2.StateCommon.Border.Width = 0
         Me.KryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
         Me.KryptonButton2.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KryptonButton2.StateNormal.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton2.StateNormal.Back.Color2 = System.Drawing.Color.Transparent
-        Me.KryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton2.StatePressed.Back.Color2 = System.Drawing.Color.Transparent
-        Me.KryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.Transparent
-        Me.KryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.Transparent
+        Me.KryptonButton2.StateDisabled.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton2.StateDisabled.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton2.StateNormal.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton2.StateNormal.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton2.StatePressed.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton2.StatePressed.Back.Color2 = System.Drawing.Color.Black
+        Me.KryptonButton2.StateTracking.Back.Color1 = System.Drawing.Color.Black
+        Me.KryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.Black
         Me.KryptonButton2.TabIndex = 802
         Me.KryptonButton2.Values.Text = "SHUFFLE"
         '
-        'priceLABEL
+        'raffleItemLABEL
         '
-        Me.priceLABEL.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.raffleItemLABEL.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.priceLABEL.AutoSize = False
-        Me.priceLABEL.Location = New System.Drawing.Point(-3, -67)
-        Me.priceLABEL.Name = "priceLABEL"
-        Me.priceLABEL.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
-        Me.priceLABEL.Size = New System.Drawing.Size(954, 230)
-        Me.priceLABEL.StateCommon.ShortText.Color1 = System.Drawing.Color.White
-        Me.priceLABEL.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.priceLABEL.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
-        Me.priceLABEL.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.priceLABEL.TabIndex = 803
-        Me.priceLABEL.Values.Text = "PRICE"
+        Me.raffleItemLABEL.AutoSize = False
+        Me.raffleItemLABEL.Location = New System.Drawing.Point(-3, -67)
+        Me.raffleItemLABEL.Name = "raffleItemLABEL"
+        Me.raffleItemLABEL.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue
+        Me.raffleItemLABEL.Size = New System.Drawing.Size(954, 230)
+        Me.raffleItemLABEL.StateCommon.ShortText.Color1 = System.Drawing.Color.White
+        Me.raffleItemLABEL.StateCommon.ShortText.Font = New System.Drawing.Font("Tahoma", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.raffleItemLABEL.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias
+        Me.raffleItemLABEL.StateCommon.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.raffleItemLABEL.TabIndex = 803
+        Me.raffleItemLABEL.Values.Text = "PRICE"
         '
         'ComboBox6
         '
@@ -1250,6 +1254,12 @@ Partial Class RaffleFRM
         'Timer2
         '
         '
+        'WinnersToolStripMenuItem
+        '
+        Me.WinnersToolStripMenuItem.Name = "WinnersToolStripMenuItem"
+        Me.WinnersToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.WinnersToolStripMenuItem.Text = "Winners"
+        '
         'RaffleFRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1304,7 +1314,7 @@ Partial Class RaffleFRM
     Friend WithEvents KryptonButton140 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents KryptonButton141 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents KryptonButton1 As ComponentFactory.Krypton.Toolkit.KryptonButton
+    Friend WithEvents rBTN As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents GameToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ResetToolStripMenuItem As ToolStripMenuItem
@@ -1319,7 +1329,7 @@ Partial Class RaffleFRM
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox5 As ComboBox
     Friend WithEvents KryptonButton2 As ComponentFactory.Krypton.Toolkit.KryptonButton
-    Friend WithEvents priceLABEL As ComponentFactory.Krypton.Toolkit.KryptonLabel
+    Friend WithEvents raffleItemLABEL As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonButton3 As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents KryptonLabel4 As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents KryptonButton4 As ComponentFactory.Krypton.Toolkit.KryptonButton
@@ -1345,7 +1355,7 @@ Partial Class RaffleFRM
     Friend WithEvents ComboBox6 As ComboBox
     Friend WithEvents ComboBox7 As ComboBox
     Friend WithEvents ProgressBar3 As ProgressBar
-    Friend WithEvents KryptonButton9 As ComponentFactory.Krypton.Toolkit.KryptonButton
+    Friend WithEvents cBTN As ComponentFactory.Krypton.Toolkit.KryptonButton
     Friend WithEvents Timer2 As Timer
     Friend WithEvents EditItemsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TabPage5 As TabPage
@@ -1374,4 +1384,5 @@ Partial Class RaffleFRM
     Friend WithEvents KryptonLabel3 As ComponentFactory.Krypton.Toolkit.KryptonLabel
     Friend WithEvents TBOXpath As ComponentFactory.Krypton.Toolkit.KryptonTextBox
     Friend WithEvents receiverTBOX As ComboBox
+    Friend WithEvents WinnersToolStripMenuItem As ToolStripMenuItem
 End Class

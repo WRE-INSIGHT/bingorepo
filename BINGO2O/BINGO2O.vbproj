@@ -176,6 +176,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Model\WinnerModel.vb" />
+    <Compile Include="WinnersFRM.Designer.vb">
+      <DependentUpon>WinnersFRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WinnersFRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BingoFRM.resx">
@@ -207,6 +213,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinnersFRM.resx">
+      <DependentUpon>WinnersFRM.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

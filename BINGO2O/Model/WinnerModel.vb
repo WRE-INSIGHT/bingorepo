@@ -29,6 +29,7 @@ Public Class WinnerModel
         End Using
     End Function
 
+
     Public Function addWinner(ByVal w As String, ByVal i As String, ByVal n As String) As Integer
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
             Dim sql As String = "insert into winnertb (winner,item,number) values ('" & w & "','" & i & "','" & n & "')"
@@ -54,14 +55,16 @@ Public Class WinnerModel
         Dim dt As New DataSet
         dt.Clear()
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Using sqlcmd As SqlCommand = New SqlCommand("select employee from checker", sqlcon)
+            Using sqlcmd As SqlCommand = New SqlCommand("select serial,employee from checker", sqlcon)
                 Try
                     sqlcon.Open()
                     Using da As SqlDataAdapter = New SqlDataAdapter
                         da.SelectCommand = sqlcmd
                         da.Fill(dt, "checker")
                         bs.DataSource = dt
+
                         bs.DataMember = "checker"
+
                     End Using
 
                 Catch ex As Exception

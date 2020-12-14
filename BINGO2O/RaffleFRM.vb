@@ -186,20 +186,20 @@ where id ='" & ID & "'"
         End Try
     End Sub
 
-    Private Sub KryptonButton1_Click(sender As Object, e As EventArgs) Handles KryptonButton1.Click
+    Private Sub KryptonButton1_Click(sender As Object, e As EventArgs) Handles rBTN.Click
         PictureBox2.Visible = True
         PictureBox1.Visible = False
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        priceLABEL.Text = ""
+        raffleItemLABEL.Text = ""
         ProgressBar1.Increment(1)
         ComboBox5.SelectedIndex = ProgressBar1.Value - 1
         search(ComboBox5.Text)
         BeLazy()
         Timer1.Start()
         Timer1.Interval = 100
-        KryptonButton1.Enabled = False
+        rBTN.Enabled = False
     End Sub
 
     Private Sub ResetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResetToolStripMenuItem.Click
@@ -316,11 +316,11 @@ where id ='" & ID & "'"
             My.Computer.Audio.PlaySystemSound(Media.SystemSounds.Beep)
             Dim mystr As String = selectedraffleitem
             Dim separate = mystr.Split(" ")
-            priceLABEL.Text = ""
+            raffleItemLABEL.Text = ""
             For i As Integer = 0 To separate.Length - 1
                 Dim myrandom As New Random()
                 Dim ShuffledItems = separate(i).OrderBy(Function() myrandom.Next).ToArray()
-                priceLABEL.Text = priceLABEL.Text + " " + ShuffledItems
+                raffleItemLABEL.Text = raffleItemLABEL.Text + " " + ShuffledItems
             Next
         End If
     End Sub
@@ -329,16 +329,18 @@ where id ='" & ID & "'"
 
         Dim mystr As String = selectedraffleitem
         Dim separate = mystr.Split(" ")
-        priceLABEL.Text = ""
+        raffleItemLABEL.Text = ""
         For i As Integer = 0 To separate.Length - 1
             Dim myrandom As New Random()
             Dim ShuffledItems = separate(i).OrderBy(Function() myrandom.Next).ToArray()
-            priceLABEL.Text = priceLABEL.Text + " " + ShuffledItems
+            raffleItemLABEL.Text = raffleItemLABEL.Text + " " + ShuffledItems
         Next
     End Sub
 
     Private Sub KryptonButton3_Click(sender As Object, e As EventArgs) Handles KryptonButton3.Click
-        priceLABEL.Text = selectedraffleitem
+        raffleItemLABEL.Text = selectedraffleitem
+        rafflenumber = KryptonLabel5.Text
+        imageviewFRM.itemLBL.Text = selectedraffleitem
         imageviewFRM.ShowDialog()
     End Sub
 
@@ -349,50 +351,62 @@ where id ='" & ID & "'"
     End Sub
     Public Sub received(ByVal number As String)
         Try
-            SQLconnection.Open()
-            Dim rec As String = "update raffletable set received = '" & receiverTBOX.Text & "' where number = '" & number & "'"
-            Dim sqlcmd As SqlCommand = New SqlCommand(rec, SQLconnection)
-            sqlcmd.ExecuteNonQuery()
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                sqlcon.Open()
+                Using sqlcmd As SqlCommand = New SqlCommand("update raffletable set received = '" & receiverTBOX.Text & "' where number = '" & number & "'", sqlcon)
+                    sqlcmd.ExecuteNonQuery()
+                End Using
+            End Using
             receiverTBOX.SelectedIndex = -1
             receiverTBOX.Focus()
             KryptonButton4.Visible = False
             KryptonLabel5.Text = ""
-            priceLABEL.Text = ""
-            countitem2()
-            countitem1()
+            raffleItemLABEL.Text = ""
+            cBTN.Text = casualItemCount()
+            rBTN.Text = regularItemCount()
         Catch ex As Exception
             MsgBox(ex.ToString)
-        Finally
-            SQLconnection.Close()
         End Try
     End Sub
 
-    Public Sub countitem2()
+    Public Function casualItemCount() As String
         Try
+            Dim x As String = Nothing
             Dim str As String = "select count(item) from raffletable where label = 2 and received=''"
-            Dim cmd As SqlCommand = New SqlCommand(str, SQLconnection)
-            Dim read As SqlDataReader = cmd.ExecuteReader
-            While read.Read
-                KryptonButton9.Text = read(0).ToString
-            End While
-            read.Close()
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                sqlcon.Open()
+                Using sqlcmd As SqlCommand = New SqlCommand(str, sqlcon)
+                    Using rd As SqlDataReader = sqlcmd.ExecuteReader
+                        While rd.Read
+                            x = rd(0).ToString
+                        End While
+                    End Using
+                End Using
+            End Using
+            Return x
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
-    End Sub
-    Public Sub countitem1()
+    End Function
+    Public Function regularItemCount() As String
         Try
+            Dim x As String = Nothing
             Dim str As String = "select count(item) from raffletable where label = 1 and received=''"
-            Dim cmd As SqlCommand = New SqlCommand(str, SQLconnection)
-            Dim read As SqlDataReader = cmd.ExecuteReader
-            While read.Read
-                KryptonButton1.Text = read(0).ToString
-            End While
-            read.Close()
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                sqlcon.Open()
+                Using sqlcmd As SqlCommand = New SqlCommand(str, sqlcon)
+                    Using rd As SqlDataReader = sqlcmd.ExecuteReader
+                        While rd.Read
+                            x = rd(0).ToString
+                        End While
+                    End Using
+                End Using
+            End Using
+            Return x
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
-    End Sub
+    End Function
     Private Sub KryptonButton5_Click(sender As Object, e As EventArgs) Handles KryptonButton5.Click
 
         CNUMBER.Text = CNUMBER.Text.Replace("'", "")
@@ -444,20 +458,20 @@ where id ='" & ID & "'"
         End If
     End Sub
 
-    Private Sub KryptonButton9_Click(sender As Object, e As EventArgs) Handles KryptonButton9.Click
+    Private Sub KryptonButton9_Click(sender As Object, e As EventArgs) Handles cBTN.Click
         PictureBox2.Visible = True
         PictureBox1.Visible = False
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        priceLABEL.Text = ""
+        raffleItemLABEL.Text = ""
         ProgressBar3.Increment(1)
         ComboBox7.SelectedIndex = ProgressBar3.Value - 1
         search(ComboBox7.Text)
         BeLazy()
         Timer2.Start()
         Timer2.Interval = 100
-        KryptonButton9.Enabled = False
+        cBTN.Enabled = False
     End Sub
     Public Sub BeLazy()
         For i = 1 To 15
@@ -479,11 +493,11 @@ where id ='" & ID & "'"
 
             Dim mystr As String = selectedraffleitem
             Dim separate = mystr.Split(" ")
-            priceLABEL.Text = ""
+            raffleItemLABEL.Text = ""
             For i As Integer = 0 To separate.Length - 1
                 Dim myrandom As New Random()
                 Dim ShuffledItems = separate(i).OrderBy(Function() myrandom.Next).ToArray()
-                priceLABEL.Text = priceLABEL.Text + " " + ShuffledItems
+                raffleItemLABEL.Text = raffleItemLABEL.Text + " " + ShuffledItems
             Next
         End If
     End Sub
@@ -498,13 +512,13 @@ where id ='" & ID & "'"
     Private Sub KryptonButton8_Click(sender As Object, e As EventArgs) Handles KryptonButton8.Click
         MYFILL2()
     End Sub
-    Private Sub KryptonLabel3_MouseDown(sender As Object, e As MouseEventArgs) Handles priceLABEL.MouseDown
+    Private Sub KryptonLabel3_MouseDown(sender As Object, e As MouseEventArgs) Handles raffleItemLABEL.MouseDown
         If e.Button = MouseButtons.Right Then
-            KryptonButton1.Enabled = False
-            KryptonButton9.Enabled = True
+            rBTN.Enabled = False
+            cBTN.Enabled = True
         ElseIf e.Button = MouseButtons.Left Then
-            KryptonButton1.Enabled = True
-            KryptonButton9.Enabled = False
+            rBTN.Enabled = True
+            cBTN.Enabled = False
         End If
     End Sub
 
@@ -522,11 +536,11 @@ where id ='" & ID & "'"
 
     Private Sub KryptonLabel5_MouseDown(sender As Object, e As MouseEventArgs) Handles KryptonLabel5.MouseDown
         If e.Button = MouseButtons.Right Then
-            KryptonButton1.Enabled = False
-            KryptonButton9.Enabled = True
+            rBTN.Enabled = False
+            cBTN.Enabled = True
         ElseIf e.Button = MouseButtons.Left Then
-            KryptonButton1.Enabled = True
-            KryptonButton9.Enabled = False
+            rBTN.Enabled = True
+            cBTN.Enabled = False
         End If
     End Sub
 
@@ -537,29 +551,31 @@ where id ='" & ID & "'"
     End Sub
     Public Sub MYFILL3()
         Try
-            SQLconnection.Open()
             Dim DS As New DataSet
-            Dim DA As New SqlDataAdapter
             Dim BS As New BindingSource
             DS.Clear()
             Dim STR As String = "SELECT * FROM RAFFLETABLE"
-            Dim SQLCMD As SqlCommand = New SqlCommand(STR, SQLconnection)
-            DA.SelectCommand = SQLCMD
-            DA.Fill(DS, "RAFFLETABLE")
-            BS.DataSource = DS
-            BS.DataMember = "RAFFLETABLE"
-            KryptonDataGridView3.DataSource = BS
-            KryptonDataGridView3.Columns("ID").Visible = False
-            countitem2()
-            countitem1()
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                sqlcon.Open()
+                Using sqlcmd As SqlCommand = New SqlCommand(STR, sqlcon)
+                    Using da As SqlDataAdapter = New SqlDataAdapter
+                        da.SelectCommand = sqlcmd
+                        da.Fill(DS, "RAFFLETABLE")
+                        BS.DataSource = DS
+                        BS.DataMember = "RAFFLETABLE"
+                        KryptonDataGridView3.DataSource = BS
+                        KryptonDataGridView3.Columns("ID").Visible = False
+                    End Using
+                End Using
+            End Using
+            cBTN.Text = casualItemCount()
+            rBTN.Text = regularItemCount()
             With KryptonDataGridView3
                 .DefaultCellStyle.BackColor = Color.WhiteSmoke
                 .AlternatingRowsDefaultCellStyle.BackColor = Color.White
             End With
         Catch ex As Exception
             MsgBox(ex.ToString)
-        Finally
-            SQLconnection.Close()
         End Try
     End Sub
 
@@ -708,8 +724,8 @@ WHERE ID = '" & ID & "'"
             result = result + " " + (firstletter + word + lastletter)
             word = ""
         Next
-        priceLABEL.Text = ""
-        priceLABEL.Text = Trim(result)
+        raffleItemLABEL.Text = ""
+        raffleItemLABEL.Text = Trim(result)
     End Sub
 
 
@@ -719,7 +735,7 @@ WHERE ID = '" & ID & "'"
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        priceLABEL.Text = ""
+        raffleItemLABEL.Text = ""
         ProgressBar1.Increment(1)
         ComboBox5.SelectedIndex = ProgressBar1.Value - 1
         search(ComboBox5.Text)
@@ -733,12 +749,16 @@ WHERE ID = '" & ID & "'"
 
         KryptonButton4.Visible = False
         ResetToolStripMenuItem.PerformClick()
-        priceLABEL.Text = ""
+        raffleItemLABEL.Text = ""
         ProgressBar3.Increment(1)
         ComboBox7.SelectedIndex = ProgressBar3.Value - 1
         search(ComboBox7.Text)
         BeLazy()
         Timer2.Start()
         Timer2.Interval = 100
+    End Sub
+
+    Private Sub WinnersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WinnersToolStripMenuItem.Click
+        WinnersFRM.Show()
     End Sub
 End Class

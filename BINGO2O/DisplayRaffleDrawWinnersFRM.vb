@@ -26,7 +26,7 @@ Public Class DisplayRaffleDrawWinnersFRM
         bgw.WorkerSupportsCancellation = True
 
         winnerTXT.DataSource = winner.loademployees()
-        winnerTXT.DisplayMember = "employee"
+        winnerTXT.DisplayMember = "serial"
         winnerTXT.ValueMember = "employee"
         searchTxt.DataSource = raffled.raffleitems()
         searchTxt.DisplayMember = "item"
@@ -103,7 +103,7 @@ Public Class DisplayRaffleDrawWinnersFRM
                 If raffled.item = Nothing Then
                     MessageBox.Show("Please select a raffle item", "warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Else
-                    winnerStr = winnerTXT.Text
+                    winnerStr = winnerTXT.SelectedValue.ToString()
                     starter("add winner")
                 End If
 

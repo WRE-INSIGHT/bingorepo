@@ -391,7 +391,7 @@ Partial Class CheckerFRM
         Me.TabControl1.Location = New System.Drawing.Point(3, 1)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(349, 382)
+        Me.TabControl1.Size = New System.Drawing.Size(351, 380)
         Me.TabControl1.TabIndex = 408
         '
         'TabPage2
@@ -400,7 +400,7 @@ Partial Class CheckerFRM
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(341, 356)
+        Me.TabPage2.Size = New System.Drawing.Size(343, 354)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Checker"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -1236,7 +1236,7 @@ Partial Class CheckerFRM
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(341, 356)
+        Me.TabPage1.Size = New System.Drawing.Size(325, 323)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Database"
         '
@@ -1258,7 +1258,7 @@ Partial Class CheckerFRM
         Me.KryptonDataGridView37.RowHeadersWidth = 31
         Me.KryptonDataGridView37.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.KryptonDataGridView37.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.KryptonDataGridView37.Size = New System.Drawing.Size(15, 397)
+        Me.KryptonDataGridView37.Size = New System.Drawing.Size(0, 302)
         Me.KryptonDataGridView37.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList
         Me.KryptonDataGridView37.StateCommon.DataCell.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
@@ -1523,13 +1523,13 @@ Partial Class CheckerFRM
         Me.KryptonButton2.TabIndex = 409
         Me.KryptonButton2.Values.Text = "update"
         '
-        'Form4
+        'CheckerFRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(352, 382)
+        Me.ClientSize = New System.Drawing.Size(354, 380)
         Me.Controls.Add(Me.TabControl1)
-        Me.Name = "Form4"
+        Me.Name = "CheckerFRM"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
