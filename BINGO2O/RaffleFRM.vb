@@ -343,7 +343,7 @@ where id ='" & ID & "'"
         raffleItemLABEL.Text = selectedraffleitem
         rafflenumber = KryptonLabel5.Text
         imageviewFRM.itemLBL.Text = selectedraffleitem
-        imageviewFRM.supplierLBL.Text = selectedsupplier
+        imageviewFRM.supplierLBL.Text = "Sponsored By: " + selectedsupplier
         imageviewFRM.ShowDialog()
     End Sub
 
