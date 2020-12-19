@@ -51,7 +51,6 @@ Partial Class WinnersFRM
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 36.0!, System.Drawing.FontStyle.Bold)
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
         Me.gv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.gv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.gv.ColumnHeadersHeight = 30
         Me.gv.ColumnHeadersVisible = False
         Me.gv.Cursor = System.Windows.Forms.Cursors.Hand

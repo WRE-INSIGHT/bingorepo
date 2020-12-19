@@ -34,5 +34,7 @@ Public Class WinnersFRM
         gv.Columns("received").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         gv.Columns("number").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         gv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        gv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        gv.Columns("number").Width = 150
     End Sub
 End Class
