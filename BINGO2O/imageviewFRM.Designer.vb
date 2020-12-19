@@ -31,6 +31,7 @@ Partial Class imageviewFRM
         Me.checkBTN = New System.Windows.Forms.Button()
         Me.winnerLBL = New System.Windows.Forms.Label()
         Me.itemLBL = New System.Windows.Forms.Label()
+        Me.supplierLBL = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -39,9 +40,9 @@ Partial Class imageviewFRM
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 76)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 128)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(937, 346)
+        Me.PictureBox1.Size = New System.Drawing.Size(937, 294)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -138,12 +139,26 @@ Partial Class imageviewFRM
         Me.itemLBL.Text = "item"
         Me.itemLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'supplierLBL
+        '
+        Me.supplierLBL.BackColor = System.Drawing.Color.Black
+        Me.supplierLBL.Dock = System.Windows.Forms.DockStyle.Top
+        Me.supplierLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.supplierLBL.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.supplierLBL.Location = New System.Drawing.Point(0, 76)
+        Me.supplierLBL.Name = "supplierLBL"
+        Me.supplierLBL.Size = New System.Drawing.Size(937, 52)
+        Me.supplierLBL.TabIndex = 9
+        Me.supplierLBL.Text = "supplier"
+        Me.supplierLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'imageviewFRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(937, 543)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.supplierLBL)
         Me.Controls.Add(Me.itemLBL)
         Me.Controls.Add(Me.winnerLBL)
         Me.Controls.Add(Me.employeeLBL)
@@ -167,4 +182,5 @@ Partial Class imageviewFRM
     Friend WithEvents checkBTN As Button
     Friend WithEvents winnerLBL As Label
     Friend WithEvents itemLBL As Label
+    Friend WithEvents supplierLBL As Label
 End Class

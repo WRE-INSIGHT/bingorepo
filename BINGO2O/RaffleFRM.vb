@@ -279,6 +279,7 @@ where id ='" & ID & "'"
     End Sub
     Public selectedpath As String = ""
     Public selectedraffleitem As String
+    Public selectedsupplier As String
     Public Sub search(ByVal number As String)
         Try
             Dim search As String = "select * from raffletable where number ='" & number & "'"
@@ -289,6 +290,7 @@ where id ='" & ID & "'"
                         While rd.Read
                             selectedraffleitem = rd("item").ToString()
                             selectedpath = rd("img")
+                            selectedsupplier = rd("supplier").ToString()
                         End While
                     End Using
                 End Using
@@ -341,6 +343,7 @@ where id ='" & ID & "'"
         raffleItemLABEL.Text = selectedraffleitem
         rafflenumber = KryptonLabel5.Text
         imageviewFRM.itemLBL.Text = selectedraffleitem
+        imageviewFRM.supplierLBL.Text = selectedsupplier
         imageviewFRM.ShowDialog()
     End Sub
 

@@ -62,14 +62,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BINGO2O.exe" size="10733568">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BINGO2O.exe" size="10734080">
       <assemblyIdentity name="BINGO2O" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yK5vprUkDqi2r9FbKAm0xnVQiiM=</dsig:DigestValue>
+        <dsig:DigestValue>I1I/kouJ1Wdavf4NLyBFfxi8eQw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
