@@ -34,7 +34,7 @@ Public Class RaffleModel
         Dim dt As New DataSet
         dt.Clear()
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Dim sql As String = " select item from RAFFLETABLE union all select number from RAFFLETABLE"
+            Dim sql As String = " select number as item from RAFFLETABLE"
             Using sqlcmd As SqlCommand = New SqlCommand(sql, sqlcon)
                 Try
                     sqlcon.Open()
