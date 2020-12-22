@@ -165,7 +165,6 @@ Partial Class imageviewFRM
         Me.Controls.Add(Me.Panel1)
         Me.Name = "imageviewFRM"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "imageviewFRM"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

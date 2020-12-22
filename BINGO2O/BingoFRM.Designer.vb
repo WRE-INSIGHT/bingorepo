@@ -437,7 +437,7 @@ Partial Class BingoFRM
         '
         Me.SpeedToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CallToolStripMenuItem, Me.AnimationToolStripMenuItem})
         Me.SpeedToolStripMenuItem.Name = "SpeedToolStripMenuItem"
-        Me.SpeedToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SpeedToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.SpeedToolStripMenuItem.Text = "Speed"
         '
         'CallToolStripMenuItem
@@ -472,7 +472,7 @@ Partial Class BingoFRM
         '
         Me.PatternToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsideSquareToolStripMenuItem, Me.HorizontalToolStripMenuItem, Me.IntersectingHVLinesToolStripMenuItem, Me.DoubleHorizontalToolStripMenuItem, Me.DoubleVerticalToolStripMenuItem, Me.KMDIToolStripMenuItem, Me.LastManStandingToolStripMenuItem, Me.SemiBlackoutToolStripMenuItem, Me.BlackoutToolStripMenuItem, Me.CustomToolStripMenuItem})
         Me.PatternToolStripMenuItem.Name = "PatternToolStripMenuItem"
-        Me.PatternToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PatternToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.PatternToolStripMenuItem.Text = "Pattern"
         '
         'InsideSquareToolStripMenuItem
@@ -486,7 +486,7 @@ Partial Class BingoFRM
         '
         Me.WinnerToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.insidesquarewinner})
         Me.WinnerToolStripMenuItem.Name = "WinnerToolStripMenuItem"
-        Me.WinnerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.WinnerToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.WinnerToolStripMenuItem.Text = "Winner"
         '
         'insidesquarewinner
@@ -499,7 +499,7 @@ Partial Class BingoFRM
         '
         Me.PriceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.insidesquareprice})
         Me.PriceToolStripMenuItem.Name = "PriceToolStripMenuItem"
-        Me.PriceToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PriceToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.PriceToolStripMenuItem.Text = "Price"
         '
         'insidesquareprice
@@ -914,20 +914,20 @@ Partial Class BingoFRM
         'SwitchViewToolStripMenuItem
         '
         Me.SwitchViewToolStripMenuItem.Name = "SwitchViewToolStripMenuItem"
-        Me.SwitchViewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SwitchViewToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.SwitchViewToolStripMenuItem.Text = "Switch View"
         '
         'CheckerToolStripMenuItem
         '
         Me.CheckerToolStripMenuItem.Name = "CheckerToolStripMenuItem"
-        Me.CheckerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CheckerToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.CheckerToolStripMenuItem.Text = "Checker"
         '
         'SpeakToolStripMenuItem
         '
         Me.SpeakToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.yesnospeak, Me.VoiceToolStripMenuItem, Me.RateToolStripMenuItem, Me.RepeatVoiceToolStripMenuItem, Me.RepeatRateToolStripMenuItem, Me.RepeatTimesToolStripMenuItem})
         Me.SpeakToolStripMenuItem.Name = "SpeakToolStripMenuItem"
-        Me.SpeakToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SpeakToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.SpeakToolStripMenuItem.Text = "Speak"
         '
         'yesnospeak
@@ -1011,7 +1011,7 @@ Partial Class BingoFRM
         '
         Me.LabelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.labelshow, Me.TextToolStripMenuItem, Me.SpeedToolStripMenuItem1, Me.labelbackcolor})
         Me.LabelToolStripMenuItem.Name = "LabelToolStripMenuItem"
-        Me.LabelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LabelToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.LabelToolStripMenuItem.Text = "Label"
         '
         'labelshow
@@ -1058,7 +1058,7 @@ Partial Class BingoFRM
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Timer1

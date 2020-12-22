@@ -1,15 +1,20 @@
-﻿Imports Microsoft.Reporting.WinForms
+﻿Imports System.ComponentModel
+Imports System.Data.SqlClient
+Imports Microsoft.Reporting.WinForms
 
 Public Class BingoFRM
     Dim bestsize As Integer = 11
     Dim letsgoprice As String
     Dim winners As String
+    Public randomSET As ArrayList
     Dim speech As Object = CreateObject("SAPI.SpVoice")
+    Dim bgw As New BackgroundWorker
 
-    Private Sub reset()
+
+    Public Sub reset()
         LastCallLabel.Text = ""
         patternSTR = "Let's play Bingo!"
-        letsgoprice = "PATTERN"
+        letsgoprice = "Price"
         KryptonNumericUpDown1.Text = "0"
         priceSTR = letsgoprice
         a1.Checked = False
@@ -88,6 +93,8 @@ Public Class BingoFRM
         Dim loc3 = (PictureBox3.Location.Y)
         PictureBox1.Location = New Point(PictureBox1.Location.X - LOC, PictureBox1.Location.Y)
         PictureBox3.Location = New Point(PictureBox3.Location.X, PictureBox3.Location.Y - loc3)
+
+        randomSET = New ArrayList
         Dim numbers = Enumerable.Range(0, 76).ToList()
         Dim RandomClass As New Random()
         Dim RandomIndex As Integer
@@ -96,7 +103,9 @@ Public Class BingoFRM
             ComboBox1.Items.Add(numbers(RandomIndex))
             ComboBox2.Items.Add(numbers(RandomIndex))
             ComboBox3.Items.Add(numbers(RandomIndex))
+            randomSET.Add(numbers(RandomIndex))
             numbers.RemoveAt(RandomIndex)
+
         Next
         KryptonCheckButton1.Checked = False
         KryptonCheckButton2.Checked = False
@@ -491,7 +500,7 @@ Public Class BingoFRM
 
                 PictureBox2.SendToBack()
                 Timer1.Start()
-                Timer1.Interval = ToolStripTextBox1.Text
+                Timer1.Interval = callSpeedValue
                 ProgressBar1.Maximum = 75
                 KryptonButton157.Visible = False
                 animestarter.Visible = False
@@ -499,9 +508,39 @@ Public Class BingoFRM
                 letterstart.Visible = False
                 DISABLEBINGO(False)
                 manualselectbtn.Checked = False
-
+                If saveSet Then
+                    starter("new set")
+                End If
         End Select
 
+    End Sub
+    Private Sub insetNewSet()
+        Try
+            patternSTR = patternSTR.Replace("'", "")
+            patternSTR = patternSTR.Replace("""", "")
+            priceSTR = priceSTR.Replace("'", "")
+            priceSTR = priceSTR.Replace("""", "")
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                sqlcon.Open()
+                Dim newSet
+                Using sqlcmd As SqlCommand = New SqlCommand("select isnull(max(isnull(setcount,0)),0)+1 from bingoset", sqlcon)
+                    Using rd As SqlDataReader = sqlcmd.ExecuteReader
+                        While rd.Read
+                            newSet = rd(0).ToString()
+                        End While
+                    End Using
+                End Using
+                For i As Integer = 0 To 74
+                    Dim str As String = "declare @id as integer = (select isnull(max(isnull(id,0)),0)+1 from bingoset) " +
+                        " insert into bingoset (id,setcount,pattern,price,nindex,number)values(@id," & newSet & ",'" & patternSTR & "','" & priceSTR & "','" & i & "','" & randomSET(i) & "')"
+                    Using sqlcmd As SqlCommand = New SqlCommand(str, sqlcon)
+                        sqlcmd.ExecuteNonQuery()
+                    End Using
+                Next
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
     End Sub
     Private Sub DISABLEBINGO(ByVal B As Boolean)
         BCheckButton.Enabled = B
@@ -518,14 +557,18 @@ Public Class BingoFRM
         manualselectbtn.Enabled = B
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler bgw.DoWork, AddressOf bgw_dowork
+        AddHandler bgw.ProgressChanged, AddressOf bgw_ProgressChanged
+        AddHandler bgw.RunWorkerCompleted, AddressOf bgw_RunWorkerCompleted
+        bgw.WorkerReportsProgress = True
+        bgw.WorkerSupportsCancellation = True
         repeatmyvoice.SelectedIndex = 0
         myvoice.SelectedIndex = 0
         vrate.SelectedIndex = 10
         repeatrate.SelectedIndex = 10
         repeattimes.SelectedIndex = 0
         labelspeed.SelectedIndex = 3
-        ToolStripTextBox1.SelectedIndex = 1
-        ToolStripTextBox2.SelectedIndex = 3
+
         labelbackcolor.SelectedIndex = 1
         Timer2.Start()
         Timer2.Interval = 500
@@ -544,9 +587,11 @@ Public Class BingoFRM
 
         ComboBox1.Items.Clear()
         ComboBox2.Items.Clear()
+        randomSET = New ArrayList
         ProgressBar1.Value = 0
         Label1.Text = ""
         KryptonLabel1.Text = ""
+
         Dim numbers = Enumerable.Range(0, 76).ToList()
         Dim RandomClass As New Random()
         Dim RandomIndex As Integer
@@ -555,11 +600,42 @@ Public Class BingoFRM
             ComboBox1.Items.Add(numbers(RandomIndex))
             ComboBox2.Items.Add(numbers(RandomIndex))
             ComboBox3.Items.Add(numbers(RandomIndex))
+            randomSET.Add(numbers(RandomIndex))
             numbers.RemoveAt(RandomIndex)
         Next
 
         reset()
     End Sub
+    Dim action As String
+    Private Sub starter(ByVal act As String)
+        If Not bgw.IsBusy Then
+            action = act
+            bgw.RunWorkerAsync()
+        End If
+    End Sub
+    Private Sub bgw_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs)
+        Select Case action
+            Case ""
+
+        End Select
+    End Sub
+
+    Private Sub bgw_ProgressChanged(sender As Object, e As ProgressChangedEventArgs)
+        Select Case action
+            Case "new set"
+
+        End Select
+    End Sub
+
+    Private Sub bgw_dowork(sender As Object, e As DoWorkEventArgs)
+        Select Case action
+            Case "new set"
+                insetNewSet()
+                bgw.ReportProgress(0)
+        End Select
+
+    End Sub
+
     Public Sub mynumbers(ByVal val As Integer)
 
         TotalCallsLabel.Text = ComboBox4.Items.Count
@@ -2799,7 +2875,7 @@ Public Class BingoFRM
             End If
 
             myanimation.Start()
-            myanimation.Interval = ToolStripTextBox2.Text
+            myanimation.Interval = animationSpeedValue
 
         End If
     End Sub
@@ -3177,6 +3253,7 @@ Public Class BingoFRM
             Return
         End If
         reset()
+        saveSet = True
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

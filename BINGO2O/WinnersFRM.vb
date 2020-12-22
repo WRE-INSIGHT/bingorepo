@@ -12,7 +12,7 @@ Public Class WinnersFRM
         ds.Clear()
 
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Dim sql As String = "select number,item,received from raffletable where not received = '' order by number asc"
+            Dim sql As String = "select number,item,received from raffletable where not received = '' order by id asc"
             Using sqlcmd As SqlCommand = New SqlCommand(sql, sqlcon)
                 Try
                     sqlcon.Open()
