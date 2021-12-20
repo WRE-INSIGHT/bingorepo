@@ -52,7 +52,7 @@ Partial Class HomeFRM
         'KryptonButton2
         '
         Me.KryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton2.Location = New System.Drawing.Point(189, 274)
+        Me.KryptonButton2.Location = New System.Drawing.Point(456, 282)
         Me.KryptonButton2.Name = "KryptonButton2"
         Me.KryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton2.Size = New System.Drawing.Size(247, 29)
@@ -67,7 +67,7 @@ Partial Class HomeFRM
         'KryptonButton3
         '
         Me.KryptonButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton3.Location = New System.Drawing.Point(189, 347)
+        Me.KryptonButton3.Location = New System.Drawing.Point(189, 312)
         Me.KryptonButton3.Name = "KryptonButton3"
         Me.KryptonButton3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton3.Size = New System.Drawing.Size(247, 31)
@@ -128,7 +128,7 @@ Partial Class HomeFRM
         'KryptonButton5
         '
         Me.KryptonButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton5.Location = New System.Drawing.Point(189, 309)
+        Me.KryptonButton5.Location = New System.Drawing.Point(189, 274)
         Me.KryptonButton5.Name = "KryptonButton5"
         Me.KryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton5.Size = New System.Drawing.Size(247, 32)
@@ -138,7 +138,7 @@ Partial Class HomeFRM
         Me.KryptonButton5.StateCommon.Border.Rounding = 0
         Me.KryptonButton5.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
         Me.KryptonButton5.TabIndex = 8
-        Me.KryptonButton5.Values.Text = "RAFFLE manual"
+        Me.KryptonButton5.Values.Text = "RAFFLE"
         '
         'HomeFRM
         '

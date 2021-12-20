@@ -26,9 +26,11 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.gv = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.winnerBTN = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.winnerTXT = New System.Windows.Forms.ComboBox()
@@ -39,14 +41,15 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.searchTxt = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.searchByTxt = New System.Windows.Forms.ComboBox()
-        Me.gv = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
+        Me.itemSupplier = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.gv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        CType(Me.gv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
@@ -56,9 +59,9 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.Panel3.Controls.Add(Me.Splitter1)
         Me.Panel3.Controls.Add(Me.Panel1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 104)
+        Me.Panel3.Location = New System.Drawing.Point(0, 159)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1046, 399)
+        Me.Panel3.Size = New System.Drawing.Size(1046, 344)
         Me.Panel3.TabIndex = 1
         '
         'PictureBox1
@@ -67,7 +70,7 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(636, 399)
+        Me.PictureBox1.Size = New System.Drawing.Size(636, 344)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -77,7 +80,7 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Splitter1.Location = New System.Drawing.Point(636, 0)
         Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(3, 399)
+        Me.Splitter1.Size = New System.Drawing.Size(3, 344)
         Me.Splitter1.TabIndex = 3
         Me.Splitter1.TabStop = False
         '
@@ -88,8 +91,40 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel1.Location = New System.Drawing.Point(639, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(407, 399)
+        Me.Panel1.Size = New System.Drawing.Size(407, 344)
         Me.Panel1.TabIndex = 2
+        '
+        'gv
+        '
+        Me.gv.AllowUserToAddRows = False
+        Me.gv.AllowUserToDeleteRows = False
+        Me.gv.ColumnHeadersHeight = 30
+        Me.gv.ColumnHeadersVisible = False
+        Me.gv.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.gv.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.gv.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.gv.Location = New System.Drawing.Point(0, 58)
+        Me.gv.Name = "gv"
+        Me.gv.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver
+        Me.gv.RowHeadersVisible = False
+        Me.gv.RowHeadersWidth = 31
+        Me.gv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.gv.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Arial Narrow", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gv.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.gv.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.gv.Size = New System.Drawing.Size(407, 286)
+        Me.gv.StateCommon.Background.Color1 = System.Drawing.Color.White
+        Me.gv.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList
+        Me.gv.StateCommon.DataCell.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.gv.StateCommon.DataCell.Border.Width = 0
+        Me.gv.StateCommon.DataCell.Content.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gv.StateCommon.HeaderColumn.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.gv.TabIndex = 4
         '
         'Panel2
         '
@@ -103,7 +138,7 @@ Partial Class DisplayRaffleDrawWinnersFRM
         '
         'Label3
         '
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Purple
@@ -116,6 +151,8 @@ Partial Class DisplayRaffleDrawWinnersFRM
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.Button2)
+        Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Controls.Add(Me.winnerBTN)
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.winnerTXT)
@@ -125,11 +162,22 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.Panel4.Controls.Add(Me.searchTxt)
         Me.Panel4.Controls.Add(Me.Label1)
         Me.Panel4.Controls.Add(Me.searchByTxt)
+        Me.Panel4.Controls.Add(Me.itemSupplier)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1046, 104)
+        Me.Panel4.Size = New System.Drawing.Size(1046, 159)
         Me.Panel4.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Location = New System.Drawing.Point(959, 15)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "winners"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'winnerBTN
         '
@@ -166,20 +214,20 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.Panel5.BackColor = System.Drawing.Color.SteelBlue
         Me.Panel5.Controls.Add(Me.itemLabel)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 46)
+        Me.Panel5.Location = New System.Drawing.Point(0, 43)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1046, 58)
+        Me.Panel5.Size = New System.Drawing.Size(1046, 72)
         Me.Panel5.TabIndex = 6
         '
         'itemLabel
         '
-        Me.itemLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.itemLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.itemLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.itemLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 40.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.itemLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.itemLabel.Font = New System.Drawing.Font("Arial Rounded MT Bold", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.itemLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.itemLabel.Location = New System.Drawing.Point(0, 0)
         Me.itemLabel.Name = "itemLabel"
-        Me.itemLabel.Size = New System.Drawing.Size(1046, 58)
+        Me.itemLabel.Size = New System.Drawing.Size(1046, 72)
         Me.itemLabel.TabIndex = 5
         Me.itemLabel.Text = "Raffle Item"
         Me.itemLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -233,40 +281,28 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.searchByTxt.Size = New System.Drawing.Size(93, 21)
         Me.searchByTxt.TabIndex = 0
         '
-        'gv
+        'itemSupplier
         '
-        Me.gv.AllowUserToAddRows = False
-        Me.gv.AllowUserToDeleteRows = False
-        Me.gv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.gv.ColumnHeadersHeight = 30
-        Me.gv.ColumnHeadersVisible = False
-        Me.gv.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.gv.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.gv.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.gv.Location = New System.Drawing.Point(0, 58)
-        Me.gv.Name = "gv"
-        Me.gv.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver
-        Me.gv.RowHeadersVisible = False
-        Me.gv.RowHeadersWidth = 31
-        Me.gv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.gv.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Arial Narrow", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gv.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Empty
-        Me.gv.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White
-        Me.gv.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
-        Me.gv.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.gv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gv.Size = New System.Drawing.Size(407, 341)
-        Me.gv.StateCommon.Background.Color1 = System.Drawing.Color.White
-        Me.gv.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList
-        Me.gv.StateCommon.DataCell.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.gv.StateCommon.DataCell.Border.Width = 0
-        Me.gv.StateCommon.DataCell.Content.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gv.StateCommon.HeaderColumn.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.gv.TabIndex = 4
+        Me.itemSupplier.BackColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.itemSupplier.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.itemSupplier.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.itemSupplier.ForeColor = System.Drawing.Color.White
+        Me.itemSupplier.Location = New System.Drawing.Point(0, 115)
+        Me.itemSupplier.Name = "itemSupplier"
+        Me.itemSupplier.Size = New System.Drawing.Size(1046, 44)
+        Me.itemSupplier.TabIndex = 11
+        Me.itemSupplier.Text = "supplier"
+        Me.itemSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.Location = New System.Drawing.Point(878, 15)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Report"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'DisplayRaffleDrawWinnersFRM
         '
@@ -280,11 +316,11 @@ Partial Class DisplayRaffleDrawWinnersFRM
         Me.Panel3.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        CType(Me.gv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel5.ResumeLayout(False)
-        CType(Me.gv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -306,4 +342,7 @@ Partial Class DisplayRaffleDrawWinnersFRM
     Friend WithEvents Label4 As Label
     Friend WithEvents winnerTXT As ComboBox
     Friend WithEvents gv As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
+    Friend WithEvents Button1 As Button
+    Friend WithEvents itemSupplier As Label
+    Friend WithEvents Button2 As Button
 End Class

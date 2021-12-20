@@ -10,6 +10,7 @@ Module partyModule
     Public raffleSearchBy As String = Nothing
     Public raffleSearch As String = Nothing
     Public winnerStr As String = Nothing
+    Public winnerId As String = Nothing
     Public employeeSerial As String = Nothing
     Public employeeName As String = Nothing
     Public rafflenumber As String = Nothing

@@ -11,7 +11,11 @@ Public Class WinnerModel
         ds.Clear()
 
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Dim sql As String = "select * from winnerTB where number = '" & number & "'"
+            Dim sql As String = "select [ID]
+      ,[WINNER_ID]
+      ,[WINNER]
+      ,[ITEM]
+      ,[NUMBER] from winnerTB where number = '" & number & "'"
             Using sqlcmd As SqlCommand = New SqlCommand(sql, sqlcon)
                 Try
                     sqlcon.Open()
@@ -30,9 +34,9 @@ Public Class WinnerModel
     End Function
 
 
-    Public Function addWinner(ByVal w As String, ByVal i As String, ByVal n As String) As Integer
+    Public Function addWinner(ByVal w As String, ByVal wi As String, ByVal i As String, ByVal n As String) As Integer
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Dim sql As String = "insert into winnertb (winner,item,number) values ('" & w & "','" & i & "','" & n & "')"
+            Dim sql As String = "insert into winnertb (winner,winner_id,item,number) values ('" & w & "','" & wi & "','" & i & "','" & n & "')"
             Using sqlcmd As SqlCommand = New SqlCommand(sql, sqlcon)
                 sqlcon.Open()
                 Return sqlcmd.ExecuteNonQuery()

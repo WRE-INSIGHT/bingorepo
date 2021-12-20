@@ -4,15 +4,16 @@ Public Class RaffleModel
     Public Property item As String
     Public Property img As String
     Public Property number As String
+    Public Property supplier As String
     Public Function searchItem() As RaffleModel
 
         Dim raffled As RaffleModel = New RaffleModel
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
             Dim sql As String = Nothing
             If raffleSearchBy = "Item Number" Then
-                sql = "select item,img,number from [RAFFLETABLE] where number = '" & raffleSearch & "'"
+                sql = "select item,img,number,supplier from [RAFFLETABLE] where number = '" & raffleSearch & "'"
             ElseIf raffleSearchBy = "Item" Then
-                sql = "select item,img,number from [RAFFLETABLE] where item = '" & raffleSearch & "'"
+                sql = "select item,img,number,supplier from [RAFFLETABLE] where item = '" & raffleSearch & "'"
             End If
             Using sqlcmd As SqlCommand = New SqlCommand(sql, sqlcon)
                 sqlcon.Open()
@@ -22,7 +23,7 @@ Public Class RaffleModel
                         raffled.item = rd(0).ToString()
                         raffled.img = rd(1).ToString()
                         raffled.number = rd(2).ToString()
-
+                        raffled.supplier = rd(3).ToString()
                     End While
                 End Using
                 Return raffled

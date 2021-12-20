@@ -22,5 +22,25 @@ BINGO2O
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:BINGO2O.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:BINGO2O.DataSet1.winnerTBDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BINGO2O.DataSet1.winnerTBRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BINGO2O.DataSet1.winnerTBRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 </members>
 </doc>

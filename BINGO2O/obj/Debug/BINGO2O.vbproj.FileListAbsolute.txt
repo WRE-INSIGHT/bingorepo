@@ -90,3 +90,8 @@ C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.imageviewFRM.resource
 C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.BingoOption.resources
 C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.DisplayRaffleDrawWinnersFRM.resources
 C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.WinnersFRM.resources
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.WinnerManual.resources
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\BINGO2O.WinnerReport.resources
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\RdlCompile.cache
+C:\Users\kmdim\Desktop\bingorepo\BINGO2O\obj\Debug\RdlCompile.compiled

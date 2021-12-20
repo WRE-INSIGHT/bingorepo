@@ -47,8 +47,12 @@ Public Class DisplayRaffleDrawWinnersFRM
         gv.Columns("id").Visible = False
         gv.Columns("number").Visible = False
         gv.Columns("item").Visible = False
-        gv.Columns("winner").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+        gv.Columns("WINNER_ID").Width = 100
+        gv.Columns("WINNER").Width = 400
+        gv.Columns("WINNER_ID").DefaultCellStyle.ForeColor = Color.Purple
+        gv.Columns("WINNER_ID").DefaultCellStyle.SelectionForeColor = Color.Purple
         gv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+
     End Sub
 
     Private Sub bgw_Completed(sender As Object, e As RunWorkerCompletedEventArgs)
@@ -56,7 +60,7 @@ Public Class DisplayRaffleDrawWinnersFRM
             Case "search item"
                 PictureBox1.Image = srcBmp
                 itemLabel.Text = raffled.item
-
+                itemSupplier.Text = "raffle item from: " + raffled.supplier
             Case "add winner"
 
         End Select
@@ -87,7 +91,7 @@ Public Class DisplayRaffleDrawWinnersFRM
                 raffled = raffled.searchItem()
                 bgw.ReportProgress(0)
             Case "add winner"
-                winner.addWinner(winnerStr, raffled.item, raffled.number)
+                winner.addWinner(winnerStr, winnerId, raffled.item, raffled.number)
                 bgw.ReportProgress(0)
             Case "get winner"
                 bgw.ReportProgress(0)
@@ -104,6 +108,7 @@ Public Class DisplayRaffleDrawWinnersFRM
                     MessageBox.Show("Please select a raffle item", "warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Else
                     winnerStr = winnerTXT.SelectedValue.ToString()
+                    winnerId = winnerTXT.Text.ToString()
                     starter("add winner")
                 End If
 
@@ -139,5 +144,13 @@ Public Class DisplayRaffleDrawWinnersFRM
             End If
 
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        WinnerManual.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        WinnerReport.ShowDialog()
     End Sub
 End Class

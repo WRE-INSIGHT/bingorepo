@@ -52,7 +52,6 @@ Partial Class WinnersFRM
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
         Me.gv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.gv.ColumnHeadersHeight = 30
-        Me.gv.ColumnHeadersVisible = False
         Me.gv.Cursor = System.Windows.Forms.Cursors.Hand
         Me.gv.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gv.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically

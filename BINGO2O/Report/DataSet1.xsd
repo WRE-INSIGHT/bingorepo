@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="winnerTB" msprop:Generator_TableClassName="winnerTBDataTable" msprop:Generator_TableVarName="tablewinnerTB" msprop:Generator_TablePropName="winnerTB" msprop:Generator_RowDeletingName="winnerTBRowDeleting" msprop:Generator_RowChangingName="winnerTBRowChanging" msprop:Generator_RowEvHandlerName="winnerTBRowChangeEventHandler" msprop:Generator_RowDeletedName="winnerTBRowDeleted" msprop:Generator_UserTableName="winnerTB" msprop:Generator_RowChangedName="winnerTBRowChanged" msprop:Generator_RowEvArgName="winnerTBRowChangeEvent" msprop:Generator_RowClassName="winnerTBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NUMBER" msprop:Generator_ColumnVarNameInTable="columnNUMBER" msprop:Generator_ColumnPropNameInRow="NUMBER" msprop:Generator_ColumnPropNameInTable="NUMBERColumn" msprop:Generator_UserColumnName="NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM" msprop:Generator_ColumnVarNameInTable="columnITEM" msprop:Generator_ColumnPropNameInRow="ITEM" msprop:Generator_ColumnPropNameInTable="ITEMColumn" msprop:Generator_UserColumnName="ITEM" type="xs:string" minOccurs="0" />
+              <xs:element name="WINNER" msprop:Generator_ColumnVarNameInTable="columnWINNER" msprop:Generator_ColumnPropNameInRow="WINNER" msprop:Generator_ColumnPropNameInTable="WINNERColumn" msprop:Generator_UserColumnName="WINNER" type="xs:string" minOccurs="0" />
+              <xs:element name="WINNER_ID" msprop:Generator_ColumnVarNameInTable="columnWINNER_ID" msprop:Generator_ColumnPropNameInRow="WINNER_ID" msprop:Generator_ColumnPropNameInTable="WINNER_IDColumn" msprop:Generator_UserColumnName="WINNER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="SUPPLIER" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER" msprop:Generator_ColumnPropNameInRow="SUPPLIER" msprop:Generator_ColumnPropNameInTable="SUPPLIERColumn" msprop:Generator_UserColumnName="SUPPLIER" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
