@@ -12,7 +12,7 @@ Public Class WinnersFRM
         ds.Clear()
 
         Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Dim sql As String = "select number AS ITEM_NO,ITEM,RECEIVED_ID AS WINNER_ID,RECEIVED AS WINNER from raffletable where not received = '' order by id asc"
+            Dim sql As String = "select number AS ITEM_NO,ITEM,SUPPLIER,RECEIVED_ID AS WINNER_ID,RECEIVED AS WINNER from raffletable where not received = '' order by id asc"
             Using sqlcmd As SqlCommand = New SqlCommand(sql, sqlcon)
                 Try
                     sqlcon.Open()
@@ -33,8 +33,17 @@ Public Class WinnersFRM
         gv.Columns("ITEM").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         gv.Columns("WINNER").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         gv.Columns("ITEM_NO").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        gv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        'gv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         'gv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        gv.Columns("ITEM_NO").Width = 150
+        'gv.Columns("ITEM_NO").Width = 150
+
+
+        gv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells
+        gv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
+        gv.Columns("ITEM_NO").Width = 100
+        gv.Columns("ITEM").Width = 450
+        gv.Columns("WINNER_ID").Width = 100
+        gv.Columns("WINNER").Width = 450
+        gv.Columns("SUPPLIER").Width = 200
     End Sub
 End Class

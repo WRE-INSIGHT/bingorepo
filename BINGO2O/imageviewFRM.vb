@@ -36,17 +36,22 @@ Public Class imageviewFRM
         Return str
     End Function
     Public Sub loadimagetopicturebox(ByVal path As String, ByVal ob As Object)
-        Dim objwebClient As WebClient
-        Dim sURL As String = Trim(path)
         Try
-            objwebClient = New WebClient()
-            objImage = New MemoryStream(objwebClient.DownloadData(sURL))
-            srcBmp = CType(Bitmap.FromStream(objImage), Bitmap)
-            totalPages = CInt(srcBmp.GetFrameCount(FrameDimension.Page) - 1)
-            srcBmp.SelectActiveFrame(FrameDimension.Page, currentPage)
-            ob.Image = srcBmp
+            ob.ImageLocation = path
         Catch ex As Exception
+            MsgBox(ex.ToString())
         End Try
+        'Dim objwebClient As WebClient
+        'Dim sURL As String = Trim(path)
+        'Try
+        '    objwebClient = New WebClient()
+        '    objImage = New MemoryStream(objwebClient.DownloadData(sURL))
+        '    srcBmp = CType(Bitmap.FromStream(objImage), Bitmap)
+        '    totalPages = CInt(srcBmp.GetFrameCount(FrameDimension.Page) - 1)
+        '    srcBmp.SelectActiveFrame(FrameDimension.Page, currentPage)
+        '    ob.Image = srcBmp
+        'Catch ex As Exception
+        'End Try
     End Sub
     Private Sub imageviewFRM_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Dispose()
@@ -83,6 +88,7 @@ Public Class imageviewFRM
         employeeSerial = serialTBOX.Text
         employeeName = verifySerial()
         employeeLBL.Text = employeeName
+        sdsdsdsd
     End Sub
 
     Private Function verifySerial() As String

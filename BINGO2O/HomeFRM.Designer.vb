@@ -52,7 +52,7 @@ Partial Class HomeFRM
         'KryptonButton2
         '
         Me.KryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton2.Location = New System.Drawing.Point(456, 282)
+        Me.KryptonButton2.Location = New System.Drawing.Point(189, 274)
         Me.KryptonButton2.Name = "KryptonButton2"
         Me.KryptonButton2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton2.Size = New System.Drawing.Size(247, 29)
@@ -128,7 +128,7 @@ Partial Class HomeFRM
         'KryptonButton5
         '
         Me.KryptonButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.KryptonButton5.Location = New System.Drawing.Point(189, 274)
+        Me.KryptonButton5.Location = New System.Drawing.Point(491, 295)
         Me.KryptonButton5.Name = "KryptonButton5"
         Me.KryptonButton5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem
         Me.KryptonButton5.Size = New System.Drawing.Size(247, 32)
@@ -145,7 +145,7 @@ Partial Class HomeFRM
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(452, 417)
+        Me.ClientSize = New System.Drawing.Size(454, 417)
         Me.Controls.Add(Me.KryptonButton5)
         Me.Controls.Add(Me.TBOXdatasource)
         Me.Controls.Add(Me.KryptonButton4)

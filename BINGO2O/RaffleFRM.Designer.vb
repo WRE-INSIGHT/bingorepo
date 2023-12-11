@@ -41,6 +41,7 @@ Partial Class RaffleFRM
         Me.GameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WinnersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -106,7 +107,6 @@ Partial Class RaffleFRM
         Me.KryptonButton7 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton8 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.WinnersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.KryptonDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -349,6 +349,12 @@ Partial Class RaffleFRM
         Me.EditItemsToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.EditItemsToolStripMenuItem.Text = "Edit Items"
         '
+        'WinnersToolStripMenuItem
+        '
+        Me.WinnersToolStripMenuItem.Name = "WinnersToolStripMenuItem"
+        Me.WinnersToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.WinnersToolStripMenuItem.Text = "Winners"
+        '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
@@ -532,7 +538,6 @@ Partial Class RaffleFRM
         Me.KryptonButton4.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KryptonButton4.TabIndex = 806
         Me.KryptonButton4.Values.Text = "RECEIVE"
-        Me.KryptonButton4.Visible = False
         '
         'KryptonPanel1
         '
@@ -699,7 +704,7 @@ Partial Class RaffleFRM
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(965, 577)
+        Me.TabPage5.Size = New System.Drawing.Size(965, 604)
         Me.TabPage5.TabIndex = 2
         Me.TabPage5.Text = "Items TB"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -974,7 +979,7 @@ Partial Class RaffleFRM
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(965, 577)
+        Me.TabPage1.Size = New System.Drawing.Size(965, 604)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "L1L2"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1253,12 +1258,6 @@ Partial Class RaffleFRM
         '
         'Timer2
         '
-        '
-        'WinnersToolStripMenuItem
-        '
-        Me.WinnersToolStripMenuItem.Name = "WinnersToolStripMenuItem"
-        Me.WinnersToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.WinnersToolStripMenuItem.Text = "Winners"
         '
         'RaffleFRM
         '

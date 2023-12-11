@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TBOXdatasource.SelectedIndex = 1
+        TBOXdatasource.SelectedIndex = 0
     End Sub
 
     Private Sub KryptonButton5_Click(sender As Object, e As EventArgs) Handles KryptonButton5.Click
