@@ -107,6 +107,7 @@ Partial Class RaffleFRM
         Me.KryptonButton7 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.KryptonButton8 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.KryptonDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -443,6 +444,7 @@ Partial Class RaffleFRM
         '
         'KryptonPanel2
         '
+        Me.KryptonPanel2.Controls.Add(Me.Panel1)
         Me.KryptonPanel2.Controls.Add(Me.receiverTBOX)
         Me.KryptonPanel2.Controls.Add(Me.cBTN)
         Me.KryptonPanel2.Controls.Add(Me.PictureBox1)
@@ -1259,6 +1261,14 @@ Partial Class RaffleFRM
         'Timer2
         '
         '
+        'Panel1
+        '
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 557)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(959, 41)
+        Me.Panel1.TabIndex = 815
+        '
         'RaffleFRM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1384,4 +1394,5 @@ Partial Class RaffleFRM
     Friend WithEvents TBOXpath As ComponentFactory.Krypton.Toolkit.KryptonTextBox
     Friend WithEvents receiverTBOX As ComboBox
     Friend WithEvents WinnersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Panel1 As Panel
 End Class

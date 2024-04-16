@@ -19,20 +19,24 @@ Public Class imageviewFRM
     End Sub
     Public Function getwinner() As String
         Dim str = Nothing
-        Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Using sqlcmd As SqlCommand = New SqlCommand("select RECEIVED from RAFFLETABLE where number = '" & rafflenumber & "'", sqlcon)
-                sqlcon.Open()
-                Using rd As SqlDataReader = sqlcmd.ExecuteReader
-                    If (rd.HasRows) Then
-                        While rd.Read
-                            str = "WINNER: " + rd(0).ToString()
-                        End While
-                    Else
-                        str = ""
-                    End If
+        Try
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                Using sqlcmd As SqlCommand = New SqlCommand("select RECEIVED from RAFFLETABLE where number = '" & rafflenumber & "'", sqlcon)
+                    sqlcon.Open()
+                    Using rd As SqlDataReader = sqlcmd.ExecuteReader
+                        If (rd.HasRows) Then
+                            While rd.Read
+                                str = "WINNER: " + rd(0).ToString()
+                            End While
+                        Else
+                            str = ""
+                        End If
+                    End Using
                 End Using
             End Using
-        End Using
+        Catch ex As Exception
+            MsgBox(ex.ToString())
+        End Try
         Return str
     End Function
     Public Sub loadimagetopicturebox(ByVal path As String, ByVal ob As Object)
@@ -71,42 +75,51 @@ Public Class imageviewFRM
         Dim bs As New BindingSource
         Dim ds As DataSet = New DataSet()
         ds.Clear()
-        Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Using sqlcmd As SqlCommand = New SqlCommand("select serial from checker", sqlcon)
-                sqlcon.Open()
-                Using da As SqlDataAdapter = New SqlDataAdapter()
-                    da.SelectCommand = sqlcmd
-                    da.Fill(ds, "checker")
-                    bs.DataSource = ds
-                    bs.DataMember = "checker"
+        Try
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                Using sqlcmd As SqlCommand = New SqlCommand("select serial from checker", sqlcon)
+                    sqlcon.Open()
+                    Using da As SqlDataAdapter = New SqlDataAdapter()
+                        da.SelectCommand = sqlcmd
+                        da.Fill(ds, "checker")
+                        bs.DataSource = ds
+                        bs.DataMember = "checker"
+                    End Using
                 End Using
             End Using
-        End Using
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
         Return bs
     End Function
     Private Sub checkBTN_Click(sender As Object, e As EventArgs) Handles checkBTN.Click
         employeeSerial = serialTBOX.Text
         employeeName = verifySerial()
         employeeLBL.Text = employeeName
-        sdsdsdsd
     End Sub
 
     Private Function verifySerial() As String
         Dim str As String = Nothing
-        Using sqlcon As SqlConnection = New SqlConnection(connectionString)
-            Using sqlcmd As SqlCommand = New SqlCommand("select isnull(employee,'') from checker where serial = '" & employeeSerial & "'", sqlcon)
-                sqlcon.Open()
-                Using rd As SqlDataReader = sqlcmd.ExecuteReader
-                    If (rd.HasRows) Then
-                        While rd.Read
-                            str = rd(0).ToString()
-                        End While
-                    Else
-                        str = "0 result found"
-                    End If
+        Try
+            Using sqlcon As SqlConnection = New SqlConnection(connectionString)
+                Using sqlcmd As SqlCommand = New SqlCommand("select isnull(employee,'') from checker where serial = '" & employeeSerial & "'", sqlcon)
+                    sqlcon.Open()
+                    Using rd As SqlDataReader = sqlcmd.ExecuteReader
+                        If (rd.HasRows) Then
+                            While rd.Read
+                                str = rd(0).ToString()
+                            End While
+                        Else
+                            str = "0 result found"
+                        End If
+                    End Using
                 End Using
             End Using
-        End Using
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
         Return str
     End Function
 End Class

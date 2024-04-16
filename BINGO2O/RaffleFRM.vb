@@ -373,8 +373,8 @@ where id ='" & ID & "'"
     End Sub
 
     Public Function casualItemCount() As String
+        Dim x As String = Nothing
         Try
-            Dim x As String = Nothing
             Dim str As String = "select count(item) from raffletable where label = 2 and received=''"
             Using sqlcon As SqlConnection = New SqlConnection(connectionString)
                 sqlcon.Open()
@@ -386,14 +386,14 @@ where id ='" & ID & "'"
                     End Using
                 End Using
             End Using
-            Return x
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
+        Return x
     End Function
     Public Function regularItemCount() As String
+        Dim x As String = Nothing
         Try
-            Dim x As String = Nothing
             Dim str As String = "select count(item) from raffletable where label = 1 and received=''"
             Using sqlcon As SqlConnection = New SqlConnection(connectionString)
                 sqlcon.Open()
@@ -405,10 +405,10 @@ where id ='" & ID & "'"
                     End Using
                 End Using
             End Using
-            Return x
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
+        Return x
     End Function
     Private Sub KryptonButton5_Click(sender As Object, e As EventArgs) Handles KryptonButton5.Click
 
