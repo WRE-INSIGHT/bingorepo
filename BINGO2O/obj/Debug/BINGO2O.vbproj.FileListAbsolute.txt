@@ -189,6 +189,5 @@ D:\MyApplications\bingorepo\BINGO2O\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinF
 D:\MyApplications\bingorepo\BINGO2O\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\MyApplications\bingorepo\BINGO2O\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\MyApplications\bingorepo\BINGO2O\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\MyApplications\bingorepo\BINGO2O\obj\Debug\BINGO2O.vbproj.AssemblyReference.cache
 D:\MyApplications\bingorepo\BINGO2O\obj\Debug\RdlCompile.cache
 D:\MyApplications\bingorepo\BINGO2O\obj\Debug\RdlCompile.compiled
