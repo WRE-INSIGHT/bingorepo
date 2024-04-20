@@ -88,7 +88,6 @@ Public Class imageviewFRM
         employeeSerial = serialTBOX.Text
         employeeName = verifySerial()
         employeeLBL.Text = employeeName
-        sdsdsdsd
     End Sub
 
     Private Function verifySerial() As String
